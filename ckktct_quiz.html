@@ -95,9 +95,7 @@
         const correct = new Set(getCorrectLabels(q));
         const selected = state.selected[q.uid];
         const revealed = state.revealed[q.uid] === true;
-
-        const canGrade = selected != null && correct.size > 0;
-        const isCorrect = canGrade ? correct.has(selected) && correct.size === 1 : false;
+        const feedback = state.feedback[q.uid] || "";
 
         stats.innerHTML = `— Câu ${idx + 1}/${total} • Đúng: <b>${state.score}</b>`;
 
@@ -127,7 +125,7 @@
             <div class="row">
               <button class="btn good" id="btnCheck" ${selected == null ? "disabled" : ""}>Chấm</button>
               <button class="btn" id="btnNext">${idx + 1 === total ? "Kết thúc" : "Câu tiếp"}</button>
-              <span class="muted" id="msg"></span>
+              <span class="muted" id="msg">${feedback}</span>
             </div>
           </div>
         `;
@@ -135,25 +133,26 @@
         quiz.querySelectorAll('input[name="ans"]').forEach((el) => {
           el.addEventListener("change", (ev) => {
             state.selected[q.uid] = ev.target.value;
+            // Re-render to enable "Chấm" immediately
+            renderQuestionCard(q, idx, total, state);
           });
         });
 
-        const msg = document.getElementById("msg");
         document.getElementById("btnCheck").addEventListener("click", () => {
           state.revealed[q.uid] = true;
           const sel = state.selected[q.uid];
           const cset = new Set(getCorrectLabels(q));
           if (cset.size !== 1) {
-            msg.innerHTML = `<span class="muted">Câu này không có đúng 1 đáp án đúng (không chấm điểm).</span>`;
+            state.feedback[q.uid] = `<span class="muted">Câu này không có đúng 1 đáp án đúng (không chấm điểm).</span>`;
           } else if (cset.has(sel)) {
             if (!state.graded[q.uid]) {
               state.score += 1;
               state.graded[q.uid] = true;
             }
-            msg.innerHTML = `<span style="color:var(--accent2)"><b>Đúng</b></span>`;
+            state.feedback[q.uid] = `<span style="color:var(--accent2)"><b>Đúng</b></span>`;
           } else {
             if (!state.graded[q.uid]) state.graded[q.uid] = true;
-            msg.innerHTML = `<span style="color:var(--danger)"><b>Sai</b></span>`;
+            state.feedback[q.uid] = `<span style="color:var(--danger)"><b>Sai</b></span>`;
           }
           renderQuestionCard(q, idx, total, state);
         });
@@ -202,6 +201,7 @@
           selected: {},
           revealed: {},
           graded: {},
+          feedback: {},
         };
 
         if (picked.length === 0) {
