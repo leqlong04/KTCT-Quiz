@@ -86,6 +86,57 @@
         return shuffle(arr).slice(0, Math.max(0, Math.min(n, arr.length)));
       }
 
+      function weightedPickForAllChapters(allItems, n) {
+        // Requirement:
+        // - total n questions (default 30)
+        // - Chương 5 + Chương 6 ~= 70%
+        // - Remaining from Chương 1 + Chương 3
+        const pools = {
+          c1: allItems.filter((x) => x.chapter === "Chương 1"),
+          c3: allItems.filter((x) => x.chapter === "Chương 3"),
+          c5: allItems.filter((x) => x.chapter === "Chương 5"),
+          c6: allItems.filter((x) => x.chapter === "Chương 6"),
+        };
+
+        const target56 = Math.round(n * 0.7);
+        const target13 = n - target56;
+
+        const target5 = Math.floor(target56 / 2);
+        const target6 = target56 - target5;
+        const target1 = Math.floor(target13 / 2);
+        const target3 = target13 - target1;
+
+        const take = (arr, k) => shuffle(arr).slice(0, Math.max(0, Math.min(k, arr.length)));
+        let picked = []
+          .concat(take(pools.c5, target5))
+          .concat(take(pools.c6, target6))
+          .concat(take(pools.c1, target1))
+          .concat(take(pools.c3, target3));
+
+        // Dedupe (just in case)
+        const seen = new Set();
+        picked = picked.filter((q) => (seen.has(q.uid) ? false : (seen.add(q.uid), true)));
+
+        // If any pool is short, fill from remaining items (prefer 5/6 first, then 1/3, then all)
+        const remaining = allItems.filter((q) => !seen.has(q.uid));
+        if (picked.length < n) {
+          const prefer = []
+            .concat(remaining.filter((x) => x.chapter === "Chương 5" || x.chapter === "Chương 6"))
+            .concat(remaining.filter((x) => x.chapter === "Chương 1" || x.chapter === "Chương 3"))
+            .concat(remaining);
+          const fill = take(prefer, n - picked.length);
+          for (const q of fill) {
+            if (!seen.has(q.uid)) {
+              seen.add(q.uid);
+              picked.push(q);
+              if (picked.length >= n) break;
+            }
+          }
+        }
+
+        return picked.slice(0, n);
+      }
+
       function getCorrectLabels(q) {
         return (q.choices || []).filter((c) => c.isCorrect).map((c) => c.label);
       }
@@ -361,10 +412,12 @@
       function startQuiz(allItems) {
         const chapter = chapterSel.value;
         const pool = chapter === "__all__" ? allItems : allItems.filter((x) => x.chapter === chapter);
-        // When user selects a chapter, default to "all questions in that chapter".
-        // Still keep a safety clamp in case the input gets edited.
         const n = Math.max(1, Math.min(pool.length, Number(countSel.value || pool.length || 10)));
-        const picked = pickRandom(pool, n);
+
+        const picked =
+          chapter === "__all__" && n === 30
+            ? weightedPickForAllChapters(allItems, 30)
+            : pickRandom(pool, n);
 
         localStorage.setItem("ckktct.quiz.chapter", chapter);
         localStorage.setItem("ckktct.quiz.count", String(n));
@@ -409,7 +462,12 @@
           const size = poolSize();
           countSel.min = "1";
           countSel.max = String(Math.max(1, size));
-          countSel.value = String(Math.max(1, size));
+          // For "__all__" default to 30 random questions
+          if (chapterSel.value === "__all__") {
+            countSel.value = String(Math.min(30, Math.max(1, size)));
+          } else {
+            countSel.value = String(Math.max(1, size));
+          }
         }
 
         chapterSel.value = localStorage.getItem("ckktct.quiz.chapter") || "__all__";
