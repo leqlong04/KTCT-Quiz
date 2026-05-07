@@ -26,6 +26,14 @@
           <select id="chapterSel"></select>
           <label for="countSel" class="muted"><b>Số câu</b></label>
           <input id="countSel" type="number" min="1" value="10" style="width:110px" />
+          <label class="muted" style="display:inline-flex;align-items:center;gap:8px">
+            <input type="checkbox" id="chkShuffleQ" checked />
+            <b>Đảo câu</b>
+          </label>
+          <label class="muted" style="display:inline-flex;align-items:center;gap:8px">
+            <input type="checkbox" id="chkShuffleA" checked />
+            <b>Đảo đáp án</b>
+          </label>
           <button class="btn primary" id="btnStart">Bắt đầu</button>
           <button class="btn" id="btnReset">Reset</button>
           <span class="muted" id="stats"></span>
@@ -43,6 +51,8 @@
       const btnReset = document.getElementById("btnReset");
       const quiz = document.getElementById("quiz");
       const stats = document.getElementById("stats");
+      const chkShuffleQ = document.getElementById("chkShuffleQ");
+      const chkShuffleA = document.getElementById("chkShuffleA");
 
       function escapeHtml(s) {
         return String(s)
@@ -82,15 +92,21 @@
         return a;
       }
 
+      function relabelChoices(choices) {
+        // Re-label as A, B, C, ... after shuffling for a consistent UX.
+        const A = "A".charCodeAt(0);
+        return choices.map((c, i) => ({
+          ...c,
+          label: String.fromCharCode(A + i),
+        }));
+      }
+
       function pickRandom(arr, n) {
         return shuffle(arr).slice(0, Math.max(0, Math.min(n, arr.length)));
       }
 
       function weightedPickForAllChapters(allItems, n) {
-        // Requirement:
-        // - total n questions (default 30)
-        // - Chương 5 + Chương 6 ~= 70%
-        // - Remaining from Chương 1 + Chương 3
+
         const pools = {
           c1: allItems.filter((x) => x.chapter === "Chương 1"),
           c3: allItems.filter((x) => x.chapter === "Chương 3"),
@@ -141,8 +157,19 @@
         return (q.choices || []).filter((c) => c.isCorrect).map((c) => c.label);
       }
 
+      function getSessionQuestion(q, state) {
+        // Apply per-session answer shuffling while keeping correctness.
+        if (!state.shuffleAnswers) return q;
+        if (!state.sessionChoices[q.uid]) {
+          const shuffled = relabelChoices(shuffle((q.choices || []).slice()));
+          state.sessionChoices[q.uid] = shuffled;
+        }
+        return { ...q, choices: state.sessionChoices[q.uid] };
+      }
+
       function getResultFor(q, state) {
-        const correct = new Set(getCorrectLabels(q));
+        const qq = getSessionQuestion(q, state);
+        const correct = new Set(getCorrectLabels(qq));
         const selected = state.selected[q.uid];
         const graded = state.graded[q.uid] === true;
         if (!graded) return { status: "ungraded", selected };
@@ -170,8 +197,9 @@
       }
 
       function renderQuestionCard(q, idx, total, state) {
-        const choices = q.choices || [];
-        const correct = new Set(getCorrectLabels(q));
+        const qq = getSessionQuestion(q, state);
+        const choices = qq.choices || [];
+        const correct = new Set(getCorrectLabels(qq));
         const selected = state.selected[q.uid];
         const revealed = state.revealed[q.uid] === true;
         const feedback = state.feedback[q.uid] || "";
@@ -220,7 +248,7 @@
         document.getElementById("btnCheck").addEventListener("click", () => {
           state.revealed[q.uid] = true;
           const sel = state.selected[q.uid];
-          const cset = new Set(getCorrectLabels(q));
+          const cset = new Set(getCorrectLabels(getSessionQuestion(q, state)));
           if (cset.size !== 1) {
             state.feedback[q.uid] = `<span class="muted">Câu này không có đúng 1 đáp án đúng (không chấm điểm).</span>`;
           } else if (cset.has(sel)) {
@@ -255,7 +283,7 @@
           for (const q of state.questions) {
             const uid = q.uid;
             const sel = state.selected[uid];
-            const cset = new Set(getCorrectLabels(q));
+            const cset = new Set(getCorrectLabels(getSessionQuestion(q, state)));
 
             // Mark revealed if user interacted (selected) so review can highlight.
             if (sel != null) state.revealed[uid] = true;
@@ -300,16 +328,20 @@
 
           return filtered
             .map(({ q, r }, i) => {
-              const correctLabels = getCorrectLabels(q);
+              const qq = getSessionQuestion(q, state);
+              const correctLabels = getCorrectLabels(qq);
               const correctText =
                 correctLabels.length === 0
                   ? "<span class='muted'>(không xác định)</span>"
                   : correctLabels.map((lb) => {
-                      const c = (q.choices || []).find((x) => x.label === lb);
+                      const c = (qq.choices || []).find((x) => x.label === lb);
                       return `<div><b>${escapeHtml(lb)}.</b> ${escapeHtml(c ? c.text : "")}</div>`;
                     }).join("");
 
-              const sel = r.selected ? `<b>${escapeHtml(r.selected)}.</b> ${(q.choices || []).find((x) => x.label === r.selected)?.text ? escapeHtml((q.choices || []).find((x) => x.label === r.selected).text) : ""}` : "<span class='muted'>(chưa chọn)</span>";
+              const selChoice = r.selected ? (qq.choices || []).find((x) => x.label === r.selected) : null;
+              const sel = r.selected
+                ? `<b>${escapeHtml(r.selected)}.</b> ${selChoice && selChoice.text ? escapeHtml(selChoice.text) : ""}`
+                : "<span class='muted'>(chưa chọn)</span>";
               const tag =
                 r.status === "correct"
                   ? `<span style="color:var(--accent2)"><b>Đúng</b></span>`
@@ -388,7 +420,7 @@
       }
 
       function startQuizFromList(allItems, pool, opts) {
-        const picked = shuffle(pool);
+        const picked = (opts && opts.shuffleQuestions === false) ? pool.slice() : shuffle(pool);
         const state = {
           allItems,
           questions: picked,
@@ -398,6 +430,8 @@
           revealed: {},
           graded: {},
           feedback: {},
+          sessionChoices: {},
+          shuffleAnswers: (opts && opts.shuffleAnswers) !== false,
           chapter: "__custom__",
           title: (opts && opts.title) || "",
         };
@@ -414,10 +448,12 @@
         const pool = chapter === "__all__" ? allItems : allItems.filter((x) => x.chapter === chapter);
         const n = Math.max(1, Math.min(pool.length, Number(countSel.value || pool.length || 10)));
 
-        const picked =
-          chapter === "__all__" && n === 30
-            ? weightedPickForAllChapters(allItems, 30)
-            : pickRandom(pool, n);
+        const shuffleQuestions = chkShuffleQ.checked;
+        const shuffleAnswers = chkShuffleA.checked;
+
+        const basePicked =
+          chapter === "__all__" && n === 30 ? weightedPickForAllChapters(allItems, 30) : pickRandom(pool, n);
+        const picked = shuffleQuestions ? shuffle(basePicked) : basePicked.slice();
 
         localStorage.setItem("ckktct.quiz.chapter", chapter);
         localStorage.setItem("ckktct.quiz.count", String(n));
@@ -431,6 +467,8 @@
           revealed: {},
           graded: {},
           feedback: {},
+          sessionChoices: {},
+          shuffleAnswers,
           chapter,
         };
 
