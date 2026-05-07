@@ -3022,16 +3022,16 @@
       },
       {
         "label": "D",
-        "text": "Mức địa tô của đất và tỷ suất lợi tức tiền gửi ngân hàng ktra",
+        "text": "Mức địa tô của đất và tỷ suất lợi tức tiền gửi ngân hàng",
         "isCorrect": true
       }
     ],
     "answerKey": "D"
   },
   {
-    "uid": "ch-ng-3-109",
+    "uid": "ki-m-tra-109",
     "id": "1",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Công thức tính giá cả sản xuất trong chủ nghĩa tư bản là gì?",
     "choices": [
       {
@@ -3058,9 +3058,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-110",
+    "uid": "ki-m-tra-110",
     "id": "2",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Chuyển dịch cơ cấu ngành kinh tế theo hướng công nghiệp hóa, hiện đại hóa được biểu hiện như thế nào?",
     "choices": [
       {
@@ -3087,9 +3087,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-111",
+    "uid": "ki-m-tra-111",
     "id": "3",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Vai trò của kinh tế nhà nước trong nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là gì?",
     "choices": [
       {
@@ -3116,9 +3116,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-112",
+    "uid": "ki-m-tra-112",
     "id": "4",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Địa tô trong chủ nghĩa tư bản là gì?",
     "choices": [
       {
@@ -3145,9 +3145,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-113",
+    "uid": "ki-m-tra-113",
     "id": "5",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Phương án nào KHÔNG PHẢI là những nhiệm vụ cần thực hiện để chuyển đổi Việt Nam từ một xã hội nông nghiệp lạc hậu sang một xã hội công nghiệp hiện đại?",
     "choices": [
       {
@@ -3174,9 +3174,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-114",
+    "uid": "ki-m-tra-114",
     "id": "6",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Mục đích nghiên cứu của Kinh tế chính trị Mác Lênin là gì?",
     "choices": [
       {
@@ -3203,9 +3203,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-115",
+    "uid": "ki-m-tra-115",
     "id": "7",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Giá trị sử dụng của hàng hóa sức lao động có vai trò gì?",
     "choices": [
       {
@@ -3232,9 +3232,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-116",
+    "uid": "ki-m-tra-116",
     "id": "8",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Đặc điểm của phương pháp biện chứng duy vật trong nghiên cứu kinh tế là gì?",
     "choices": [
       {
@@ -3261,9 +3261,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-117",
+    "uid": "ki-m-tra-117",
     "id": "9",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Một doanh nghiệp tăng năng suất lao động, giá trị thị trường 1 đơn vị hàng hóa mà ngành đó sản xuất có thay đổi không?",
     "choices": [
       {
@@ -3285,9 +3285,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-118",
+    "uid": "ki-m-tra-118",
     "id": "10",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Luận điểm nào sau đây KHÔNG PHẢN ÁNH vai trò của lợi ích kinh tế?",
     "choices": [
       {
@@ -3314,9 +3314,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-119",
+    "uid": "ki-m-tra-119",
     "id": "11",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Để thu được giá trị thặng dư, giới hạn tối thiểu của độ dài ngày lao động là bao nhiêu?",
     "choices": [
       {
@@ -3343,9 +3343,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-120",
+    "uid": "ki-m-tra-120",
     "id": "12",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Ưu thế của kinh tế thị trường đối với đời sống kinh tế - xã hội là gì?",
     "choices": [
       {
@@ -3372,9 +3372,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-121",
+    "uid": "ki-m-tra-121",
     "id": "13",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Lợi nhuận bình quân là gì?",
     "choices": [
       {
@@ -3401,9 +3401,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-122",
+    "uid": "ki-m-tra-122",
     "id": "14",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Lợi tức là gì?",
     "choices": [
       {
@@ -3430,9 +3430,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-123",
+    "uid": "ki-m-tra-123",
     "id": "15",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Lợi nhuận và giá trị thặng dư có nguồn gốc từ đâu?",
     "choices": [
       {
@@ -3459,9 +3459,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-124",
+    "uid": "ki-m-tra-124",
     "id": "16",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Tính chất đặc biệt của hàng hóa tiền tệ là gì?",
     "choices": [
       {
@@ -3488,9 +3488,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-125",
+    "uid": "ki-m-tra-125",
     "id": "17",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Phương pháp sản xuất giá trị thặng dư được áp dụng phổ biến hiện nay là?",
     "choices": [
       {
@@ -3517,9 +3517,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-126",
+    "uid": "ki-m-tra-126",
     "id": "18",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Giá trị hàng hoá là gì?",
     "choices": [
       {
@@ -3546,9 +3546,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-127",
+    "uid": "ki-m-tra-127",
     "id": "19",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Năng suất lao động phụ thuộc vào nhân tố nào sau đây?",
     "choices": [
       {
@@ -3575,9 +3575,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-128",
+    "uid": "ki-m-tra-128",
     "id": "20",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Nền kinh tế thị trường định hướng XHCN vừa mang tính phổ biến vừa mang tính đặc thù thể hiện ở nội dung nào?",
     "choices": [
       {
@@ -3604,9 +3604,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-129",
+    "uid": "ki-m-tra-129",
     "id": "21",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Công thức chung của tư bản là gì?",
     "choices": [
       {
@@ -3633,9 +3633,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-130",
+    "uid": "ki-m-tra-130",
     "id": "22",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Nguồn lực quan trọng hàng đầu trong nền kinh tế tri thức là gì?",
     "choices": [
       {
@@ -3662,9 +3662,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-131",
+    "uid": "ki-m-tra-131",
     "id": "23",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Sản xuất tự cung tự cấp và sản xuất hàng hoá giống nhau ở điểm nào?",
     "choices": [
       {
@@ -3691,9 +3691,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-132",
+    "uid": "ki-m-tra-132",
     "id": "24",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Mối quan hệ giữa cơ sở vật chất kỹ thuật của CNXH và CNH-HĐH là gì?",
     "choices": [
       {
@@ -3720,9 +3720,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-133",
+    "uid": "ki-m-tra-133",
     "id": "25",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Thuộc tính giá trị sử dụng của hàng hóa sức lao động có điểm đặc biệt là?",
     "choices": [
       {
