@@ -90,6 +90,34 @@
         return (q.choices || []).filter((c) => c.isCorrect).map((c) => c.label);
       }
 
+      function getResultFor(q, state) {
+        const correct = new Set(getCorrectLabels(q));
+        const selected = state.selected[q.uid];
+        const graded = state.graded[q.uid] === true;
+        if (!graded) return { status: "ungraded", selected };
+        if (correct.size !== 1) return { status: "unscored", selected };
+        return { status: correct.has(selected) ? "correct" : "wrong", selected };
+      }
+
+      function wrongStoreKey(chapter) {
+        return `ckktct.wrongs.${chapter || "__all__"}`;
+      }
+
+      function loadWrongs(chapter) {
+        try {
+          const raw = localStorage.getItem(wrongStoreKey(chapter));
+          const arr = raw ? JSON.parse(raw) : [];
+          return Array.isArray(arr) ? arr : [];
+        } catch {
+          return [];
+        }
+      }
+
+      function saveWrongs(chapter, uids) {
+        const uniq = Array.from(new Set(uids));
+        localStorage.setItem(wrongStoreKey(chapter), JSON.stringify(uniq));
+      }
+
       function renderQuestionCard(q, idx, total, state) {
         const choices = q.choices || [];
         const correct = new Set(getCorrectLabels(q));
@@ -168,18 +196,127 @@
       }
 
       function renderDone(total, state) {
+        const chapter = state.chapter || "__all__";
+        const results = state.questions.map((q) => ({ q, r: getResultFor(q, state) }));
+        const wrongs = results.filter((x) => x.r.status === "wrong").map((x) => x.q.uid);
+        const corrects = results.filter((x) => x.r.status === "correct").length;
+        const ungraded = results.filter((x) => x.r.status === "ungraded").length;
+        const unscored = results.filter((x) => x.r.status === "unscored").length;
+
+        // persist wrong questions to localStorage (append + dedupe)
+        const prev = loadWrongs(chapter);
+        saveWrongs(chapter, prev.concat(wrongs));
+
+        function renderList(filter) {
+          const filtered =
+            filter === "all"
+              ? results
+              : results.filter((x) => (filter === "correct" ? x.r.status === "correct" : filter === "wrong" ? x.r.status === "wrong" : x.r.status === "ungraded" || x.r.status === "unscored"));
+
+          return filtered
+            .map(({ q, r }, i) => {
+              const correctLabels = getCorrectLabels(q);
+              const correctText =
+                correctLabels.length === 0
+                  ? "<span class='muted'>(không xác định)</span>"
+                  : correctLabels.map((lb) => {
+                      const c = (q.choices || []).find((x) => x.label === lb);
+                      return `<div><b>${escapeHtml(lb)}.</b> ${escapeHtml(c ? c.text : "")}</div>`;
+                    }).join("");
+
+              const sel = r.selected ? `<b>${escapeHtml(r.selected)}.</b> ${(q.choices || []).find((x) => x.label === r.selected)?.text ? escapeHtml((q.choices || []).find((x) => x.label === r.selected).text) : ""}` : "<span class='muted'>(chưa chọn)</span>";
+              const tag =
+                r.status === "correct"
+                  ? `<span style="color:var(--accent2)"><b>Đúng</b></span>`
+                  : r.status === "wrong"
+                  ? `<span style="color:var(--danger)"><b>Sai</b></span>`
+                  : `<span class="muted"><b>Chưa chấm</b></span>`;
+
+              return `
+                <details>
+                  <summary>${i + 1}. ${escapeHtml(q.question)} — ${tag}</summary>
+                  <div class="hr"></div>
+                  <div class="muted"><b>Bạn chọn</b></div>
+                  <div style="margin-top:6px">${sel}</div>
+                  <div class="hr"></div>
+                  <div class="muted"><b>Đáp án đúng</b></div>
+                  <div style="margin-top:6px">${correctText}</div>
+                </details>
+              `;
+            })
+            .join("");
+        }
+
         quiz.innerHTML = `
           <div class="panel">
             <div class="qtitle">Hoàn thành</div>
-            <p style="margin-top:8px">Điểm của bạn: <b>${state.score}</b> / ${total} (chỉ chấm những câu có đúng 1 đáp án đúng).</p>
-            <div class="row">
+            <p style="margin-top:8px">
+              Điểm: <b>${state.score}</b> / ${total}
+              <span class="muted">(chỉ chấm câu có đúng 1 đáp án đúng)</span>
+            </p>
+            <div class="row muted" style="margin-top:8px">
+              <span><b>Đúng:</b> ${corrects}</span>
+              <span><b>Sai:</b> ${wrongs.length}</span>
+              <span><b>Chưa chấm:</b> ${ungraded + unscored}</span>
+            </div>
+            <div class="row" style="margin-top:12px">
               <button class="btn primary" id="btnAgain">Làm bộ khác</button>
+              <button class="btn" id="btnRetryWrong" ${wrongs.length === 0 ? "disabled" : ""}>Làm lại câu sai</button>
               <a class="btn" href="./ckktct_list.html">Xem danh sách</a>
             </div>
+            <div class="hr"></div>
+            <div class="row">
+              <label class="muted"><b>Lọc</b></label>
+              <select id="filterSel">
+                <option value="all">Tất cả</option>
+                <option value="wrong">Sai</option>
+                <option value="correct">Đúng</option>
+                <option value="ungraded">Chưa chấm</option>
+              </select>
+              <span class="muted">• Câu sai được lưu lại để làm lại lần sau.</span>
+            </div>
           </div>
+          <div class="chapter-group" id="reviewList" style="margin-top:12px"></div>
         `;
+
         stats.innerHTML = `— Hoàn thành • Đúng: <b>${state.score}</b>`;
+
+        const reviewList = document.getElementById("reviewList");
+        const filterSel = document.getElementById("filterSel");
+        const render = () => (reviewList.innerHTML = renderList(filterSel.value));
+        filterSel.addEventListener("change", render);
+        render();
+
         document.getElementById("btnAgain").addEventListener("click", () => startQuiz(state.allItems));
+        const btnRetryWrong = document.getElementById("btnRetryWrong");
+        if (btnRetryWrong) {
+          btnRetryWrong.addEventListener("click", () => {
+            const pool = state.allItems.filter((x) => wrongs.includes(x.uid));
+            startQuizFromList(state.allItems, pool, { forceAll: true, title: "Làm lại câu sai" });
+          });
+        }
+      }
+
+      function startQuizFromList(allItems, pool, opts) {
+        const picked = shuffle(pool);
+        const state = {
+          allItems,
+          questions: picked,
+          idx: 0,
+          score: 0,
+          selected: {},
+          revealed: {},
+          graded: {},
+          feedback: {},
+          chapter: "__custom__",
+          title: (opts && opts.title) || "",
+        };
+        if (picked.length === 0) {
+          quiz.innerHTML = `<div class="panel"><b>Không có câu hỏi</b>.</div>`;
+          stats.textContent = "";
+          return;
+        }
+        renderQuestionCard(picked[0], 0, picked.length, state);
       }
 
       function startQuiz(allItems) {
@@ -202,6 +339,7 @@
           revealed: {},
           graded: {},
           feedback: {},
+          chapter,
         };
 
         if (picked.length === 0) {
@@ -254,6 +392,12 @@
           quiz.innerHTML = "";
           stats.textContent = "";
         });
+
+        // Optional: quick entry to redo saved wrongs for selected chapter
+        const savedWrongs = loadWrongs(chapterSel.value);
+        if (savedWrongs.length > 0) {
+          // keep silent; feature is available after finishing a quiz
+        }
       }
 
       init().catch((e) => {
