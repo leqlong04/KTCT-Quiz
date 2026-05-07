@@ -70,7 +70,7 @@
       },
       {
         "label": "B",
-        "text": "Sản xuất (Trọng tâm là sản xuất nông nghiệp)",
+        "text": "Sản xuất",
         "isCorrect": true
       },
       {
@@ -94,7 +94,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "Học thuyết giá trị thặng dư (Đây là \"hòn đá tảng\" trong kinh tế học của Mác)",
+        "text": "Học thuyết giá trị thặng dư",
         "isCorrect": true
       },
       {
@@ -244,7 +244,7 @@
       },
       {
         "label": "B",
-        "text": "1615 (Trong tác phẩm của Antoine de Montchrestien)",
+        "text": "1615",
         "isCorrect": true
       },
       {
@@ -558,7 +558,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "Chính sách kinh tế luôn phù hợp với các quy luật kinh tế (Đây là phát biểu sai vì chính sách có thể chủ quan, sai lầm)",
+        "text": "Chính sách kinh tế luôn phù hợp với các quy luật kinh tế",
         "isCorrect": true
       },
       {
@@ -587,7 +587,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "Từ nửa đầu thế kỷ XIX (Những năm 40 của thế kỷ XIX)",
+        "text": "Từ nửa đầu thế kỷ XIX",
         "isCorrect": true
       },
       {
@@ -1670,12 +1670,12 @@
       },
       {
         "label": "C",
-        "text": "Rút ngắn thời gian lao động thặng dư (Sai, phải kéo dài thời gian này).",
+        "text": "Rút ngắn thời gian lao động thặng dư.",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Câu hỏi này có vẻ nhầm lẫn ở các phương án, nhưng theo logic tăng bóc lột: Rút ngắn thời gian lao động tất yếu (Đây là biện pháp của GTTD tương đối để tăng thời gian lao động thặng dư).",
+        "text": "Câu hỏi này có vẻ nhầm lẫn ở các phương án, nhưng theo logic tăng bóc lột: Rút ngắn thời gian lao động tất yếu.",
         "isCorrect": true
       }
     ],
@@ -2698,7 +2698,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "Là khoản chênh lệch giữa giá trị hàng hóa và chi phí sản xuất tư bản chủ nghĩa (Xét về mặt hiện thực sau khi bán )",
+        "text": "Là khoản chênh lệch giữa giá trị hàng hóa và chi phí sản xuất tư bản chủ nghĩa",
         "isCorrect": true
       },
       {
