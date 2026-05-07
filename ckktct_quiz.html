@@ -197,6 +197,40 @@
 
       function renderDone(total, state) {
         const chapter = state.chapter || "__all__";
+
+        function gradeAll() {
+          // Recompute score from scratch to avoid double-counting
+          state.score = 0;
+          for (const q of state.questions) {
+            const uid = q.uid;
+            const sel = state.selected[uid];
+            const cset = new Set(getCorrectLabels(q));
+
+            // Mark revealed if user interacted (selected) so review can highlight.
+            if (sel != null) state.revealed[uid] = true;
+
+            if (sel == null) {
+              // leave ungraded
+              continue;
+            }
+
+            // Always mark graded when user selected (even if unscored).
+            state.graded[uid] = true;
+
+            if (cset.size !== 1) {
+              state.feedback[uid] = `<span class="muted">Câu này không có đúng 1 đáp án đúng (không chấm điểm).</span>`;
+              continue;
+            }
+
+            if (cset.has(sel)) {
+              state.score += 1;
+              state.feedback[uid] = `<span style="color:var(--accent2)"><b>Đúng</b></span>`;
+            } else {
+              state.feedback[uid] = `<span style="color:var(--danger)"><b>Sai</b></span>`;
+            }
+          }
+        }
+
         const results = state.questions.map((q) => ({ q, r: getResultFor(q, state) }));
         const wrongs = results.filter((x) => x.r.status === "wrong").map((x) => x.q.uid);
         const corrects = results.filter((x) => x.r.status === "correct").length;
@@ -261,6 +295,7 @@
             </div>
             <div class="row" style="margin-top:12px">
               <button class="btn primary" id="btnAgain">Làm bộ khác</button>
+              <button class="btn good" id="btnGradeAll">Chấm tất cả</button>
               <button class="btn" id="btnRetryWrong" ${wrongs.length === 0 ? "disabled" : ""}>Làm lại câu sai</button>
               <a class="btn" href="./ckktct_list.html">Xem danh sách</a>
             </div>
@@ -288,6 +323,10 @@
         render();
 
         document.getElementById("btnAgain").addEventListener("click", () => startQuiz(state.allItems));
+        document.getElementById("btnGradeAll").addEventListener("click", () => {
+          gradeAll();
+          renderDone(total, state);
+        });
         const btnRetryWrong = document.getElementById("btnRetryWrong");
         if (btnRetryWrong) {
           btnRetryWrong.addEventListener("click", () => {
