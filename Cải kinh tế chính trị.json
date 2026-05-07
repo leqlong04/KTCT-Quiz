@@ -2763,6 +2763,25 @@
     "answerKey": null
   },
   {
+    "uid": "ch-ng-3-103",
+    "id": "5",
+    "chapter": "Chương 3",
+    "question": "000$",
+    "choices": [
+      {
+        "label": "A",
+        "text": "50$.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "500$.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
     "uid": "ch-ng-3-104",
     "id": "28",
     "chapter": "Chương 3",
@@ -3123,16 +3142,16 @@
       },
       {
         "label": "D",
-        "text": "Mức địa tô của đất và tỷ suất lợi tức tiền gửi ngân hàn ktra",
+        "text": "Mức địa tô của đất và tỷ suất lợi tức tiền gửi ngân hàn",
         "isCorrect": true
       }
     ],
     "answerKey": "D"
   },
   {
-    "uid": "ch-ng-3-117",
+    "uid": "ki-m-tra-117",
     "id": "1",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Công thức tính giá cả sản xuất trong chủ nghĩa tư bản là gì?",
     "choices": [
       {
@@ -3159,9 +3178,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-118",
+    "uid": "ki-m-tra-118",
     "id": "2",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Chuyển dịch cơ cấu ngành kinh tế theo hướng công nghiệp hóa, hiện đại hóa được biểu hiện như thế nào?",
     "choices": [
       {
@@ -3188,9 +3207,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-119",
+    "uid": "ki-m-tra-119",
     "id": "3",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Vai trò của kinh tế nhà nước trong nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là gì?",
     "choices": [
       {
@@ -3217,9 +3236,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-120",
+    "uid": "ki-m-tra-120",
     "id": "4",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Địa tô trong chủ nghĩa tư bản là gì?",
     "choices": [
       {
@@ -3246,9 +3265,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-121",
+    "uid": "ki-m-tra-121",
     "id": "5",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Phương án nào KHÔNG PHẢI là những nhiệm vụ cần thực hiện để chuyển đổi Việt Nam từ một xã hội nông nghiệp lạc hậu sang một xã hội công nghiệp hiện đại?",
     "choices": [
       {
@@ -3275,9 +3294,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-122",
+    "uid": "ki-m-tra-122",
     "id": "6",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Mục đích nghiên cứu của Kinh tế chính trị Mác Lênin là gì?",
     "choices": [
       {
@@ -3304,9 +3323,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-123",
+    "uid": "ki-m-tra-123",
     "id": "7",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Giá trị sử dụng của hàng hóa sức lao động có vai trò gì?",
     "choices": [
       {
@@ -3333,9 +3352,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-124",
+    "uid": "ki-m-tra-124",
     "id": "8",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Đặc điểm của phương pháp biện chứng duy vật trong nghiên cứu kinh tế là gì?",
     "choices": [
       {
@@ -3362,9 +3381,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-125",
+    "uid": "ki-m-tra-125",
     "id": "9",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Một doanh nghiệp tăng năng suất lao động, giá trị thị trường 1 đơn vị hàng hóa mà ngành đó sản xuất có thay đổi không?",
     "choices": [
       {
@@ -3386,9 +3405,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-126",
+    "uid": "ki-m-tra-126",
     "id": "10",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Luận điểm nào sau đây KHÔNG PHẢN ÁNH vai trò của lợi ích kinh tế?",
     "choices": [
       {
@@ -3415,9 +3434,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-127",
+    "uid": "ki-m-tra-127",
     "id": "11",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Để thu được giá trị thặng dư, giới hạn tối thiểu của độ dài ngày lao động là bao nhiêu?",
     "choices": [
       {
@@ -3444,9 +3463,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-128",
+    "uid": "ki-m-tra-128",
     "id": "12",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Ưu thế của kinh tế thị trường đối với đời sống kinh tế - xã hội là gì?",
     "choices": [
       {
@@ -3473,9 +3492,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-129",
+    "uid": "ki-m-tra-129",
     "id": "13",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Lợi nhuận bình quân là gì?",
     "choices": [
       {
@@ -3502,9 +3521,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-130",
+    "uid": "ki-m-tra-130",
     "id": "14",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Lợi tức là gì?",
     "choices": [
       {
@@ -3531,9 +3550,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-131",
+    "uid": "ki-m-tra-131",
     "id": "15",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Lợi nhuận và giá trị thặng dư có nguồn gốc từ đâu?",
     "choices": [
       {
@@ -3560,9 +3579,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-132",
+    "uid": "ki-m-tra-132",
     "id": "16",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Tính chất đặc biệt của hàng hóa tiền tệ là gì?",
     "choices": [
       {
@@ -3589,9 +3608,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-133",
+    "uid": "ki-m-tra-133",
     "id": "17",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Phương pháp sản xuất giá trị thặng dư được áp dụng phổ biến hiện nay là?",
     "choices": [
       {
@@ -3618,9 +3637,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-134",
+    "uid": "ki-m-tra-134",
     "id": "18",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Giá trị hàng hoá là gì?",
     "choices": [
       {
@@ -3647,9 +3666,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-135",
+    "uid": "ki-m-tra-135",
     "id": "19",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Năng suất lao động phụ thuộc vào nhân tố nào sau đây?",
     "choices": [
       {
@@ -3676,9 +3695,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-136",
+    "uid": "ki-m-tra-136",
     "id": "20",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Nền kinh tế thị trường định hướng XHCN vừa mang tính phổ biến vừa mang tính đặc thù thể hiện ở nội dung nào?",
     "choices": [
       {
@@ -3705,9 +3724,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-137",
+    "uid": "ki-m-tra-137",
     "id": "21",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Công thức chung của tư bản là gì?",
     "choices": [
       {
@@ -3734,9 +3753,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-138",
+    "uid": "ki-m-tra-138",
     "id": "22",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Nguồn lực quan trọng hàng đầu trong nền kinh tế tri thức là gì?",
     "choices": [
       {
@@ -3763,9 +3782,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-139",
+    "uid": "ki-m-tra-139",
     "id": "23",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Sản xuất tự cung tự cấp và sản xuất hàng hoá giống nhau ở điểm nào?",
     "choices": [
       {
@@ -3792,9 +3811,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-140",
+    "uid": "ki-m-tra-140",
     "id": "24",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Mối quan hệ giữa cơ sở vật chất kỹ thuật của CNXH và CNH-HĐH là gì?",
     "choices": [
       {
@@ -3821,9 +3840,9 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-141",
+    "uid": "ki-m-tra-141",
     "id": "25",
-    "chapter": "Chương 3",
+    "chapter": "Kiểm tra",
     "question": "Thuộc tính giá trị sử dụng của hàng hóa sức lao động có điểm đặc biệt là?",
     "choices": [
       {
@@ -4714,6 +4733,720 @@
       {
         "label": "D",
         "text": "Công bằng về cơ hội tiếp cận các nguồn lực của xã hội",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-6-172",
+    "id": "6.1",
+    "chapter": "Chương 6",
+    "question": "Lý do khách quan hàng đầu thúc đẩy Việt Nam phải thực hiện công nghiệp hóa, hiện đại hóa là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Để xây dựng cơ sở vật chất kỹ thuật cho chủ nghĩa xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Để khai thác tốt nguồn lực công nghệ hiện có",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Để nhanh chóng bắt kịp trình độ công nghệ hiện đại của thế giới",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Để giải quyết việc làm cho người lao động",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-6-173",
+    "id": "6.2",
+    "chapter": "Chương 6",
+    "question": "Đặc điểm của quá trình CNH, HĐH ở Việt Nam, chọn ý sai?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Đẩy mạnh CNH, HĐH nông nghiệp nông thôn",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CNH, HĐH gắn với Kinh tế tri thức",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CNH, HĐH theo định hướng XHCN",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CNH, HĐH trong điều kiện KTTT định hướng XHCN",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-6-174",
+    "id": "6.3",
+    "chapter": "Chương 6",
+    "question": "Cơ sở vật chất kỹ thuật là tiêu chuẩn để đánh giá điều gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Mức độ hiện đại của nền kinh tế",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Trình độ phát triển của xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Trình độ hoàn thiện của thể chế chính trị",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Trình độ của người lao động",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Nền kinh tế tri thức được xem là:",
+        "isCorrect": true
+      },
+      {
+        "label": "F",
+        "text": "Một giai đoạn mới của CNTB hiện đại",
+        "isCorrect": false
+      },
+      {
+        "label": "G",
+        "text": "Một hình thái kinh tế - xã hội mới",
+        "isCorrect": false
+      },
+      {
+        "label": "H",
+        "text": "Một phương thức sản xuất mới",
+        "isCorrect": false
+      },
+      {
+        "label": "I",
+        "text": "Một nấc thang phát triển của lực lượng sản xuất",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-6-175",
+    "id": "6.4",
+    "chapter": "Chương 6",
+    "question": "Trong các luận điểm dưới đây, luận điểm nào không đúng?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "CNH là tất yếu đối với các nước nghèo, kém phát triển",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CNH là tất yếu đối với mọi nước lạc hậu",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CNH là tất yếu đối với các nước chưa có nền sản xuất lớn, hiện đại",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CNH là tất yếu đối với mọi nước đi lên CNXH",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-6-176",
+    "id": "6.5",
+    "chapter": "Chương 6",
+    "question": "Nước nào tiến hành CNH đầu tiên trên thế giới?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Mỹ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Pháp",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Anh",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Đức",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-6-177",
+    "id": "6.6",
+    "chapter": "Chương 6",
+    "question": "Đâu là động lực của công nghiệp hoá, hiện đại hoá?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Hiệu quả kinh tế - xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Khoa học - công nghệ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mở rộng quan hệ kinh tế quốc tế",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Con người",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-6-178",
+    "id": "6.7",
+    "chapter": "Chương 6",
+    "question": "Quá trình CNH, HĐH làm cho cơ cấu lao động chuyển dịch, ý nào dưới đây không đúng?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lao động ngành dịch vụ tăng nhanh hơn các ngành sản xuất vật chất",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lao động công nghiệp tăng",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Tỷ trọng lao động trí tuệ trong nền kinh tế tăng lên",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lao động nông nghiệp giảm",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Thế nào là cơ cấu kinh tế hợp lý, hiện đại và hiệu quả? Chọn đáp án sai.",
+        "isCorrect": true
+      },
+      {
+        "label": "F",
+        "text": "Khai thác phân bổ và phát huy hiệu quả các nguồn lực trong nước cũng như nước ngoài",
+        "isCorrect": false
+      },
+      {
+        "label": "G",
+        "text": "Ứng dụng linh hoạt các thành tựu khoa học công nghệ mới, hiện đại vào các ngành, vùng, lĩnh vực",
+        "isCorrect": false
+      },
+      {
+        "label": "H",
+        "text": "Phù hợp với xu thế phát triển chung của nền kinh tế và yêu cầu của toàn cầu hóa và hội nhập kinh tế quốc tế",
+        "isCorrect": false
+      },
+      {
+        "label": "I",
+        "text": "Giảm tỉ trọng đóng góp của công nghiệp và dịch vụ; tăng tỉ trọng đóng góp của nông nghiệp trong GDP",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-6-179",
+    "id": "6.8",
+    "chapter": "Chương 6",
+    "question": "Thực chất của CNH ở nước ta là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cải thiện, nâng cao đời sống nhân dân",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Thay thế công nghiệp nhẹ thành công nghiệp nặng đặc biệt là ngành cơ khí chế tạo máy",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tái sản xuất mở rộng",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Thay lao động thủ công lạc hậu bằng lao động sử dụng máy móc có NSLĐ xã hội cao",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-6-180",
+    "id": "6.9",
+    "chapter": "Chương 6",
+    "question": "Mối quan hệ giữa CNH, HĐH với phát triển kinh tế tri thức ở Việt Nam là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phát triển kinh tế tri thức là mục tiêu của quá trình công nghiệp hóa, hiện đại hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phát triển kinh tế tri thức là một nội dung gắn liền với quá trình công nghiệp hóa, hiện đại hóa",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Phát triển kinh tế tri thức là điều kiện tiền đề của quá trình công nghiệp hóa, hiện đại hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Phát triển kinh tế tri thức là điều kiện tiên quyết để thực hiện công nghiệp hóa, hiện đại hóa",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-6-181",
+    "id": "6.10",
+    "chapter": "Chương 6",
+    "question": "Để nhanh chóng phát triển đất nước đối với một nước CNH muộn, chúng ta đặc biệt coi trọng giải pháp gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Coi trọng vai trò kinh tế của nhà nước",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Đẩy mạnh việc thu hút đầu tư trực tiếp nước ngoài",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Thúc đẩy chuyển dịch cơ cấu kinh tế theo hướng hiện đại",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Khuyến khích các hình thức tổ chức, sản xuất, kinh doanh",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-6-182",
+    "id": "6.11",
+    "chapter": "Chương 6",
+    "question": "Vì sao cần phải xây dựng và phát triển ngành công nghiệp sản xuất tư liệu sản xuất trong quá trình CNH, HĐH của Việt Nam?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Vì là ngành có trình độ công nghệ hiện đại",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Vì là ngành tạo ra phần lớn sản phẩm trong nền kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Vì là ngành có năng suất lao động cao",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Vì là ngành có vai trò quan trọng, quyết định sự phát triển của các ngành khác",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Tác động tích cực của hội nhập kinh tế quốc tế? Chọn ý sai.",
+        "isCorrect": true
+      },
+      {
+        "label": "F",
+        "text": "Tạo cơ hội phát triển nguồn nhân lực",
+        "isCorrect": false
+      },
+      {
+        "label": "G",
+        "text": "Tạo điều kiện thúc đẩy hội nhập các lĩnh vực văn hóa, chính trị, củng cố an ninh quốc phòng",
+        "isCorrect": false
+      },
+      {
+        "label": "H",
+        "text": "Phân phối công bằng lợi ích và rủi ro cho các nước và các nhóm khác nhau trong xã hội, giảm bớt khoảng cách giàu nghèo, bất bình đẳng xã hội",
+        "isCorrect": true
+      },
+      {
+        "label": "I",
+        "text": "Tạo điều kiện mở rộng thị trường, tiếp thu khoa học công nghệ, vốn, chuyển dịch cơ cấu trong nước",
+        "isCorrect": false
+      },
+      {
+        "label": "J",
+        "text": "Đặc trưng của cuộc cách mạng công nghiệp lần thứ tư là",
+        "isCorrect": true
+      },
+      {
+        "label": "K",
+        "text": "Cơ giới hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "L",
+        "text": "Điện khí hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "M",
+        "text": "Tin học hóa và tự động hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "N",
+        "text": "Kết nối thế giới thực và thế giới ảo",
+        "isCorrect": true
+      },
+      {
+        "label": "O",
+        "text": "Thách thức lớn nhất đối với các nước đang phát triển trong bối cảnh CMCN 4.0 là",
+        "isCorrect": true
+      },
+      {
+        "label": "P",
+        "text": "Khoảng cách chênh lệch về trình độ phát triển của lực lượng sản xuất ngày càng lớn",
+        "isCorrect": true
+      },
+      {
+        "label": "Q",
+        "text": "Tỉ lệ thất nghiệp ngày càng gia tăng",
+        "isCorrect": false
+      },
+      {
+        "label": "R",
+        "text": "Nợ nước ngoài ngày càng lớn",
+        "isCorrect": false
+      },
+      {
+        "label": "S",
+        "text": "Nền kinh tế ngày càng bị phụ thuộc vào bên ngoài",
+        "isCorrect": false
+      },
+      {
+        "label": "T",
+        "text": "Đặc trưng riêng có của mô hình công nghiệp hóa cổ điển là:",
+        "isCorrect": true
+      },
+      {
+        "label": "U",
+        "text": "Thu hút vốn đầu tư từ nước ngoài",
+        "isCorrect": false
+      },
+      {
+        "label": "V",
+        "text": "Thực hiện bước đi mang tính tuần tự",
+        "isCorrect": true
+      },
+      {
+        "label": "W",
+        "text": "Chuyển từ chiến lược thay thế nhập khẩu sang hướng về xuất khẩu",
+        "isCorrect": false
+      },
+      {
+        "label": "X",
+        "text": "Ưu tiên phát triển công nghiệp nặng",
+        "isCorrect": false
+      },
+      {
+        "label": "Y",
+        "text": "Đặc trưng riêng có của mô hình công nghiệp hóa của Liên Xô là:",
+        "isCorrect": true
+      },
+      {
+        "label": "Z",
+        "text": "Thực hiện công nghiệp hóa rút ngắn",
+        "isCorrect": false
+      },
+      {
+        "label": "A",
+        "text": "Thực hiện công nghiệp hóa theo chiến lược hướng về xuất khẩu",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chú trọng đầu tư nguồn nhân lực",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ưu tiên phát triển công nghiệp nặng",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Điểm giống nhau trong mô hình công nghiệp hóa của NICs và Liên Xô là:",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Đều ưu tiên phát triển công nghiệp nặng",
+        "isCorrect": false
+      },
+      {
+        "label": "F",
+        "text": "Đều mở cửa, thu hút vốn đầu tư từ nước ngoài",
+        "isCorrect": false
+      },
+      {
+        "label": "G",
+        "text": "Đều có sự can thiệp của nhà nước vào quá trình công nghiệp hóa",
+        "isCorrect": true
+      },
+      {
+        "label": "H",
+        "text": "Đều thực hiện chuyển giao công nghệ với các quốc gia có công nghệ tiên tiến",
+        "isCorrect": false
+      },
+      {
+        "label": "I",
+        "text": "Mục tiêu hàng đầu của CNH, HĐH ở Việt Nam là:",
+        "isCorrect": true
+      },
+      {
+        "label": "J",
+        "text": "Để Việt Nam bắt kịp với trình độ văn minh của nhân loại",
+        "isCorrect": false
+      },
+      {
+        "label": "K",
+        "text": "Nhằm theo kịp các nước tư bản phát triển",
+        "isCorrect": false
+      },
+      {
+        "label": "L",
+        "text": "Để Việt Nam hội nhập kinh tế quốc tế thành công",
+        "isCorrect": false
+      },
+      {
+        "label": "M",
+        "text": "Xây dựng cơ sở vật chất kỹ thuật cho CNXH",
+        "isCorrect": true
+      },
+      {
+        "label": "N",
+        "text": "Kinh tế tri thức là:",
+        "isCorrect": true
+      },
+      {
+        "label": "O",
+        "text": "Nền kinh tế hình thành trong thời kỳ cuộc cách mạng công nghiệp",
+        "isCorrect": false
+      },
+      {
+        "label": "P",
+        "text": "Nền kinh tế sản sinh ra những tri thức mới",
+        "isCorrect": false
+      },
+      {
+        "label": "Q",
+        "text": "Nền kinh tế ứng dụng những thành tựu khoa học công nghệ mới",
+        "isCorrect": false
+      },
+      {
+        "label": "R",
+        "text": "Sự sản sinh, phổ cập và sử dụng tri thức quyết định đối với sự tăng trưởng và phát triển kinh tế",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-6-183",
+    "id": "6.12",
+    "chapter": "Chương 6",
+    "question": "Đâu không phải là đặc điểm của kinh tế tri thức?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Các ngành kinh tế dựa vào tri thức, dựa vào những thành tựu mới nhất của khoa học công nghệ ngày càng tăng và chiếm ưu thế",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Thông tin trở thành tài nguyên và được lan truyền và ứng dụng rộng rãi trên mạng lưới đa phương tiện tới các tổ chức và gia đình",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tri thức trở thành lực lượng sản xuất trực tiếp",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Thông tin được chia sẻ miễn phí trên phạm vi toàn cầu",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-6-184",
+    "id": "6.13",
+    "chapter": "Chương 6",
+    "question": "Chuyển dịch cơ cấu kinh tế là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sự thay đổi tỉ lệ đóng góp của mỗi bộ phận cũng như mối quan hệ giữa các bộ phận trong nền kinh tế",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Tỉ trọng của mỗi thành phần kinh tế trong nền kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tỉ trọng của nông nghiệp, công nghiệp, dịch vụ trong nền kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tỉ trọng của mỗi ngành, mỗi lĩnh vực của nền kinh tế và mối quan hệ giữa các lĩnh vực đó",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-6-185",
+    "id": "6.14",
+    "chapter": "Chương 6",
+    "question": "Tác động tiêu cực của hội nhập kinh tế quốc tế ?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Gia tăng sự phụ thuộc vào bên ngoài của nền kinh tế",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Mở rộng thị trường, tiếp thu khoa học, công nghệ, vốn; và chuyển dịch cơ cấu kinh tế trong nước",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Nâng cao chất lượng nguồn nhân lực",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gia tăng sự phụ thuộc về chính trị giữa các nước",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-6-186",
+    "id": "6.15",
+    "chapter": "Chương 6",
+    "question": "Đâu không phải là nhiệm vụ chuẩn bị các điều kiện để ứng phó với tác động tiêu cưc của cuộc cách mạng công nghiệp 4.0?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phát triển kinh tế nhà nước giữ vai trò chủ đạo",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phát triển nguồn nhân lực có trình độ công nghệ cao",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Đẩy mạnh công nghiệp hóa, hiện đại hóa nông nghiệp, nông thôn",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Xây dựng hạ tầng kỹ thuật về công nghệ thông tin, thực hiện chuyển đổi số nền kinh tế và quản trị xã hội",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-6-187",
+    "id": "6.16",
+    "chapter": "Chương 6",
+    "question": "Để thích ứng với cuộc CMCN 4.0, CNH, HĐH Việt Nam cần thực hiện nội dung gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Hoàn thiện thể chế, xây dựng nền kinh tế dựa trên đổi mới sáng tạo",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Chuyển đổi cơ cấu kinh tế theo hướng hiện đại, hợp lý, hiệu quả",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tào lập những điều kiện cần thiết cho quá trình công nghiệp hóa, hiện đại hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hoàn thiện quan hệ sản xuất phù hợp với trình độ phát triển của lực lượng sản xuất",
         "isCorrect": false
       }
     ],

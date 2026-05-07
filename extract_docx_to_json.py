@@ -84,6 +84,7 @@ def extract_questions(docx_path: Path) -> List[Dict[str, Any]]:
     auto_label_idx: int = 0
     current_chapter: str = "Chưa phân loại"
     global_idx: int = 0
+    chapter_fallback_idx: int = 0
 
     def flush_current():
         nonlocal current, auto_label_idx
@@ -106,12 +107,14 @@ def extract_questions(docx_path: Path) -> List[Dict[str, Any]]:
         if cm:
             flush_current()
             current_chapter = f"Chương {cm.group(2)}"
+            chapter_fallback_idx = 0
             continue
 
         sm = SECTION_RE.match(text)
         if sm:
             flush_current()
             current_chapter = "Kiểm tra"
+            chapter_fallback_idx = 0
             continue
 
         qmatch = QUESTION_START_RE.match(text)
@@ -130,7 +133,49 @@ def extract_questions(docx_path: Path) -> List[Dict[str, Any]]:
             )
             continue
 
+        # Fallback question start while we're already parsing a fallback-style section:
+        # If a line ends with '?' and we already collected a few answers for the current question,
+        # treat this as the next question.
+        if current is not None and text.endswith("?") and len(current.answers) >= 3:
+            flush_current()
+            chapter_fallback_idx += 1
+            global_idx += 1
+            chap_num = None
+            m = re.search(r"(\d+)$", current_chapter)
+            if m:
+                chap_num = m.group(1)
+            qid = f"{chap_num}.{chapter_fallback_idx}" if chap_num else str(chapter_fallback_idx)
+            uid = f"{re.sub(r'[^0-9A-Za-z]+', '-', current_chapter.lower()).strip('-')}-{global_idx}"
+            current = PendingQuestion(
+                qid=str(qid),
+                text=text,
+                answers=[],
+                chapter=current_chapter,
+                uid=uid,
+            )
+            continue
+
         if current is None:
+            # Fallback: some sections (e.g. Chương 6) don't prefix questions with "Câu x:"
+            # Heuristic: treat any line ending with '?' as a question.
+            if text.endswith("?"):
+                flush_current()
+                chapter_fallback_idx += 1
+                global_idx += 1
+                chap_num = None
+                m = re.search(r"(\d+)$", current_chapter)
+                if m:
+                    chap_num = m.group(1)
+                qid = f"{chap_num}.{chapter_fallback_idx}" if chap_num else str(chapter_fallback_idx)
+                uid = f"{re.sub(r'[^0-9A-Za-z]+', '-', current_chapter.lower()).strip('-')}-{global_idx}"
+                current = PendingQuestion(
+                    qid=str(qid),
+                    text=text,
+                    answers=[],
+                    chapter=current_chapter,
+                    uid=uid,
+                )
+                continue
             # Ignore leading content until first question
             continue
 
