@@ -2763,25 +2763,6 @@
     "answerKey": null
   },
   {
-    "uid": "ch-ng-3-105",
-    "id": "5",
-    "chapter": "Chương 3",
-    "question": "000$",
-    "choices": [
-      {
-        "label": "A",
-        "text": "50$.",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "500$.",
-        "isCorrect": false
-      }
-    ],
-    "answerKey": null
-  },
-  {
     "uid": "ch-ng-3-106",
     "id": "28",
     "chapter": "Chương 3",
