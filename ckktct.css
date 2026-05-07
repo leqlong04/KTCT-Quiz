@@ -161,6 +161,12 @@ select,input[type="number"]{
   font-weight: 700;
 }
 
+/* Native dropdown list is often white; force readable text */
+select option{
+  color: #0b1020;
+  background: #ffffff;
+}
+
 .muted{ color: var(--muted); }
 
 .qcard{
