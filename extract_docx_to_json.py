@@ -133,10 +133,15 @@ def extract_questions(docx_path: Path) -> List[Dict[str, Any]]:
             )
             continue
 
+        def is_fallback_question_start(s: str) -> bool:
+            # In some sections, questions are not prefixed with "Câu x:".
+            # Commonly they end with "?" or ":" (e.g. "Nền kinh tế tri thức được xem là:")
+            return s.endswith("?") or s.endswith(":")
+
         # Fallback question start while we're already parsing a fallback-style section:
-        # If a line ends with '?' and we already collected a few answers for the current question,
+        # If a line looks like a new question and we already collected a few answers for the current question,
         # treat this as the next question.
-        if current is not None and text.endswith("?") and len(current.answers) >= 3:
+        if current is not None and is_fallback_question_start(text) and len(current.answers) >= 3:
             flush_current()
             chapter_fallback_idx += 1
             global_idx += 1
@@ -157,8 +162,8 @@ def extract_questions(docx_path: Path) -> List[Dict[str, Any]]:
 
         if current is None:
             # Fallback: some sections (e.g. Chương 6) don't prefix questions with "Câu x:"
-            # Heuristic: treat any line ending with '?' as a question.
-            if text.endswith("?"):
+            # Heuristic: treat any line ending with '?' or ':' as a question.
+            if is_fallback_question_start(text):
                 flush_current()
                 chapter_fallback_idx += 1
                 global_idx += 1
