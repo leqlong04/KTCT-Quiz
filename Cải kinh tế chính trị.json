@@ -1,0 +1,4741 @@
+[
+  {
+    "uid": "ch-ng-1-1",
+    "id": "1",
+    "chapter": "Chương 1",
+    "question": "Để nghiên cứu kinh tế - chính trị Mác - Lênin phương pháp nào quan trọng nhất?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Mô hình hoá",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Trừu tượng hoá khoa học",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Phân tích và tổng hợp",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Điều tra thống kê",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-1-2",
+    "id": "2",
+    "chapter": "Chương 1",
+    "question": "Phát biểu nào sau đây là sai?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Đối tượng nghiên cứu của KTCT là quan hệ thuộc một lĩnh vực",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nghiên cứu KTCT phải đặt trong mối liên hệ biện chứng với Lực lượng sản xuất và kiến trúc thượng tầng",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "KTCT không nghiên cứu biểu hiện kỹ thuật của sự sản xuất và trao đổi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Đối tượng nghiên cứu của KTCT là quan hệ xã hội của sản xuất và trao đổi",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-1-3",
+    "id": "3",
+    "chapter": "Chương 1",
+    "question": "Chủ nghĩa trọng nông nghiên cứu lĩnh vực gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lưu thông",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sản xuất (Trọng tâm là sản xuất nông nghiệp)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Phân phối",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cung cầu",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-1-4",
+    "id": "4",
+    "chapter": "Chương 1",
+    "question": "Học thuyết kinh tế nào của C.Mác được coi là nền tảng tư tưởng cho công nhân và nhân dân lao động?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Học thuyết giá trị thặng dư (Đây là \"hòn đá tảng\" trong kinh tế học của Mác)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Học thuyết tái sản xuất tư bản xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Học thuyết tích luỹ tư sản",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Học thuyết giá trị lao động",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-1-5",
+    "id": "5",
+    "chapter": "Chương 1",
+    "question": "Hoạt động nào của con người được coi là cơ bản nhất và là cơ sở của đời sống xã hội?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Hoạt động sản xuất của cải vật chất",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hoạt động nghệ thuật, thể thao",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hoạt động chính trị",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hoạt động khoa học chất",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-1-6",
+    "id": "6",
+    "chapter": "Chương 1",
+    "question": "Mục đích nghiên cứu KTCT Mác - Lênin. Chọn ý sai?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phát hiện ra các quy luật kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cung cấp cơ sở khoa học góp phần thức đẩy trình độ văn minh và phát triển",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Vận dụng các quy luật để giải quyết hài hòa các quan hệ lợi ích",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tìm ra mối liên hệ giữa quan hệ sản xuất và kiến trúc thượng tầng tương ứng",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-1-7",
+    "id": "7",
+    "chapter": "Chương 1",
+    "question": "Để xem xét, giải thích nguồn gốc sâu xa của các hiện tượng kinh tế xã hội phải xuất phát từ:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Từ truyền thống lịch sử",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Từ ý thức xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Từ hệ tư tưởng của giai cấp thống trị",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Từ các hoạt động kinh tế",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-1-8",
+    "id": "8",
+    "chapter": "Chương 1",
+    "question": "Chủ nghĩa trọng thương nghiên cứu lĩnh vực gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tiêu dùng",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lưu thông",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Phân phối",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-1-9",
+    "id": "9",
+    "chapter": "Chương 1",
+    "question": "Thuật ngữ \"Kinh tế - chính trị\" được sử dụng lần đầu tiên vào năm nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1815",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1615 (Trong tác phẩm của Antoine de Montchrestien)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1715",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1651",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-1-10",
+    "id": "10",
+    "chapter": "Chương 1",
+    "question": "Chức năng phương pháp luận của kinh tế - chính trị Mác - Lênin thể hiện ở:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Vận dụng vào các hoạt động thực tiễn lao động cũng như quản trị quốc gia",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Thấy sự gắn kết giữa KTCT với nội hàm của các khái niệm kinh tế chuyên ngành",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Góp phần xây dựng lý tưởng khoa học",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Làm phong phú tri thức, tư duy lý luận các cá nhân về các quan hệ kinh tế",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-1-11",
+    "id": "11",
+    "chapter": "Chương 1",
+    "question": "Chức năng nhận thức của kinh tế - chính trị Mác - Lênin là nhằm:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phát hiện bản chất của các hiện tượng và quy luật kinh tế",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nghiên cứu mối quan hệ giữa quan hệ sản xuất với lực lượng sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tìm ra các quy luật kinh tế chi phối sự vận động của sản xuất và trao đổi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cung cấp hệ thống tri thức mở, những phạm trù kinh tế cơ bản",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-1-12",
+    "id": "12",
+    "chapter": "Chương 1",
+    "question": "Thuật ngữ chỉ mối liên hệ chặt chẽ giữa quy luật kinh tế với khía cạnh thực tiễn của hoạt động chính trị gọi là?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Kinh tế chính trị",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Kinh tế học",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kinh tế công",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kinh tế - xã hội",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-1-13",
+    "id": "13",
+    "chapter": "Chương 1",
+    "question": "Hệ thống lý luận kinh tế đầu tiên nghiên cứu về nền sản xuất tư bản chủ nghĩa là?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Kinh tế chính trị Mác - Lênin",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chủ nghĩa trọng thương",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Chủ nghĩa trọng nông",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kinh tế chính trị tư sản cổ điển",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-1-14",
+    "id": "14",
+    "chapter": "Chương 1",
+    "question": "Người sáng lập ra chủ nghĩa Mác là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Các Mác",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mác và Ph.Ăng ghen",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Mác và V.I. Lênin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mác, Ph. Ăng ghen và V.I. Lênin",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-1-15",
+    "id": "15",
+    "chapter": "Chương 1",
+    "question": "Trừu tượng hoá khoa học là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Đi từ những hiện tượng ngẫu nhiên để rút ra bản chất bên trong của sự vật hiện tượng kinh tế xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Gạt bỏ các hiện tượng ngẫu nhiên, bề ngoài, giữ lại những mối liên hệ phổ biến mang tính bản chất",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Gạt bỏ những bộ phận phức tạp của đối tượng nghiên cứu.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Quá trình đi từ cụ thể đến trừu tượng và ngược lại.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-1-16",
+    "id": "16",
+    "chapter": "Chương 1",
+    "question": "Chức năng tư tưởng của kinh tế - chính trị Mác – Lê nin thể hiện ở:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Định vị vai trò, trách nhiệm của các cá nhân",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Xây dựng nền tảng tư tưởng người lao động",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Là cơ sở khoa học để giải quyết hài hòa các quan hệ lợi ích",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cải thiện đời sống vật chất và tinh thần của toàn xã hội",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-1-17",
+    "id": "17",
+    "chapter": "Chương 1",
+    "question": "Ai là người đầu tiên đưa ra khái niệm \"Kinh tế - chính trị\"?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "William Petty",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Francois Quesney",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tomas Mun",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Antoine de Montchrestien",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-1-18",
+    "id": "18",
+    "chapter": "Chương 1",
+    "question": "Đối tượng nghiên cứu của kinh tế - chính trị Mác - Lênin là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Quan hệ xã hội của sản xuất và trao đổi",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Quan hệ trao đổi giữa người với người trong sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Quan hệ kỹ thuật của sự sản xuất và trao đổi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Qua hệ giữa các quá trình sản xuất, phân phối, trao đổi, tiêu dùng.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-1-19",
+    "id": "19",
+    "chapter": "Chương 1",
+    "question": "Kinh tế - chính trị Mác - Lênin đã kế thừa và phát triển trực tiếp những thành tựu của:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Chủ nghĩa trọng thương",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kinh tế - chính trị tầm thường",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kinh tế chính trị tư sản cổ điển",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Chủ nghĩa trọng nông",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-1-20",
+    "id": "20",
+    "chapter": "Chương 1",
+    "question": "Chọn phương án không đúng về quy luật kinh tế và chính sách kinh tế:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Chính sách kinh tế luôn phù hợp với các quy luật kinh tế (Đây là phát biểu sai vì chính sách có thể chủ quan, sai lầm)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Quy luật kinh tế hoạt động trong dài hạn chính sách kinh tế tác động vào nền kinh tế trong ngắn hạn",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chính sách kinh tế là hoạt động chủ quan của nhà nước trên cơ sở nhận thức và vận dụng các quy luật",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Quy luật kinh tế là cơ sở của chính sách kinh tế",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-1-21",
+    "id": "21",
+    "chapter": "Chương 1",
+    "question": "Kinh tế chính trị Mác Lênin ra đời trong khoảng thời gian nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Từ nửa đầu thế kỷ XIX (Những năm 40 của thế kỷ XIX)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Từ nửa cuối thế kỷ XVIII đến nửa đầu XIX",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Từ thế kỷ XV đến XVII",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Từ thế kỷ XVII đến nửa đầu XVIII",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-1-22",
+    "id": "22",
+    "chapter": "Chương 1",
+    "question": "Hãy chọn phương án đúng về quy luật kinh tế:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Mang tính chủ quan phụ thuộc vào ý muốn của con người",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tồn tại khách quan",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Tác động khác nhau trong từng đối tượng cụ thể",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mang tính chủ quan với những động cơ lợi ích khác nhau",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-2-23",
+    "id": "1",
+    "chapter": "Chương 2",
+    "question": "Quy luật giá trị là",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Quy luật kinh tế của thời kỳ quá độ lên CNXH",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Quy luật kinh tế chung của phương thức sản xuất Tư bản chủ nghĩa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Quy luật riêng của CNTB",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Quy luật cơ bản của sản xuất và trao đổi hàng hoá",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-2-24",
+    "id": "2",
+    "chapter": "Chương 2",
+    "question": "Mục đích của cạnh tranh trong nội bộ ngành là?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giành các điều kiện sản xuất với giá cao nhất",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Giành lợi ích tối đa cho mình trong việc mua TLSX và bán hàng hóa.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Nhằm bán hàng hoá với giá cả có lợi nhất.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tự do di chuyển tư bản từ ngành này sang ngành khác tìm nơi đầu tư có lợi nhất",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-2-25",
+    "id": "3",
+    "chapter": "Chương 2",
+    "question": "Khi đồng nội tệ được định giá cao quá mức thì hoạt động xuất nhập khẩu sẽ",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Hạn chế nhập khẩu, khuyến khích tiêu dùng hàng nội địa",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Khuyến khích cả xuất và nhập khẩu",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hạn chế nhập khẩu, khuyến khích xuất khẩu",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Khuyến khích nhập khẩu, hạn chế xuất khẩu",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-2-26",
+    "id": "4",
+    "chapter": "Chương 2",
+    "question": "Nhận định nào không đúng về cơ chế thị trường?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là một phương thức cơ bản, có tính khách quan để phân phối và sử dụng các nguồn lực của xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Là hệ thống các quan hệ kinh tế mang đặc tính tự điều chỉnh theo yêu cầu của các quy luật kinh tế thị trường",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Là một không gian cụ thể để người mua và người bán gặp gỡ và trao đổi hàng hóa",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Tuân theo các yêu cầu của quy luật kinh tế",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-2-27",
+    "id": "5",
+    "chapter": "Chương 2",
+    "question": "Trong các mệnh đề dưới đây, mệnh đề nào không đúng?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Quy luật kinh tế là quy luật chủ quan",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Quy luật kinh tế là quy luật khách quan",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Quy luật kinh tế phát huy tác dụng thông qua các hoạt động của con người.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Quy luật kinh tế cũng giống các quy luật trong tự nhiên",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-2-28",
+    "id": "6",
+    "chapter": "Chương 2",
+    "question": "Nhận định nào đúng về hậu quả của lạm phát?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tiền lương thực tế tăng",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phân phối lại các nguồn thu nhập giữa các tầng lớp dân cư từ người giàu sang người nghèo.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Người giữ tiền, người cho vay bị thiệt, người giữ hàng hoá người đi vay có lợi",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Người giữ tiền, người cho vay có lợi, người giữ hàng hoá người đi vay bị thiệt",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-2-29",
+    "id": "7",
+    "chapter": "Chương 2",
+    "question": "Cơ chế thị trường là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cơ chế điều tiết nền kinh tế mang tính chủ quan",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cơ chế điều tiết nền kinh tế tự phát",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cơ chế thị trường do \"bàn tay hữu hình\" chi phối.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cơ chế điều tiết nền kinh tế theo các quy luật kinh tế",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-2-30",
+    "id": "8",
+    "chapter": "Chương 2",
+    "question": "Sự hoạt động của quy luật giá trị được biểu hiện:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá cả xoay quanh giá trị dưới tác động của quy luật cung cầu",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Giá cả thị trường xoay quanh giá trị cá biệt của hàng hoá",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Giá cả thị trường xoay quanh giá cả sản xuất dưới tác động của quy luật lưu thông",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Giá cả thị trường xoay quanh giá cả độc quyền",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-2-31",
+    "id": "9",
+    "chapter": "Chương 2",
+    "question": "Trong công thức H-T-H’, tiền thực hiện chức năng gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phương tiện cất trữ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phương tiện lưu thông",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Phương tiện thanh toán",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tiền tệ thế giới",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-2-32",
+    "id": "10",
+    "chapter": "Chương 2",
+    "question": "Nhận định nào là đúng nhất về cạnh tranh trong các ý sau:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là cuộc đấu tranh giữa những người sản xuất nhằm có được những ưu thế trong tiêu thụ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Là sự ganh đua giữa những người sản xuất nhằm có được ưu thế trong sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Là sự ganh đua giữa các chủ thể kinh tế nhằm có được những ưu thế",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Là cuộc đấu tranh giữa những người sản xuất với người tiêu dùng",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-2-33",
+    "id": "11",
+    "chapter": "Chương 2",
+    "question": "Nhận định nào sau đây là không đúng về dịch vụ?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Dịch vụ là hàng hóa có quá trình sử dụng và sản xuất diễn ra đồng thời",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Dịch vụ là hàng hóa vô hình",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Để có được dịch vụ không cần hao phí sức lao động",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Dịch vụ là hàng hóa không thể cất trữ",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-2-34",
+    "id": "12",
+    "chapter": "Chương 2",
+    "question": "Trong 5 chức năng của tiền tệ, chức năng nào không đòi hỏi phải có tiền vàng?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phương tiện lưu thông và phương tiện thanh toán",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Tiền tệ thế giới và phương tiện cất trữ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Phương tiện cất trữ, Tiền tệ thế giới, Phương tiện thanh toán",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chức năng thước đo giá trị",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-2-35",
+    "id": "13",
+    "chapter": "Chương 2",
+    "question": "Lưu thông tiền tệ là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là sự mua bán các quỹ tiền tệ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Là sự vận động của tiền lấy trao đổi hàng hoá làm tiền đề",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Là sự vay, cho vay tiền tệ.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Là sự di chuyển các quỹ tiền tệ trong nền kinh tế",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-2-36",
+    "id": "14",
+    "chapter": "Chương 2",
+    "question": "Thực hiện chức năng tiền tệ thế giới tức là tiền tệ dùng để làm gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Làm môi giới trung gian cho trao đổi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Để biểu hiện và đo lường giá trị hàng hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Để mua và thanh toán quốc tế",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Để trả nợ",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-2-37",
+    "id": "15",
+    "chapter": "Chương 2",
+    "question": "Vật ngang giá chung xuất hiện trong các hình thái giá trị nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Hình thái chung và hình thái tiền tệ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hình thái giá trị giản đơn",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hình thái giá trị mở rộng và hình thái chung",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hình thái giản đơn và hình thái mở rộng",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-2-38",
+    "id": "16",
+    "chapter": "Chương 2",
+    "question": "Chọn ý không đúng về sản phẩm và hàng hoá:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Mọi hàng hóa đều là kết quả của sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Mọi sản phẩm đều là hàng hoá",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Không phải mọi sản phẩm đều là hàng hoá",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mọi hàng hoá đều là sản phẩm",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-2-39",
+    "id": "17",
+    "chapter": "Chương 2",
+    "question": "Bản chất tiền tệ là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là vàng, bạc",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Là hàng hoá đặc biệt đóng vai trò là vật ngang giá chung",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Phương tiện để lưu thông hàng hoá và để thanh toán",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Thước đo giá trị của hàng hoá",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-2-40",
+    "id": "18",
+    "chapter": "Chương 2",
+    "question": "Đối với nhà tư bản giá trị cá biệt và giá trị xã hội có liên quan với nhau như thế nào trong việc thu về nhiều lợi nhuận?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá trị cá biệt phải cao hơn giá trị xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Giá trị cá biệt phải nhỏ hơn giá trị xã hội",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Giá trị cá biệt không liên quan đến giá trị xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Giá trị cá biệt phải bằng giá trị xã hội",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-2-41",
+    "id": "19",
+    "chapter": "Chương 2",
+    "question": "Yêu cầu của quy luật giá trị trong nền sản xuất hàng hóa là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Việc sản xuất và trao đổi hàng hóa phải dựa vào hao phí lao động xã hội cần thiết",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Việc sản xuất và trao đổi hàng hóa phải dựa vào hao phí lao động cá biệt",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hao phí lao động cá biệt > hao phí lao động xã hội cần thiết",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Giá cả thị trường thoát ly, tách rời giá trị thị trường của hàng hóa",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-2-42",
+    "id": "20",
+    "chapter": "Chương 2",
+    "question": "Thế nào là cung hàng hoá?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là số lượng hàng hoá xã hội sản xuất ra.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Là toàn bộ khả năng cung cấp hàng hoá cho thị trường.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Toàn bộ hàng hoá đem bán trên thị trường và đến thị trường ở một mức giá nhất định.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Là toàn bộ số hàng hoá đem bán trên thị trường.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-2-43",
+    "id": "21",
+    "chapter": "Chương 2",
+    "question": "Căn cứ vào vai trò của mỗi yếu tố được trao đổi, thị trường được phân chia thành những loại nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Thị trường hàng hóa hữu hình và thị trường hàng hóa vô hình",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Thị trường tư liệu tiêu dùng và thị trường tư liệu sản xuất",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Thị trường cạnh tranh hoàn hảo và thị trường độc quyền",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Thị trường tự do và thị trường có sự điều tiết",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-2-44",
+    "id": "22",
+    "chapter": "Chương 2",
+    "question": "Đặc điểm chung của các hàng hóa đặc biệt trong nền kinh tế thị trường?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá cả do hao phí lao động quyết định",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Giá trị không do hao phí lao động quyết định",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Giá cả không do hao phí lao động quyết định",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Giá trị do hao phí lao động quyết định",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-2-45",
+    "id": "23",
+    "chapter": "Chương 2",
+    "question": "Khi lạm phát phi mã xảy ra, hình thức sử dụng tiền nào có lợi nhất?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Đầu tư vào sản xuất kinh doanh",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Mua hàng hoá hoặc vàng cất giữ",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Cất ở nhà",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gửi ngân hàng",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-2-46",
+    "id": "24",
+    "chapter": "Chương 2",
+    "question": "Nhận định nào sau đây là sai về nền kinh tế thị trường?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Không có sự đa dạng của các chủ thể kinh tế và nhiều hình thức sở hữu",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nhà nước có thể khắc phục một phần các khuyết tật của thị trường",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Động lực trực tiếp của các chủ thể sản xuất kinh doanh là lợi ích kinh tế- xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Giá cả được hình thành theo nguyên tắc thị trường",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-2-47",
+    "id": "25",
+    "chapter": "Chương 2",
+    "question": "Giá cả của hàng hoá là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá tiền đã in trên sản phẩm hoặc người bán quy định",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Số tiền người mua phải trả cho người bán",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sự thoả thuận giữa người mua và người bán",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sự biểu hiện bằng tiền của giá trị",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-2-48",
+    "id": "26",
+    "chapter": "Chương 2",
+    "question": "Nhận định nào là sai về cạnh tranh trong nội bộ ngành?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Đòi hỏi các nhà tư bản phải ra sức cải tiến kỹ thuật, đổi mới công nghệ, hợp lý hóa sản xuất, tăng năng suất lao động",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sẽ dẫn đến hình thành giá trị thị trường của từng loại hàng hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Là cạnh tranh giữa các chủ thể kinh doanh trong một ngành, cùng sản xuất một loại hàng hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Có biện pháp là tự do di chuyển tư bản từ ngành này sang ngành khác",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-2-49",
+    "id": "27",
+    "chapter": "Chương 2",
+    "question": "Trong các phạm trù kinh tế dưới đây, phạm trù nào được coi là tín hiệu của cơ chế thị trường?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cung - cầu hàng hoá",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sức mua của tiền",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Giá cả thị trường",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Thông tin thị trường",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-2-50",
+    "id": "28",
+    "chapter": "Chương 2",
+    "question": "Nhận định nào sau đây là sai về ưu thế của kinh tế thị trường",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Thực hiện phát huy tốt nhất tiềm năng của mọi chủ thể, các vùng miền cũng như lợi thế quốc gia trong các quan hệ với thế giới",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tạo động lực mạnh mẽ cho sự hình thành ý tưởng mới của các chủ thể kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tạo ra phương thức để thỏa mãn tối đa nhu cầu con người, thúc đẩy tiến bộ, văn minh xã hội.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tự khắc phục được những hiện tượng phân hóa trong xã hội",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-2-51",
+    "id": "29",
+    "chapter": "Chương 2",
+    "question": "Chọn ý đúng về quan hệ cung - cầu đối với giá trị, giá cả:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Không quyết định đến giá trị và có ảnh hưởng tới giá cả thị trường",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Không có ảnh hưởng đến giá trị và giá cả",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Không quyết định đến giá cả và có ảnh hướng đến giá trị",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Quyết định giá trị và giá cả hàng hoá",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-52",
+    "id": "1",
+    "chapter": "Chương 3",
+    "question": "Nhận xét về giá trị thặng dư tương đối và giá trị thặng dư siêu ngạch, ý nào dưới đây là sai?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá trị thặng dư tương đối dựa trên cơ sở tăng NSLĐ xã hội còn giá trị thặng dư siêu ngạch dựa trên cơ sở tăng NSLĐ cá biệt.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Đều dựa trên cơ sở tăng NSLĐ.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Giá trị thặng dư siêu ngạch có thể chuyển hoá thành giá trị thặng dư tương đối.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Giá trị thặng dư tương đối dựa trên cơ sở tăng NSLĐ cá biệt, còn giá trị thặng dư siêu ngạch dựa trên tăng NSLĐ xã hội (Đây là ý sai vì thực tế ngược lại).",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-3-53",
+    "id": "2",
+    "chapter": "Chương 3",
+    "question": "Phương pháp sản xuất giá trị thặng dư tuyệt đối có những hạn chế. Chọn ý sai?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Năng suất lao động không thay đổi.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tỷ suất giá trị thặng dư và khối lượng giá trị thặng dư không thay đổi (Sai vì mục đích của phương pháp này là để tăng m và M).",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Gặp phải sự phản kháng quyết liệt của công nhân.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Không thoả mãn khát vọng giá trị thặng dư của nhà tư bản.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-54",
+    "id": "3",
+    "chapter": "Chương 3",
+    "question": "Trong quá trình sản xuất ra một đơn vị sản phẩm, hao mòn máy móc (c1) = 100.000; chi phí nguyên liệu (c2) = 300.000. Giá trị sản phẩm (G) = 1.000.000; m' = 200%. Xác định tư bản khả biến (v)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giải: G = c1 + c2 + v + m. Mà m = m' * v = 2v. Ta có: 1.000.000 = (100.000 + 300.000) + v + 2v => 600.000 = 3v => v = 200.000.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-59",
+    "id": "4",
+    "chapter": "Chương 3",
+    "question": "Việc mua bán nô lệ và mua bán sức lao động quan hệ với nhau thế nào? Chọn ý đúng:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Hoàn toàn khác nhau (Vì nô lệ bị bán đứt thân thể, còn sức lao động là hàng hóa mà người lao động tự do sở hữu và bán có thời hạn).",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hoàn toàn giống nhau",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Có quan hệ với nhau",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Giống nhau về bản chất, chỉ khác về hình thức",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-60",
+    "id": "5",
+    "chapter": "Chương 3",
+    "question": "Giá trị của tư bản bất biến (c) thay đổi như thế nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá trị chuyển dần vào sản phẩm qua khấu hao (Chỉ đúng với tư bản cố định).",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Giá trị không thay đổi về lượng và được chuyển toàn bộ sang sản phẩm sau một chu kỳ sản xuất (Chỉ đúng với tư bản lưu động là nguyên liệu).",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Giá trị không thay đổi về lượng và được chuyển nguyên vẹn sang sản phẩm (Định nghĩa chung về tư bản bất biến).",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Giá trị lớn lên trong quá trình sản xuất",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-61",
+    "id": "6",
+    "chapter": "Chương 3",
+    "question": "Điều kiện để sức lao động trở thành hàng hoá là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Người lao động tự nguyện đi làm thuê",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Người lao động hoàn toàn không có TLSX và của cải gì phải bán sức lao động",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Người lao động không được tự do thân thể và không có TLSX",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Người lao động được tự do về thân thể và không có TLSX.",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-3-62",
+    "id": "7",
+    "chapter": "Chương 3",
+    "question": "Tỷ suất giá trị thặng dư (m') phản ánh điều gì? Chọn ý đúng:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Trình độ bóc lột của tư bản đối với công nhân làm thuê.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Phán ánh mức độ thuận lợi trong cạnh tranh giữa các doanh nghiệp",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hiệu quả của tư bản",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chỉ cho nhà tư bản biết nơi đầu tư có lợi",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-63",
+    "id": "8",
+    "chapter": "Chương 3",
+    "question": "Để tăng khối lượng giá trị thặng dư (M), nhà tư bản có thể sử dụng cách nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Rút ngắn thời gian lao động trong ngày",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Rút ngắn thời gian lao động tất yếu.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Rút ngắn thời gian lao động thặng dư (Sai, phải kéo dài thời gian này).",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Câu hỏi này có vẻ nhầm lẫn ở các phương án, nhưng theo logic tăng bóc lột: Rút ngắn thời gian lao động tất yếu (Đây là biện pháp của GTTD tương đối để tăng thời gian lao động thặng dư).",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-64",
+    "id": "9",
+    "chapter": "Chương 3",
+    "question": "Tuần hoàn và chu chuyển giống nhau ở điểm nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tuần hoàn và chu chuyển đều nghiên cứu về thời gian chu chuyển của tư bản",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tuần hoàn và chu chuyển đều nghiên cứu số vòng chu chuyển của tư bản",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tuần hoàn và chu chuyển đều nghiên cứu sự vận động của tư bản.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Tuần hoàn và chu chuyển đều nghiên cứu chức năng của tư bản",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-65",
+    "id": "10",
+    "chapter": "Chương 3",
+    "question": "Giá trị thặng dư là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phần lao động không công của người công nhân.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Phần lao động được trả công của người công nhân",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Toàn bộ kết quả lao động của nhà tư bản",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Toàn bộ phần giá trị mới do công nhân tạo ra trong quá trình sản xuất",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-66",
+    "id": "11",
+    "chapter": "Chương 3",
+    "question": "Ngày lao động 8h, m' = 100% (4h tất yếu, 4h thặng dư). Tăng ngày lao động lên 1h (tổng 9h) và giá trị sức lao động giảm 25% (4h giảm 25% còn 3h). Tính m' mới?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giải: Thời gian lao động tất yếu mới = 3h. Thời gian lao động thặng dư mới = 9h - 3h = 6h. m' = (6h/3h) * 100% = 200%.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "200%",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "250%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "300%",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "150%",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-67",
+    "id": "12",
+    "chapter": "Chương 3",
+    "question": "Giá trị sức lao động là?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá trị những tư liệu tiêu dùng để duy trì đời sống của người lao động làm thuê, gia đình họ và phí tổn đào tạo.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Giá trị những tư liệu sản xuất để nuôi sống người lao động và gia đình con cái họ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Giá trị những tư liệu sản xuất để nuôi sống người lao động và phí tổn đào tạo",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Giá trị những tư liệu tiêu dùng để duy trì đời sống nhà tư bản",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-68",
+    "id": "13",
+    "chapter": "Chương 3",
+    "question": "Có 100 công nhân, v/người = 250 => Tổng V = 25.000. m' = 300% => M = 75.000. Tổng C = 250.000. Sản lượng = 12.500 sản phẩm. Giá trị 1 đơn vị sản phẩm?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giải: Tổng giá trị (G) = C + V + M = 250.000 + 25.000 + 75.000 = 350.000. Giá trị 1 SP = 350.000 / 12.500 = 28.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "30 đô la",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "26 đô la",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "24 đô la",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "28 đô la",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "E"
+  },
+  {
+    "uid": "ch-ng-3-69",
+    "id": "14",
+    "chapter": "Chương 3",
+    "question": "Phương pháp sản xuất giá trị thặng dư tuyệt đối và tương đối có điểm nào giống nhau?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Đều làm cho công nhân tốn sức lao động nhiều hơn",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Đều làm tăng tỷ suất giá trị thặng dư (Mục đích chung của các phương pháp).",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Đều tăng thời gian lao động của công nhân",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Đều làm giảm giá trị sức lao động của công nhân",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-70",
+    "id": "15",
+    "chapter": "Chương 3",
+    "question": "Trong tuần hoàn tư bản, tư bản tồn tại lần lượt dưới các hình thức nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tư bản cố định, tư bản lưu động",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tư bản bất biến, tư bản khả biến",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tư bản tiền tệ, tư bản lưu thông, tư bản sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tư bản tiền tệ, tư bản sản xuất, tư bản hàng hóa.",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-3-71",
+    "id": "16",
+    "chapter": "Chương 3",
+    "question": "Vai trò của máy móc trong quá trình tạo ra giá trị thặng dư, chọn ý đúng:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Máy móc là yếu tố quyết định để tạo ra giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Máy móc là nguồn gốc của giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Máy móc là tiền đề vật chất cho việc tạo ra giá trị thặng dư (Máy móc không tạo ra giá trị mới, chỉ chuyển dịch giá trị cũ).",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Máy móc và sức lao động đều tạo ra giá trị thặng dư",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-72",
+    "id": "17",
+    "chapter": "Chương 3",
+    "question": "Tiền công thực tế là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là số lượng hàng hoá và dịch vụ mua được bằng tiền công danh nghĩa.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Là tổng số tiền nhận được thực tế trong 1 tháng.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Là giá cả của sức lao động.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Là số tiền trong sổ lương + tiền thưởng + các nguồn thu nhập khác",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-73",
+    "id": "18",
+    "chapter": "Chương 3",
+    "question": "Tư bản là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá trị mang lại giá trị thặng dư bằng cách bóc lột lao động làm thuê.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Tiền và máy móc thiết bị",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tiền có khả năng đẻ ra tiền",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Công cụ sản xuất và nguyên vật liệu",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-74",
+    "id": "19",
+    "chapter": "Chương 3",
+    "question": "Chọn ý đúng về lao động và sức lao động:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sức lao động là hàng hoá, còn lao động không là hàng hoá (Lao động là quá trình tiêu dùng hàng hóa sức lao động).",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sức lao động có giá trị, còn lao động không có giá trị",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sức lao động có sau, lao động có trước",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sức lao động là khả năng, lao động là quá trình vận dụng sức lao động vào sản xuất. (Cả hai ý đầu và cuối đều đúng về mặt lý luận, nhưng ý cuối định nghĩa rõ ràng nhất bản chất).",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-3-75",
+    "id": "1",
+    "chapter": "Chương 3",
+    "question": "Thời gian chu chuyển của tư bản gồm?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Thời gian lao động và thời gian sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Thời gian tiêu thụ hàng hoá và thời gian sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Thời gian sản xuất và thời gian lưu thông",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Thời gian mua TLSX và thời gian sản xuất",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-76",
+    "id": "2",
+    "chapter": "Chương 3",
+    "question": "Tư bản khả biến là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là nguồn gốc của giá trị thặng dư",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Là nguồn gốc mang lại giá trị sử dụng của sản phẩm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Là điều kiện mang lại giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tư bản luôn luôn biến đổi",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-77",
+    "id": "3",
+    "chapter": "Chương 3",
+    "question": "Chọn ý đúng về mua bán sức lao động?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Chỉ bán quyền sở hữu không mất quyền sử dụng",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chỉ bán quyền sử dụng",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Chỉ bản quyền sở hữu",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bán cả quyền sử dụng và quyền sở hữu",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-78",
+    "id": "4",
+    "chapter": "Chương 3",
+    "question": "Tư bản cố định có vai trò gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là nguồn gốc của giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Điều kiện để cạnh tranh giữa các ngành",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Là điều kiện để tăng năng suất lao động (Dựa trên đặc điểm máy móc, thiết bị )",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Quyết định việc mang lại giá trị thặng dư",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-79",
+    "id": "5",
+    "chapter": "Chương 3",
+    "question": "Các cách diễn tả dưới đây có cách nào sai không?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá trị của TLSX = c",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Giá trị của sức lao động = v",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Giá trị của sản phẩm mới = v + m (Cách diễn đạt này đúng )",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Giá trị mới của sản phẩm = v + m (Lưu ý: Cả 4 cách diễn tả trên đều đúng theo giáo trình, nếu câu hỏi yêu cầu chọn cách SAI thì có thể đây là lỗi đề bài hoặc cần phân biệt giữa \"Giá trị của sản phẩm mới\" (c+v+m) và \"Giá trị mới tạo ra\" (v+m)).",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-80",
+    "id": "6",
+    "chapter": "Chương 3",
+    "question": "Chọn ý đúng về mua bán hàng hóa sức lao động?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Luôn được trả tiền trước",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chỉ bán quyền sử dụng, không mất quyền sở hữu",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Giá cả < giá trị sức lao động",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Giá cả > giá trị sức lao động",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-81",
+    "id": "7",
+    "chapter": "Chương 3",
+    "question": "Dựa vào căn cứ nào để chia tư bản ra thành tư bản cố định và tư bản lưu động.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sự thay đổi về lượng trong quá trình sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Phương thức chuyển giá trị của các bộ phận tư bản sang sản phẩm",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Tốc độ chu chuyển chung của tư bản",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-82",
+    "id": "8",
+    "chapter": "Chương 3",
+    "question": "Sức lao động là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Toàn bộ thể lực và trí lực trong con người và được vận dụng trong quá trình sản xuất",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Khả năng lao động, được tiêu dùng trong quá trình sản xuất.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hoạt động có mục đích của con người để tạo ra của cải.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Toàn bộ thể lực trong một con người và được vận dụng để sản xuất ra hàng hóa hoặc dịch vụ nào đó",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-83",
+    "id": "9",
+    "chapter": "Chương 3",
+    "question": "Chọn ý không đúng về các cặp phạm trù tư bản:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Chia tư bản thành tư bản bất biến và tư bản khả biến để tìm nguồn gốc giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tư bản cố định cũng là tư bản bất biến, tư bản lưu động cũng là tư bản khả biến (Sai vì tư bản lưu động bao gồm cả nguyên vật liệu - là tư bản bất biến )",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Tư bản cố định, tư bản lưu động và tư bản bất biến, tư bản khả biến đều là tư bản sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chia tư bản thành tư bản cố định và tư bản lưu động để biết cách thức chuyển giá trị của chúng sang sản phẩm",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-84",
+    "id": "10",
+    "chapter": "Chương 3",
+    "question": "Chi phí thực tế của xã hội để sản xuất hàng hóa là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Chi phí sức lao động của toàn xã hội.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chi phí tư bản bất biến và khả biến.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Chi phí lao động sống và lao động quá khứ.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chi phí về tiền vốn, máy móc, nguyên liệu.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-85",
+    "id": "11",
+    "chapter": "Chương 3",
+    "question": "Ý kiến nào dưới đây là sai?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Động cơ của tích lỹ tư bản là giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tích luỹ tư bản là biến một phần giá trị thặng dư thành tư bản.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tích luỹ là sự tiết kiệm giá trị thặng dư (Sai, tích lũy là tư bản hóa giá trị thặng dư, không đơn thuần là tiết kiệm để tiêu dùng )",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Nguồn gốc của tích luỹ tư bản là giá trị thặng dư.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-86",
+    "id": "12",
+    "chapter": "Chương 3",
+    "question": "Cạnh tranh giữa các ngành xảy ra khi có sự khác nhau về:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lợi nhuận.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Giá trị thặng dư siêu ngạch.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cung cầu các loại hàng hóa.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tỷ suất lợi nhuận",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-3-87",
+    "id": "13",
+    "chapter": "Chương 3",
+    "question": "Giá cả của tư bản cho vay có điểm gì đặc biệt?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá cả của tư bản cho vay do giá trị sử dụng của vốn vay quyết định",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Giá cả của tư bản cho vay do giá trị của vốn vay quyết định",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Giá cả của tư bản cho vay không phụ thuộc quan hệ cung-cầu về vốn vay",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Giá cả của tư bản cho vay do nhà nước quyết định",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-88",
+    "id": "14",
+    "chapter": "Chương 3",
+    "question": "Chọn ý đúng về tỷ suất lợi nhuận (p') và tỷ suất giá trị thặng dư (m')",
+    "choices": [
+      {
+        "label": "A",
+        "text": "p'> m' p' < m' (Vì $p' = \\frac{m}{c+v}$ còn $m' = \\frac{m}{v}$ ) m' chỉ ra nơi đầu tư có lợi cho nhà tư bản, p' phản ánh trình độ bóc lột của nhà tư bản p'= m'",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-89",
+    "id": "15",
+    "chapter": "Chương 3",
+    "question": "Địa tô chênh lệch I thu được trên:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Ruộng đất có độ màu mỡ trung bình",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ruộng đất trung bình, đất tốt và ở vị trí thuận lợi",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Ruộng đất ở vị trí không thuận lợi.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ruộng đất xấu",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-90",
+    "id": "16",
+    "chapter": "Chương 3",
+    "question": "Tích tụ tư bản là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tăng qui mô tư bản cá biệt bằng cách tiết kiệm giá trị thặng dư.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tăng qui mô tư bản xã hội bằng cách tư bản hóa giá trị thặng dư.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Tăng qui mô tư bản cá biệt bằng cách tư bản hóa giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Làm cho tư bản xã hội giảm xuống",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-91",
+    "id": "17",
+    "chapter": "Chương 3",
+    "question": "Khi hàng hóa bán đúng giá trị thì:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "p = m p < m. p = 0. p > m.",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-92",
+    "id": "18",
+    "chapter": "Chương 3",
+    "question": "Nhân tố nào dưới đây có ảnh hưởng ngược chiều với tỷ suất lợi nhuận (p')",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tỷ suất giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tư bản khả biến",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tốc độ chu chuyển của tư bản",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cấu tạo hữu cơ của tư bản",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-3-93",
+    "id": "19",
+    "chapter": "Chương 3",
+    "question": "Chi phí sản xuất tư bản chủ nghĩa (k) là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Chi phí về đối tượng lao động và sức lao động",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chi phí nhà tư bản mua máy móc, nguyên vật liệu.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chi phí tư bản bất biến và tư bản khả biến",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Chi phí về tư liệu lao động và sức lao động.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-94",
+    "id": "20",
+    "chapter": "Chương 3",
+    "question": "Địa tô chênh lệch II thu được từ đâu:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Ruộng đất thâm canh",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ruộng đất có vị trí địa lí thuận lợi.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ruộng đất có độ màu mỡ tốt.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ruộng đất có độ màu mỡ trung bình.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-95",
+    "id": "21",
+    "chapter": "Chương 3",
+    "question": "Tích tụ và tập trung tư bản giống nhau ở:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tăng qui mô tư bản cá biệt",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nguồn gốc trực tiếp giống nhau.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tăng qui mô tư bản xã hội.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Vai trò quan trọng như nhau.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-96",
+    "id": "22",
+    "chapter": "Chương 3",
+    "question": "Lợi nhuận thương nghiệp có được là do bán hàng hóa với mức giá:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Thấp hơn giá trị.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bằng chi phí sản xuất tư bản chủ nghĩa.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bằng giá trị (Và mua thấp hơn giá trị )",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Cao hơn giá trị.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-97",
+    "id": "23",
+    "chapter": "Chương 3",
+    "question": "Nhà tư bản kinh doanh nông nghiệp trên khu đất xấu nhất phải nộp địa tô gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Địa tô tuyệt đối",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Địa tô chênh lệch I và II.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Địa tô tuyệt đối và địa tô chênh lệch II.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Địa tô chênh lệch và địa tô tuyệt đối.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-98",
+    "id": "24",
+    "chapter": "Chương 3",
+    "question": "Lợi nhuận bình quân là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lợi nhuận không bằng nhau của những lượng vốn tư bản đầu tư bằng nhau khi đầu tư vào các ngành khác nhau.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lợi nhuận bằng nhau của những lượng vốn tư bản đầu tư không bằng nhau khi đầu tư vào các ngành khác nhau",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lợi nhuận bằng nhau của những lượng vốn tư bản đầu tư bằng nhau khi đầu tư vào các ngành khác nhau",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Lợi nhuận khác nhau của những lượng vốn tư bản đầu tư khác nhau khi đầu tư vào các ngành khác nhau.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-99",
+    "id": "25",
+    "chapter": "Chương 3",
+    "question": "Chọn ý không đúng về lợi nhuận:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lợi nhuận có thể khác nhau về lượng với giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Là hình thức biến tướng của giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lợi nhuận luôn lớn hơn giá trị thặng dư (Sai, lợi nhuận có thể bằng hoặc nhỏ hơn m )",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Là khoản chênh lệch giữa giá trị hàng hóa và chi phí sản xuất",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-100",
+    "id": "26",
+    "chapter": "Chương 3",
+    "question": "Hệ quả của quá trình tích lũy tư bản là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tích tụ tư bản và tập trung tư bản không đổi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tích tụ tư bản và tập trung tư bản giảm xuống",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cấu tạo hữu cơ của tư bản tăng lên",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Chênh lệch về thu nhập giữa nhà tư bản và người lao động giảm",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-101",
+    "id": "27",
+    "chapter": "Chương 3",
+    "question": "Một mảnh đất đem lại mức địa tô chênh lệch (300$) + địa tô tuyệt đối (100$) = tổng địa tô là 400$. Tỉ suất lợi tức 8%. Giá cả mảnh đất?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giải: Giá cả = (Địa tô / Tỉ suất lợi tức) = 400 / 8% = 5.000$.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-103",
+    "id": "5",
+    "chapter": "Chương 3",
+    "question": "000$",
+    "choices": [
+      {
+        "label": "A",
+        "text": "50$.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "500$.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-104",
+    "id": "28",
+    "chapter": "Chương 3",
+    "question": "Tư bản thương nghiệp dưới chủ nghĩa tư bản ra đời từ:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tư bản công nghiệp.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Tư bản cho vay.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tư bản lưu động.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tư bản hàng hóa",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-105",
+    "id": "29",
+    "chapter": "Chương 3",
+    "question": "Lợi nhuận là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là khoản chênh lệch giữa giá trị hàng hóa và chi phí sản xuất tư bản chủ nghĩa (Xét về mặt hiện thực sau khi bán )",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Là khoản chênh lệch giữa giá trị và giá cả hàng hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Là khoản chênh lệch giữa hao phí lao động cá biệt và hao phí lao động xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Là khoản chênh lệch giữa vốn đầu tư và chi phí sản xuất",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-106",
+    "id": "30",
+    "chapter": "Chương 3",
+    "question": "Điểm giống nhau giữa địa tô và lợi tức là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Đều không phải là hình thức thu nhập của tư bản đầu đầu tư",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Đều là một phần giá trị thặng dư (Cụ thể là trích ra từ lợi nhuận bình quân )",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Đều là phần lợi nhuận siêu ngạch",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Đều không phụ thuộc vào quan hệ cung-cầu",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-107",
+    "id": "31",
+    "chapter": "Chương 3",
+    "question": "Khi hình thành lợi nhuận bình quân, giá trị hàng hóa sẽ chuyển thành?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá trị thị trường.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Giá cả sản xuất cá biệt",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Giá cả sản xuất",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Giá cả thị trường.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-108",
+    "id": "32",
+    "chapter": "Chương 3",
+    "question": "Giới hạn của tỷ suất lợi tức (z’) là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0 > z' > p' bình quân z' > p' bình quân",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0 < z' < p' bình quân z' = p' bình quân",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-109",
+    "id": "33",
+    "chapter": "Chương 3",
+    "question": "Địa tô tư bản chủ nghĩa là phần giá trị thặng dư còn lại sau khi khấu trừ:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lợi nhuận.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lợi nhuận độc quyền.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lợi nhuận siêu ngạch.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lợi nhuận bình quân",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-3-110",
+    "id": "34",
+    "chapter": "Chương 3",
+    "question": "Hình thức nào không phải là biểu hiện của giá trị thặng dư?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lợi nhuận.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tiền lương (Tiền lương là giá cả của sức lao động - v )",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Địa tô.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lợi tức.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-111",
+    "id": "35",
+    "chapter": "Chương 3",
+    "question": "Lợi nhuận thương nghiệp có nguồn gốc từ đâu?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Từ lĩnh vực sản xuất do lao động làm thuê tạo ra",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Từ lĩnh vực lưu thông sinh ra",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Là kết quả của việc mua rẻ, bán đắt",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Là kết quả của vận chuyển hàng hóa hóa trên thị trường",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-112",
+    "id": "36",
+    "chapter": "Chương 3",
+    "question": "Tỷ suất lợi nhuận (p') phản ánh:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sự giàu có của nhà tư bản.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hiệu quả của tư bản đầu tư",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Trình độ bóc lột của tư bản.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nghệ thuật quản lí của tư bản.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-113",
+    "id": "37",
+    "chapter": "Chương 3",
+    "question": "Địa tô tuyệt đối có ở loại ruộng đất nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Ruộng xấu.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ruộng tốt, trung bình và xấu",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Ruộng tốt.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ruộng trung bình.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-3-114",
+    "id": "38",
+    "chapter": "Chương 3",
+    "question": "Tư bản cho vay ra đời từ:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tư bản tiền tệ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Tư bản công nghiệp.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tư bản ngân hàng.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tư bản thương nghiệp.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-3-115",
+    "id": "39",
+    "chapter": "Chương 3",
+    "question": "Nhân tố nào không ảnh hưởng đến quy mô tích lũy?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tỷ lệ phân chia giá trị thặng dư thành 2 phần: quỹ tích lũy và quỹ tiêu dùng",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tỷ suất giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Số lượng tư liệu lao động được sử dụng (Tài liệu nêu là \"Sử dụng hiệu quả máy móc\", còn số lượng không phải là nhân tố quyết định quy mô nếu không xét đến giá trị thặng dư).",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Khối lượng giá trị thặng dư.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-3-116",
+    "id": "40",
+    "chapter": "Chương 3",
+    "question": "Giá cả ruộng đất phụ thuộc vào:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Độ màu mỡ của đất.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tỷ suất lợi tức tiền gửi ngân hàng.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mức địa tô của đất.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mức địa tô của đất và tỷ suất lợi tức tiền gửi ngân hàn ktra",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-3-117",
+    "id": "1",
+    "chapter": "Chương 3",
+    "question": "Công thức tính giá cả sản xuất trong chủ nghĩa tư bản là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Chi phí sản xuất + lợi nhuận siêu ngạch",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chi phí sản xuất + giá trị thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chi phí sản xuất + lợi nhuận",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chi phí sản xuất + lợi nhuận bình quân",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-118",
+    "id": "2",
+    "chapter": "Chương 3",
+    "question": "Chuyển dịch cơ cấu ngành kinh tế theo hướng công nghiệp hóa, hiện đại hóa được biểu hiện như thế nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tăng tỉ trọng đóng góp của công nghiệp và dịch vụ; giảm tỉ trọng đóng góp của nông nghiệp trong GDP",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tăng tỉ trọng đóng góp của các ngành kinh tế trong GDP",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Giảm tỉ trọng đóng góp của công nghiệp và dịch vụ; tăng tỉ trọng đóng góp của nông nghiệp trong GDP",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Giảm tỉ trọng của các ngành kinh tế trong GDP",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-119",
+    "id": "3",
+    "chapter": "Chương 3",
+    "question": "Vai trò của kinh tế nhà nước trong nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Vai trò thống trị",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Vai trò chủ đạo",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Vai trò quan trọng",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Vai trò quyết định",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-120",
+    "id": "4",
+    "chapter": "Chương 3",
+    "question": "Địa tô trong chủ nghĩa tư bản là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phần lợi nhuận bình quân mà nhà tư bản kinh doanh nông nghiệp phải nộp cho chủ đất",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phần chi phí sản xuất mà nhà tư bản kinh doanh nông nghiệp phải nộp cho chủ đất",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Phần lợi nhuận siêu ngạch mà nhà tư bản kinh doanh nông nghiệp phải nộp cho chủ đất",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Phần lợi tức mà nhà tư bản kinh doanh nông nghiệp phải nộp cho chủ đất",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-121",
+    "id": "5",
+    "chapter": "Chương 3",
+    "question": "Phương án nào KHÔNG PHẢI là những nhiệm vụ cần thực hiện để chuyển đổi Việt Nam từ một xã hội nông nghiệp lạc hậu sang một xã hội công nghiệp hiện đại?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Chuyển đổi số, đẩy mạnh đổi mới sáng tạo",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Đẩy mạnh ứng dụng những thành tựu của khoa học công nghệ vào các lĩnh vực của nền kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chuyển dịch cơ cấu kinh tế theo hướng hiện đại, hợp lý và hiệu quả",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Thiết lập quan hệ sản xuất phù hợp",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-122",
+    "id": "6",
+    "chapter": "Chương 3",
+    "question": "Mục đích nghiên cứu của Kinh tế chính trị Mác Lênin là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tìm ra chủ thể kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tìm ra tiềm lực kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tìm ra đối tác kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tìm ra quy luật kinh tế",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-123",
+    "id": "7",
+    "chapter": "Chương 3",
+    "question": "Giá trị sử dụng của hàng hóa sức lao động có vai trò gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Chìa khóa để giải quyết mâu thuẫn giữa tư bản và lao động làm thuê",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chìa khóa để giải quyết mâu thuẫn của lưu thông hàng hóa giản đơn",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chìa khóa để giải quyết mâu thuẫn giữa tư bản và công nhân",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chìa khóa để giải quyết mâu thuẫn trong công thức chung của tư bản",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-124",
+    "id": "8",
+    "chapter": "Chương 3",
+    "question": "Đặc điểm của phương pháp biện chứng duy vật trong nghiên cứu kinh tế là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Đi sâu vào nghiên cứu cái chi tiết, cái bộ phận, rồi tổng hợp, khái quát",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Loại bỏ cái ngẫu nhiên, giữ cái điển hình",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Xâu chuỗi các sự kiện quá khứ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nghiên cứu sự vật trong mối liên hệ tác động qua lại và trong sự vận động phát triển không ngừng",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-125",
+    "id": "9",
+    "chapter": "Chương 3",
+    "question": "Một doanh nghiệp tăng năng suất lao động, giá trị thị trường 1 đơn vị hàng hóa mà ngành đó sản xuất có thay đổi không?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Có thể thay đổi, có thể không đổi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chắc chắn thay đổi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chắc chắn không đổi",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-126",
+    "id": "10",
+    "chapter": "Chương 3",
+    "question": "Luận điểm nào sau đây KHÔNG PHẢN ÁNH vai trò của lợi ích kinh tế?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lợi ích kinh tế phụ thuộc vào địa vị của mỗi cá nhân trong xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lợi ích kinh tế là động lực trực tiếp thúc đẩy các hoạt động kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lợi ích kinh tế là cơ sở để thiết lập quan hệ kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lợi ích kinh tế được đảm bảo là cơ sở cho sự ổn định và phát triển",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-127",
+    "id": "11",
+    "chapter": "Chương 3",
+    "question": "Để thu được giá trị thặng dư, giới hạn tối thiểu của độ dài ngày lao động là bao nhiêu?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lớn hơn thời gian lao động cần thiết",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Nhỏ hơn thời gian lao động cần thiết",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bằng thời gian lao động thặng dư",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bằng thời gian lao động tất yếu",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-128",
+    "id": "12",
+    "chapter": "Chương 3",
+    "question": "Ưu thế của kinh tế thị trường đối với đời sống kinh tế - xã hội là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Thỏa mãn tốt nhất nhu cầu của con người; Kích thích tính năng động, sáng tạo; Phát huy tốt các tiềm năng của mọi chủ thể, vùng miền",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phát huy tiềm năng + sáng tạo + khắc phục phân hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Thỏa mãn nhu cầu + phát huy tiềm năng + khắc phục phân hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sáng tạo + phát huy tiềm năng + khắc phục phân hóa",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-129",
+    "id": "13",
+    "chapter": "Chương 3",
+    "question": "Lợi nhuận bình quân là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lợi nhuận khác nhau của vốn khác nhau",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lợi nhuận không bằng nhau của vốn bằng nhau",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lợi nhuận bằng nhau của những lượng vốn tư bản đầu tư bằng nhau khi đầu tư vào các ngành khác nhau",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lợi nhuận bằng nhau của vốn khác nhau",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-130",
+    "id": "14",
+    "chapter": "Chương 3",
+    "question": "Lợi tức là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là một phần lợi nhuận bình quân mà người đi vay phải trả cho người cho vay",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Là toàn bộ phần lợi nhuận bình quân",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Là toàn bộ phần lợi nhuận siêu ngạch",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Là một phần lợi nhuận siêu ngạch",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-131",
+    "id": "15",
+    "chapter": "Chương 3",
+    "question": "Lợi nhuận và giá trị thặng dư có nguồn gốc từ đâu?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lao động phức tạp",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lao động cụ thể",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lao động giản đơn",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lao động không công của công nhân",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-132",
+    "id": "16",
+    "chapter": "Chương 3",
+    "question": "Tính chất đặc biệt của hàng hóa tiền tệ là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là vật ngang giá chung",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Được mang ra trao đổi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Có hai thuộc tính",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Là vật ngang giá",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-133",
+    "id": "17",
+    "chapter": "Chương 3",
+    "question": "Phương pháp sản xuất giá trị thặng dư được áp dụng phổ biến hiện nay là?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tuyệt đối",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Siêu ngạch",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tương đối",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lợi nhuận siêu ngạch",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-134",
+    "id": "18",
+    "chapter": "Chương 3",
+    "question": "Giá trị hàng hoá là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là hao phí lao động xã hội kết tinh trong hàng hoá",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hao phí lao động cá biệt",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chi phí sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Công dụng",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-135",
+    "id": "19",
+    "chapter": "Chương 3",
+    "question": "Năng suất lao động phụ thuộc vào nhân tố nào sau đây?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá cả đầu vào",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Thời gian lao động",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Nhu cầu công nhân",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Trình độ khoa học công nghệ",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-136",
+    "id": "20",
+    "chapter": "Chương 3",
+    "question": "Nền kinh tế thị trường định hướng XHCN vừa mang tính phổ biến vừa mang tính đặc thù thể hiện ở nội dung nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Vừa chứa đựng những đặc trưng chung của kinh tế thị trường, vừa chứa đựng những đặc trưng riêng của Việt Nam",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kết hợp TBCN và XHCN",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Công nghệ + văn hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hiện đại + phù hợp",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-137",
+    "id": "21",
+    "chapter": "Chương 3",
+    "question": "Công thức chung của tư bản là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "H – T – H",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "T – H – T’",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H – SX – H’",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "T – H – T",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-138",
+    "id": "22",
+    "chapter": "Chương 3",
+    "question": "Nguồn lực quan trọng hàng đầu trong nền kinh tế tri thức là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Thể chế",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Vốn",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tài nguyên",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tri thức",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-139",
+    "id": "23",
+    "chapter": "Chương 3",
+    "question": "Sản xuất tự cung tự cấp và sản xuất hàng hoá giống nhau ở điểm nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Thỏa mãn qua trao đổi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Quá trình sản xuất đều là sự kết hợp 2 yếu tố: sức lao động và tư liệu sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Thỏa mãn trực tiếp",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4 khâu",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-140",
+    "id": "24",
+    "chapter": "Chương 3",
+    "question": "Mối quan hệ giữa cơ sở vật chất kỹ thuật của CNXH và CNH-HĐH là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phương thức",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tiền đề",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Con đường",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mục tiêu",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-3-141",
+    "id": "25",
+    "chapter": "Chương 3",
+    "question": "Thuộc tính giá trị sử dụng của hàng hóa sức lao động có điểm đặc biệt là?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tạo ra giá trị bằng bản thân nó",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Nhỏ hơn",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tạo nhiều sản phẩm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tạo ra giá trị mới lớn hơn giá trị của bản thân nó",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-5-142",
+    "id": "1",
+    "chapter": "Chương 5",
+    "question": "Mô hình phát triển kinh tế của Việt Nam hiện nay là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Kinh tế thị trường có sự quản lý của nhà nước",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kinh tế thị trường xã hội chủ nghĩa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kinh tế hàng hóa nhiều thành phần theo định hướng xã hội chủ nghĩa",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kinh tế thị trường định hướng xã hội chủ nghĩa",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-5-143",
+    "id": "2",
+    "chapter": "Chương 5",
+    "question": "Nhận định nào là sai về Kinh tế thị trường:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Mỗi nước có mô hình kinh tế thị trường phù hợp riêng",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Nền KTTT của mỗi nước vừa có đặc trưng tất yếu chung vừa có đặc trưng phản ánh riêng",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tồn tại mô hình KTTT chung cho mọi quốc gia và mọi giai đoạn phát triển",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "KTTT là sản phẩm của văn minh nhân loại",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-5-144",
+    "id": "3",
+    "chapter": "Chương 5",
+    "question": "Đâu là đặc trưng mang tính lịch sử-xã hội của kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Nền kinh tế nhiều thành phần với kinh tế nhà nước giữ vai trò chủ đạo",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tồn tại nhiều chủ thể độc lập với nhau về lợi ích kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Thị trường giữ vai trò quyết định phân bổ nguồn lực",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kinh tế thị trường chịu sự quản lý của nhà nước và sự lãnh đạo của đảng",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-5-145",
+    "id": "4",
+    "chapter": "Chương 5",
+    "question": "Tính tất yếu khách quan cho sự ra đời của KTTT định hướng XHCN ở Việt Nam. Chọn ý sai?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phù hợp với xu hướng phát triển khách quan của Việt Nam trong bối cảnh thế giới hiện nay",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Do tính ưu việt của KTTT trong định hướng XHCN trong thúc đẩy phát triển",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Phù hợp với nguyện vọng mong muốn dân giàu, nước mạnh, dân chủ, công bằng, văn minh của người dân Việt Nam",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Do thể chế KTTT định hướng XHCN ở Việt Nam còn chưa đồng bộ.",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-5-146",
+    "id": "5",
+    "chapter": "Chương 5",
+    "question": "Nguyên nhân tồn tại nhiều thành phần kinh tế trong nền KTTT định hướng XHCN ở nước ta là do. Chọn ý sai:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Do xã hội cũ để lại",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Do quá trình cải tạo và xây dựng QHSX mới",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Do trình độ LLSX còn nhiều thang bậc khác nhau",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Còn nhiều quan hệ sở hữu về TLSX",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": null
+  },
+  {
+    "uid": "ch-ng-5-147",
+    "id": "6",
+    "chapter": "Chương 5",
+    "question": "Đặc trưng chung của kinh tế thị trường?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Kinh tế thị trường gắn liền với vai trò lãnh đạo của Đảng cộng sản",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kinh tế thị trường gắn liền với định hướng xã hội chủ nghĩa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Giá cả thị trường do thị trường quy định",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Kinh tế thị trường thực hiện phân phối thu nhập công bằng",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-5-148",
+    "id": "7",
+    "chapter": "Chương 5",
+    "question": "Cơ cấu kinh tế nhiều thành phần trong nền KTTT có vai trò gì? chọn ý sai.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cho phép khai thác, sử dụng có hiệu quả các yếu tố sản xuất các nguồn lực và tiềm năng của nền kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Đảm bảo được an ninh quốc phòng và phục vụ lợi ích công cộng.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Thúc đẩy kinh tế hàng hoá phát triển, khoa học, công nghệ phát triển nhanh.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Làm cho NSLĐ tăng, kinh tế tăng trưởng nhanh và hiệu quả.",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-5-149",
+    "id": "8",
+    "chapter": "Chương 5",
+    "question": "Nền KTTT định hướng XHCN ở Việt Nam thực hiện nguyên tắc phân phối nào, Chọn ý sai?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phân phối theo đầu vào và đầu ra",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ngoài thù lao lao động thông qua các quỹ phúc lợi xã hội và tập thể.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Theo lao động",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Theo hiệu quá sản xuất kinh doanh",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-5-150",
+    "id": "9",
+    "chapter": "Chương 5",
+    "question": "Kinh tế nhà nước giữ vai trò chủ đạo. Biểu hiện nào dưới đây không đúng về vai trò chủ đạo:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Là nhân tố chính thúc đẩy tăng trưởng kinh tế nhanh và bền vững, có tác dụng chi phối các thành phần kinh tế khác.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Nắm các ngành then chốt, các lĩnh vực quan trọng",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Đi đầu trong ứng dụng tiến bộ KHCN, là công cụ để định hướng và điều tiết kinh tế vĩ mô.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chiếm tỷ trọng lớn",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-5-151",
+    "id": "10",
+    "chapter": "Chương 5",
+    "question": "Sự khác biệt cơ bản giữa KTTT định hướng XHCN với kinh tế thị trường TBCN là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Có sự điều tiết của nhà nước XHCN",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Có nhiều hình thức sở hữu TLSX",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Vai trò chủ đạo của kinh tế nhà nước",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Nền kinh tế nhiều thành phần",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-5-152",
+    "id": "11",
+    "chapter": "Chương 5",
+    "question": "Quan niệm nào sau đây KHÔNG ĐÚNG về kinh tế thị trường?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Kinh tế thị trường là sản phẩm riêng có của chủ nghĩa tư bản",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Kinh tế thị trường là kết quả phát triển lâu dài của lực lượng sản xuất và xã hội hóa các quan hệ kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kinh tế thị trường là hình thức phát triển cao của kinh tế hàng hóa",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kinh tế thị trường là thành tựu của văn minh nhân loại",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-5-153",
+    "id": "12",
+    "chapter": "Chương 5",
+    "question": "Luận điểm nào sau đây KHÔNG PHẢN ÁNH vai trò của lợi ích kinh tế?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lợi ích kinh tế phụ thuộc vào địa vị của mỗi cá nhân trong xã hội",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Lợi ích kinh tế được đảm bảo là cơ sở cho sự ổn định và phát triển của xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lợi ích kinh tế là cơ sở để thiết lập quan hệ kinh tế giữa các chủ thể kinh tế với nhau",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lợi ích kinh tế là động lực trực tiếp thúc đẩy các hoạt động kinh tế của các chủ thể khác nhau trong xã hội",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-5-154",
+    "id": "13",
+    "chapter": "Chương 5",
+    "question": "Chủ thể quản lý nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Nhân dân quản lý và giám sát",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Các chủ doanh nghiệp và các nhà đầu tư",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Đảng Cộng sản và các tổ chức chính trị xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nhà nước XHCN đặt dưới sự lãnh đạo của Đảng Cộng sản và chịu sự giám sát của nhân dân",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-5-155",
+    "id": "14",
+    "chapter": "Chương 5",
+    "question": "Trong nền KTTT ở nước ta, nhà nước có chức năng gì trong bảo đảm hài hòa các quan hệ lợi ích? chọn ý sai.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Bảo vệ lợi ích hợp pháp, tạo môi trường thuận lợi cho hoạt động tìm kiếm lợi ích của các chủ thể kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Giải quyết các xung đột trong quan hệ xã hội",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Điều hòa lợi ích giữa cá nhân- doanh nghiệp- xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kiểm soát , ngăn ngừa các quan hệ lợi ích có ảnh hưởng tiêu cực đối với sự phát triển xã hội",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-5-156",
+    "id": "15",
+    "chapter": "Chương 5",
+    "question": "Mối quan hệ giữa kinh tế thị trường và định hướng xã hội chủ nghĩa?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Chủ nghĩa xã hội không phù hợp với cơ chế thị trường",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chúng mâu thuẫn và đối lập với nhau hoàn toàn",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kinh tế thị trường làm chệch hướng xã hội chủ nghĩa",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kinh tế thị trường là tiền đề để xây dựng chủ nghĩa xã hội",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-5-157",
+    "id": "16",
+    "chapter": "Chương 5",
+    "question": "Việc thiết lập quan hệ sở hữu cần chú ý tới những khía cạnh nào?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tính hợp pháp của quan hệ sở hữu",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Khía cạnh kinh tế và pháp lý",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Lợi ích của các bên tham gia",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Quyền của chủ sở hữu theo quy định của pháp luật",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-5-158",
+    "id": "17",
+    "chapter": "Chương 5",
+    "question": "Nhân tố nào sau đây KHÔNG ẢNH HƯỞNG đến lợi ích kinh tế?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Trình độ phát triển của lực lượng sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Địa vị của chủ thể kinh tế trong quan hệ sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chính sách phân phối thu nhập của nhà nước",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Trình độ phát triển của đời sống văn hóa tinh thần",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-5-159",
+    "id": "18",
+    "chapter": "Chương 5",
+    "question": "Luận điểm “Con người tiến các các hoạt động trước hết vì lợi ích của chính mình” phản ánh vai trò nào của lợi ích kinh tế?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lợi ích kinh tế là động lực trực tiếp thúc đẩy các chủ thể hoạt động",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Lợi ích kinh tế là cơ sở để thực hiện các lợi ích khác",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Đảm bảo lợi ích kinh tế là cơ sở cho sự ổn định chính trị xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Đảm bảo được lợi ích kinh tế là cơ sở để nâng cao đời sống tinh thần",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-5-160",
+    "id": "19",
+    "chapter": "Chương 5",
+    "question": "Nội dung kinh tế của sở hữu biểu hiện ở?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Giá trị vật chất và giá trị tinh thần thu được",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Địa vị xã hội của chủ thể sở hữu",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Của cải vật chất và tinh thần mà chủ thể sở hữu được hưởng",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lợi ích kinh tế mà các chủ thể được thụ hưởng",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-5-161",
+    "id": "20",
+    "chapter": "Chương 5",
+    "question": "Yếu tố có ý nghĩa quyết định đảm bảo định hướng xã hội chủ nghĩa cho nền kinh tế thị trường ở Việt Nam là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Vai trò điều tiết của Nhà nước pháp quyền xã hội chủ nghĩa dưới sự lãnh đạo của Đảng Cộng sản",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Sự hợp tác và hỗ trợ từ các nước trong hệ thống xã hội chủ nghĩa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Phát triển nền kinh tế nhiều thành phần và hội nhập kinh tế quốc tế",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ngân sách Nhà Nước phải đủ mạnh để đẩy mạnh thực hiện các chính sách phúc lợi xã hội",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-5-162",
+    "id": "21",
+    "chapter": "Chương 5",
+    "question": "Luận điểm “Ở đâu không có lợi ích chung thì ở đó không thể có sự thống nhất về mục đích và cũng không thể có sự thống nhất về hành động được” phản ánh khía cạnh nào của lợi ích kinh tế?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Nội dung của lợi ích kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phương thức thực hiện lợi ích kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hình thức của lợi ích kinh tế",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Vai trò, tác động của lợi ích kinh tế",
+        "isCorrect": true
+      }
+    ],
+    "answerKey": "D"
+  },
+  {
+    "uid": "ch-ng-5-163",
+    "id": "22",
+    "chapter": "Chương 5",
+    "question": "Đặc trưng quan trọng phản ánh định hướng XHCN trong nền KTTT của nước ta là:",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phân phối công bằng các yếu tố đầu vào và đầu ra",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Đảm bảo cho nền kinh tế hoạt động có hiệu quả",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Gắn tăng trưởng kinh tế với công bằng xã hội",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Nhà nước quản lý can thiệp khắc phục những khuyết tật của thị trường",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-5-164",
+    "id": "23",
+    "chapter": "Chương 5",
+    "question": "Trong các hình thức lợi ích kinh tế, lợi ích nào là cơ sở là nền tảng cho các lợi ích khác?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lợi ích xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lợi ích cá nhân",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Lợi ích cá nhân và lợi ích xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lợi ích nhóm",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-5-165",
+    "id": "24",
+    "chapter": "Chương 5",
+    "question": "Trong các hình thức lợi ích kinh tế sau, lợi ích nào đóng vai trò định hướng cho các quan hệ lợi ích khác?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lợi ích xã hội",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Lợi ích cá nhân",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lợi ích nhóm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lợi ích cá nhân và lợi ích nhóm",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-5-166",
+    "id": "25",
+    "chapter": "Chương 5",
+    "question": "Quan điểm “Kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là mô hình kinh tế tổng quát của thời kỳ quá độ lên chủ nghĩa xã hội ở nước ta” được khẳng định tại Đại hội Đảng lần thứ mấy?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Đại hội Đảng lần thứ IX",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Đại hội Đảng lần thứ VI",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Đại hội Đảng lần thứ VII",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Đại hội Đảng lần thứ VIII",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-5-167",
+    "id": "26",
+    "chapter": "Chương 5",
+    "question": "Chọn ý KHÔNG ĐÚNG về tính tất yếu khách quan của nhiều hình thức phân phối thu nhập trong nền kinh tế thị trường Việt Nam hiện nay?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Do yêu cầu khách quan tồn tại nhiều hình thức sở hữu về tư liệu sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Do trình độ phát triển của LLSX còn thấp kém, phải huy động mọi nguồn lực cho sản xuất",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Do yêu cầu đảm bảo tính công bằng xã hội trong sử dụng các nguồn lực kinh tế.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Do định hướng phát triển xã hội chủ nghĩa",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-5-168",
+    "id": "27",
+    "chapter": "Chương 5",
+    "question": "Nhóm lợi ích là gì?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Các cá nhân, tổ chức hoạt động cùng ngành, cùng lĩnh vực, quan hệ trao đổi với nhau",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Các cá nhân, tổ chức hoạt động trong cùng ngành, cùng lĩnh vực, liên kết với nhau trong hành động để thực hiện tốt hơn lợi ích riêng",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Các cá nhân, tổ chức hoạt động trong các ngành, các lĩnh vực khác nhau nhưng có mối liên hệ với nhau trong hành động",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Các cá nhân, tổ chức hoạt động trong cùng ngành, cùng lĩnh vực, liên kết với nhau trong hành động để thực hiện tốt hơn lợi ích chung của nhóm",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "B"
+  },
+  {
+    "uid": "ch-ng-5-169",
+    "id": "28",
+    "chapter": "Chương 5",
+    "question": "Phương thức thực hiện lợi ích kinh tế trong điều kiện KTTT định hướng XHCN. Chọn đáp án sai?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Theo nguyên tắc phân phối",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Theo chính sách nhà nước",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Theo vai trò của các tổ chức xã hội",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Theo nguyên tắc thị trường",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  },
+  {
+    "uid": "ch-ng-5-170",
+    "id": "29",
+    "chapter": "Chương 5",
+    "question": "Đặc điểm của quan hệ lợi ích kinh tế trong nền kinh tế thị trường định hướng xã hội chủ nghĩa",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lợi ích kinh tế của giai cấp thống trị hoàn toàn đối lập với lợi ích kinh tế của giai cấp bị trị",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Các quan hệ lợi ích kinh tế thống nhất với nhau, thực hiện quan hệ lợi ích này là cơ sở để thực hiện các quan hệ lợi ích kinh tế khác",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Các quan hệ lợi ích kinh tế vừa thống nhất, vừa mâu thuẫn với nhau",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Các quan hệ lợi ích kinh tế mâu thuẫn với nhau, chủ thể này thu được lợi ích kinh tế thì chủ thể khác sẽ bị thiệt hại lợi ích kinh tế",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "C"
+  },
+  {
+    "uid": "ch-ng-5-171",
+    "id": "30",
+    "chapter": "Chương 5",
+    "question": "Nhận định nào sau đây không đúng về thực hiện “công bằng trong phân phối thu nhập”?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phần thu nhập của mỗi người phải luôn luôn bằng nhau",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Công bằng tương ứng với mức độ đóng góp trong việc tạo ra thu nhập",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Công bằng về mức thu nhập mà mỗi chủ thể nhận được",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Công bằng về cơ hội tiếp cận các nguồn lực của xã hội",
+        "isCorrect": false
+      }
+    ],
+    "answerKey": "A"
+  }
+]

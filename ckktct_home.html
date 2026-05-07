@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ôn tập Cải Kinh Tế Chính Trị</title>
+    <link rel="stylesheet" href="./ckktct.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <span class="badge">Ôn tập Cải Kinh Tế Chính Trị</span>
+      <h1>Chọn cách ôn tập phù hợp.</h1>
+      <p>
+        Bạn có thể học theo chương (xem đầy đủ câu hỏi + đáp án đúng), hoặc luyện phản xạ bằng chế độ trắc nghiệm random.
+        Dữ liệu được lấy từ file <span class="muted">Cải kinh tế chính trị.json</span> (đáp án đúng là đáp án in đậm trong doc).
+      </p>
+
+      <section class="grid">
+        <a class="card" href="./ckktct_list.html">
+          <span class="card-kicker list">Danh sách</span>
+          <h2>Học theo chương</h2>
+          <p>Xem đầy đủ câu hỏi và đáp án đúng theo từng chương: Chương 1, 2, 3, …, Kiểm tra…</p>
+          <div class="meta">Phù hợp khi học theo chủ đề</div>
+        </a>
+
+        <a class="card" href="./ckktct_quiz.html">
+          <span class="card-kicker quiz">Trắc nghiệm</span>
+          <h2>Quiz random để tự luyện</h2>
+          <p>Chọn chương hoặc “tất cả”, random câu hỏi, chọn đáp án và xem đúng/sai ngay.</p>
+          <div class="meta">Phù hợp khi luyện phản xạ</div>
+        </a>
+      </section>
+
+      <div class="panel" style="margin-top:16px">
+        <div class="row">
+          <span class="muted"><b>Lưu ý</b>: để load JSON bằng <code>fetch</code>, bạn nên mở bằng server local.</span>
+        </div>
+        <div class="row" style="margin-top:10px">
+          <code class="muted">py -m http.server 5500</code>
+          <span class="muted">→ rồi mở <code>http://localhost:5500/ckktct_home.html</code></span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+

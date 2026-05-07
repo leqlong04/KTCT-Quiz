@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Quiz random | Cải Kinh Tế Chính Trị</title>
+    <link rel="stylesheet" href="./ckktct.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <div class="topbar">
+        <div>
+          <span class="badge">Trắc nghiệm random</span>
+          <h1 style="margin:12px 0 6px">Luyện phản xạ nhanh</h1>
+          <p style="margin:0">Chọn chương hoặc tất cả, random câu hỏi, chấm điểm ngay.</p>
+        </div>
+        <div class="row">
+          <a class="btn" href="./ckktct_home.html">Trang chủ</a>
+          <a class="btn good" href="./ckktct_list.html">Xem danh sách</a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="row">
+          <label for="chapterSel" class="muted"><b>Chương</b></label>
+          <select id="chapterSel"></select>
+          <label for="countSel" class="muted"><b>Số câu</b></label>
+          <input id="countSel" type="number" min="1" value="10" style="width:110px" />
+          <button class="btn primary" id="btnStart">Bắt đầu</button>
+          <button class="btn" id="btnReset">Reset</button>
+          <span class="muted" id="stats"></span>
+        </div>
+      </div>
+
+      <div id="quiz"></div>
+    </main>
+
+    <script>
+      const DATA_URL = "./Cải kinh tế chính trị.json";
+      const chapterSel = document.getElementById("chapterSel");
+      const countSel = document.getElementById("countSel");
+      const btnStart = document.getElementById("btnStart");
+      const btnReset = document.getElementById("btnReset");
+      const quiz = document.getElementById("quiz");
+      const stats = document.getElementById("stats");
+
+      function escapeHtml(s) {
+        return String(s)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      function uniqueChapters(items) {
+        const map = new Map();
+        for (const it of items) map.set(it.chapter, true);
+        const chapters = Array.from(map.keys());
+        const order = (c) => {
+          const m = /chương\s*(\d+)/i.exec(c);
+          if (m) return [0, Number(m[1])];
+          if (/kiểm\s*tra/i.test(c)) return [1, 9999];
+          return [2, 10000];
+        };
+        chapters.sort((a, b) => {
+          const [ga, na] = order(a);
+          const [gb, nb] = order(b);
+          if (ga !== gb) return ga - gb;
+          if (na !== nb) return na - nb;
+          return a.localeCompare(b, "vi");
+        });
+        return chapters;
+      }
+
+      function shuffle(arr) {
+        const a = arr.slice();
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+
+      function pickRandom(arr, n) {
+        return shuffle(arr).slice(0, Math.max(0, Math.min(n, arr.length)));
+      }
+
+      function getCorrectLabels(q) {
+        return (q.choices || []).filter((c) => c.isCorrect).map((c) => c.label);
+      }
+
+      function renderQuestionCard(q, idx, total, state) {
+        const choices = q.choices || [];
+        const correct = new Set(getCorrectLabels(q));
+        const selected = state.selected[q.uid];
+        const revealed = state.revealed[q.uid] === true;
+
+        const canGrade = selected != null && correct.size > 0;
+        const isCorrect = canGrade ? correct.has(selected) && correct.size === 1 : false;
+
+        stats.innerHTML = `— Câu ${idx + 1}/${total} • Đúng: <b>${state.score}</b>`;
+
+        quiz.innerHTML = `
+          <div class="qcard">
+            <div class="muted"><b>${escapeHtml(q.chapter)}</b></div>
+            <div class="qtitle" style="margin-top:6px">${escapeHtml(q.question)}</div>
+            <div class="choices">
+              ${choices
+                .map((c) => {
+                  const checked = selected === c.label ? "checked" : "";
+                  let cls = "choice";
+                  if (revealed) {
+                    if (c.isCorrect) cls += " correct";
+                    else if (selected === c.label && !c.isCorrect) cls += " wrong";
+                  }
+                  return `
+                    <label class="${cls}">
+                      <input type="radio" name="ans" value="${escapeHtml(c.label)}" ${checked}/>
+                      <div><b>${escapeHtml(c.label)}.</b> ${escapeHtml(c.text)}</div>
+                    </label>
+                  `;
+                })
+                .join("")}
+            </div>
+            <div class="hr"></div>
+            <div class="row">
+              <button class="btn good" id="btnCheck" ${selected == null ? "disabled" : ""}>Chấm</button>
+              <button class="btn" id="btnNext">${idx + 1 === total ? "Kết thúc" : "Câu tiếp"}</button>
+              <span class="muted" id="msg"></span>
+            </div>
+          </div>
+        `;
+
+        quiz.querySelectorAll('input[name="ans"]').forEach((el) => {
+          el.addEventListener("change", (ev) => {
+            state.selected[q.uid] = ev.target.value;
+          });
+        });
+
+        const msg = document.getElementById("msg");
+        document.getElementById("btnCheck").addEventListener("click", () => {
+          state.revealed[q.uid] = true;
+          const sel = state.selected[q.uid];
+          const cset = new Set(getCorrectLabels(q));
+          if (cset.size !== 1) {
+            msg.innerHTML = `<span class="muted">Câu này không có đúng 1 đáp án đúng (không chấm điểm).</span>`;
+          } else if (cset.has(sel)) {
+            if (!state.graded[q.uid]) {
+              state.score += 1;
+              state.graded[q.uid] = true;
+            }
+            msg.innerHTML = `<span style="color:var(--accent2)"><b>Đúng</b></span>`;
+          } else {
+            if (!state.graded[q.uid]) state.graded[q.uid] = true;
+            msg.innerHTML = `<span style="color:var(--danger)"><b>Sai</b></span>`;
+          }
+          renderQuestionCard(q, idx, total, state);
+        });
+
+        document.getElementById("btnNext").addEventListener("click", () => {
+          state.idx += 1;
+          if (state.idx >= total) {
+            renderDone(total, state);
+          } else {
+            renderQuestionCard(state.questions[state.idx], state.idx, total, state);
+          }
+        });
+      }
+
+      function renderDone(total, state) {
+        quiz.innerHTML = `
+          <div class="panel">
+            <div class="qtitle">Hoàn thành</div>
+            <p style="margin-top:8px">Điểm của bạn: <b>${state.score}</b> / ${total} (chỉ chấm những câu có đúng 1 đáp án đúng).</p>
+            <div class="row">
+              <button class="btn primary" id="btnAgain">Làm bộ khác</button>
+              <a class="btn" href="./ckktct_list.html">Xem danh sách</a>
+            </div>
+          </div>
+        `;
+        stats.innerHTML = `— Hoàn thành • Đúng: <b>${state.score}</b>`;
+        document.getElementById("btnAgain").addEventListener("click", () => startQuiz(state.allItems));
+      }
+
+      function startQuiz(allItems) {
+        const chapter = chapterSel.value;
+        const pool = chapter === "__all__" ? allItems : allItems.filter((x) => x.chapter === chapter);
+        // When user selects a chapter, default to "all questions in that chapter".
+        // Still keep a safety clamp in case the input gets edited.
+        const n = Math.max(1, Math.min(pool.length, Number(countSel.value || pool.length || 10)));
+        const picked = pickRandom(pool, n);
+
+        localStorage.setItem("ckktct.quiz.chapter", chapter);
+        localStorage.setItem("ckktct.quiz.count", String(n));
+
+        const state = {
+          allItems,
+          questions: picked,
+          idx: 0,
+          score: 0,
+          selected: {},
+          revealed: {},
+          graded: {},
+        };
+
+        if (picked.length === 0) {
+          quiz.innerHTML = `<div class="panel"><b>Không có câu hỏi</b> trong chương này.</div>`;
+          stats.textContent = "";
+          return;
+        }
+        renderQuestionCard(picked[0], 0, picked.length, state);
+      }
+
+      async function init() {
+        const res = await fetch(DATA_URL, { cache: "no-store" });
+        if (!res.ok) throw new Error("Không load được JSON: " + res.status);
+        const items = await res.json();
+
+        const chapters = uniqueChapters(items);
+        chapterSel.innerHTML =
+          `<option value="__all__">Tất cả chương</option>` +
+          chapters.map((c) => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join("");
+
+        function poolSize() {
+          const chapter = chapterSel.value;
+          const pool = chapter === "__all__" ? items : items.filter((x) => x.chapter === chapter);
+          return pool.length;
+        }
+
+        function syncCountToChapter() {
+          const size = poolSize();
+          countSel.min = "1";
+          countSel.max = String(Math.max(1, size));
+          countSel.value = String(Math.max(1, size));
+        }
+
+        chapterSel.value = localStorage.getItem("ckktct.quiz.chapter") || "__all__";
+        // Always pick full chapter size when changing chapter
+        chapterSel.addEventListener("change", () => {
+          syncCountToChapter();
+          localStorage.setItem("ckktct.quiz.chapter", chapterSel.value);
+        });
+
+        // First load: if user had a saved chapter, set count to that chapter's size
+        syncCountToChapter();
+
+        btnStart.addEventListener("click", () => startQuiz(items));
+        btnReset.addEventListener("click", () => {
+          localStorage.removeItem("ckktct.quiz.chapter");
+          localStorage.removeItem("ckktct.quiz.count");
+          chapterSel.value = "__all__";
+          syncCountToChapter();
+          quiz.innerHTML = "";
+          stats.textContent = "";
+        });
+      }
+
+      init().catch((e) => {
+        quiz.innerHTML = `<div class="panel"><b>Lỗi:</b> ${escapeHtml(e.message)}<div class="hr"></div><div class="muted">Gợi ý: chạy server local: <code>py -m http.server 5500</code></div></div>`;
+      });
+    </script>
+  </body>
+</html>
+

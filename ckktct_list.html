@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Học theo chương | Cải Kinh Tế Chính Trị</title>
+    <link rel="stylesheet" href="./ckktct.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <div class="topbar">
+        <div>
+          <span class="badge">Danh sách theo chương</span>
+          <h1 style="margin:12px 0 6px">Ôn tập có hệ thống</h1>
+          <p style="margin:0">Chọn chương để xem toàn bộ câu hỏi và đáp án đúng (được in đậm trong doc).</p>
+        </div>
+        <div class="row">
+          <a class="btn" href="./ckktct_home.html">Trang chủ</a>
+          <a class="btn good" href="./ckktct_quiz.html">Đi quiz</a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="row">
+          <label for="chapterSel" class="muted"><b>Chương</b></label>
+          <select id="chapterSel"></select>
+          <button class="btn primary" id="btnRender">Xem</button>
+          <span class="muted" id="stats"></span>
+        </div>
+      </div>
+
+      <div id="content"></div>
+    </main>
+
+    <script>
+      const DATA_URL = "./Cải kinh tế chính trị.json";
+      const chapterSel = document.getElementById("chapterSel");
+      const btnRender = document.getElementById("btnRender");
+      const content = document.getElementById("content");
+      const stats = document.getElementById("stats");
+
+      function escapeHtml(s) {
+        return String(s)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      function uniqueChapters(items) {
+        const map = new Map();
+        for (const it of items) map.set(it.chapter, true);
+        const chapters = Array.from(map.keys());
+        const order = (c) => {
+          const m = /chương\s*(\d+)/i.exec(c);
+          if (m) return [0, Number(m[1])];
+          if (/kiểm\s*tra/i.test(c)) return [1, 9999];
+          return [2, 10000];
+        };
+        chapters.sort((a, b) => {
+          const [ga, na] = order(a);
+          const [gb, nb] = order(b);
+          if (ga !== gb) return ga - gb;
+          if (na !== nb) return na - nb;
+          return a.localeCompare(b, "vi");
+        });
+        return chapters;
+      }
+
+      function getCorrectText(q) {
+        const correct = (q.choices || []).filter((c) => c.isCorrect);
+        if (correct.length === 0) return "<span class='muted'>(không xác định)</span>";
+        if (correct.length === 1) return `<b>${escapeHtml(correct[0].label)}.</b> ${escapeHtml(correct[0].text)}`;
+        return correct.map((c) => `<b>${escapeHtml(c.label)}.</b> ${escapeHtml(c.text)}`).join("<br/>");
+      }
+
+      function renderChapter(chapter, items) {
+        const list = items.filter((x) => x.chapter === chapter);
+        stats.innerHTML = `— ${list.length} câu`;
+        content.innerHTML = `
+          <div class="chapter-group">
+            <h3>${escapeHtml(chapter)}</h3>
+            ${list
+              .map((q, idx) => {
+                const num = idx + 1;
+                return `
+                  <details>
+                    <summary>${num}. ${escapeHtml(q.question)}</summary>
+                    <div class="hr"></div>
+                    <div class="muted"><b>Đáp án đúng</b></div>
+                    <div style="margin-top:6px">${getCorrectText(q)}</div>
+                    <div class="hr"></div>
+                    <div class="muted"><b>Tất cả đáp án</b></div>
+                    <div style="margin-top:6px">
+                      ${(q.choices || [])
+                        .map((c) => {
+                          const tag = c.isCorrect ? " <span class='muted'>(đúng)</span>" : "";
+                          return `<div><b>${escapeHtml(c.label)}.</b> ${escapeHtml(c.text)}${tag}</div>`;
+                        })
+                        .join("")}
+                    </div>
+                  </details>
+                `;
+              })
+              .join("")}
+          </div>
+        `;
+      }
+
+      async function init() {
+        const res = await fetch(DATA_URL, { cache: "no-store" });
+        if (!res.ok) throw new Error("Không load được JSON: " + res.status);
+        const items = await res.json();
+
+        const chapters = uniqueChapters(items);
+        chapterSel.innerHTML =
+          `<option value="__all__">Tất cả chương</option>` +
+          chapters.map((c) => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join("");
+
+        const saved = localStorage.getItem("ckktct.chapter") || "__all__";
+        chapterSel.value = saved;
+
+        function render() {
+          localStorage.setItem("ckktct.chapter", chapterSel.value);
+          content.innerHTML = "";
+          stats.textContent = "";
+          if (chapterSel.value === "__all__") {
+            const allCount = items.length;
+            stats.innerHTML = `— ${allCount} câu`;
+            for (const c of chapters) {
+              const block = document.createElement("div");
+              block.innerHTML = `<div class="chapter-group"><h3>${escapeHtml(c)}</h3></div>`;
+              content.appendChild(block);
+              // Render each chapter as compact list with details
+              const list = items.filter((x) => x.chapter === c);
+              const holder = document.createElement("div");
+              holder.innerHTML = list
+                .map((q, idx) => {
+                  const num = idx + 1;
+                  return `
+                    <details>
+                      <summary>${num}. ${escapeHtml(q.question)}</summary>
+                      <div class="hr"></div>
+                      <div class="muted"><b>Đáp án đúng</b></div>
+                      <div style="margin-top:6px">${getCorrectText(q)}</div>
+                    </details>
+                  `;
+                })
+                .join("");
+              content.appendChild(holder);
+            }
+          } else {
+            renderChapter(chapterSel.value, items);
+          }
+        }
+
+        btnRender.addEventListener("click", render);
+        chapterSel.addEventListener("change", render);
+        render();
+      }
+
+      init().catch((e) => {
+        content.innerHTML = `<div class="panel"><b>Lỗi:</b> ${escapeHtml(e.message)}<div class="hr"></div><div class="muted">Gợi ý: chạy server local: <code>py -m http.server 5500</code></div></div>`;
+      });
+    </script>
+  </body>
+</html>
+
