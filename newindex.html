@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ôn Tập Kinh Tế Chính Trị Mác–Lênin</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0f1a;
+    --surface: #13162a;
+    --surface2: #1b1f38;
+    --border: #2a2f55;
+    --accent: #f0c040;
+    --accent2: #e8834a;
+    --text: #e8eaf6;
+    --text-muted: #7880b0;
+    --correct: #3ecf6c;
+    --wrong: #e05c6b;
+    --radius: 14px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    background-image: radial-gradient(ellipse at 20% 10%, #1e2450 0%, transparent 50%),
+                      radial-gradient(ellipse at 80% 90%, #1a1230 0%, transparent 50%);
+  }
+
+  /* Header */
+  header {
+    padding: 40px 24px 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #000;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    border-radius: 99px;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 900;
+    background: linear-gradient(135deg, #fff 30%, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* Chapter tabs */
+  .chapter-nav {
+    display: flex;
+    gap: 8px;
+    padding: 0 24px 24px;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .chapter-btn {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 8px 18px;
+    border-radius: 99px;
+    font-size: 13px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+  }
+
+  .chapter-btn:hover, .chapter-btn.active {
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #000;
+    border-color: transparent;
+    font-weight: 700;
+  }
+
+  /* Stats bar */
+  .stats-bar {
+    max-width: 900px;
+    margin: 0 auto 24px;
+    padding: 0 24px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .stat-pill {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 99px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .stat-pill .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+  }
+
+  .dot-progress { background: var(--accent); }
+  .dot-correct { background: var(--correct); }
+  .dot-wrong { background: var(--wrong); }
+
+  .progress-track {
+    flex: 1;
+    min-width: 160px;
+    height: 6px;
+    background: var(--surface2);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    border-radius: 99px;
+    transition: width 0.4s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  /* Question card */
+  .quiz-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  .question-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 0.3s ease;
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .question-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+  }
+
+  .q-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .q-number {
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #000;
+    font-weight: 800;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 99px;
+  }
+
+  .q-chapter {
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .q-text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--text);
+    margin-bottom: 22px;
+  }
+
+  /* Options */
+  .options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .option-btn {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    color: var(--text);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 1.5;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    background: rgba(240,192,64,0.06);
+    transform: translateX(3px);
+  }
+
+  .option-letter {
+    min-width: 24px; height: 24px;
+    border-radius: 50%;
+    background: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 12px;
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+
+  .option-btn.selected .option-letter {
+    background: var(--accent);
+    color: #000;
+  }
+
+  .option-btn.correct {
+    background: rgba(62,207,108,0.1);
+    border-color: var(--correct);
+    color: #fff;
+  }
+
+  .option-btn.correct .option-letter {
+    background: var(--correct);
+    color: #000;
+  }
+
+  .option-btn.wrong {
+    background: rgba(224,92,107,0.1);
+    border-color: var(--wrong);
+    color: #fff;
+  }
+
+  .option-btn.wrong .option-letter {
+    background: var(--wrong);
+    color: #fff;
+  }
+
+  .option-btn:disabled { cursor: default; }
+
+  /* Result badge per question */
+  .result-badge {
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    display: none;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .result-badge.show { display: flex; }
+
+  .result-badge.correct-msg {
+    background: rgba(62,207,108,0.12);
+    border: 1px solid rgba(62,207,108,0.3);
+    color: var(--correct);
+  }
+
+  .result-badge.wrong-msg {
+    background: rgba(224,92,107,0.12);
+    border: 1px solid rgba(224,92,107,0.3);
+    color: #ff8a96;
+  }
+
+  /* Action buttons */
+  .actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #000;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 0.3px;
+  }
+
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(240,192,64,0.25); }
+  .btn-primary:active { transform: translateY(0); }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--text-muted);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 28px;
+    border: 1px solid var(--border);
+    border-radius: 99px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn-secondary:hover { border-color: var(--text-muted); color: var(--text); }
+
+  /* Final result panel */
+  #result-panel {
+    display: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 48px 32px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 0.4s ease;
+  }
+
+  #result-panel::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+  }
+
+  .result-score {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .result-label {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+  }
+
+  .result-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+  }
+
+  .result-stat {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 28px;
+    min-width: 120px;
+  }
+
+  .result-stat .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .result-stat .lbl {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+  }
+
+  .correct-num { color: var(--correct); }
+  .wrong-num { color: var(--wrong); }
+
+  .result-msg {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: var(--text);
+  }
+
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+  }
+
+  /* Loader */
+  #quiz-area { position: relative; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.04); box-shadow: 0 0 20px rgba(240,192,64,0.5); }
+  }
+
+  @media (max-width: 600px) {
+    .question-card { padding: 20px; }
+    .q-text { font-size: 14px; }
+    .option-btn { font-size: 13px; padding: 12px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-badge">Ôn Thi Cuối Kỳ</div>
+  <h1>Kinh Tế Chính Trị Mác–Lênin</h1>
+  <p class="subtitle">Chọn chương và trả lời ngẫu nhiên để ôn luyện hiệu quả</p>
+</header>
+
+<div class="chapter-nav" id="chapterNav"></div>
+
+<div class="quiz-container">
+  <div class="stats-bar" id="statsBar" style="display:none">
+    <div class="stat-pill"><span class="dot dot-progress"></span><span id="statProgress">0/0</span></div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <div class="stat-pill"><span class="dot dot-correct"></span><span id="statCorrect">0 Đúng</span></div>
+    <div class="stat-pill"><span class="dot dot-wrong"></span><span id="statWrong">0 Sai</span></div>
+  </div>
+
+  <div id="quiz-area"></div>
+  <div id="result-panel">
+    <div class="result-score" id="finalScore"></div>
+    <div class="result-label">điểm số của bạn</div>
+    <div class="result-grid">
+      <div class="result-stat"><div class="num correct-num" id="finalCorrect"></div><div class="lbl">Câu Đúng</div></div>
+      <div class="result-stat"><div class="num wrong-num" id="finalWrong"></div><div class="lbl">Câu Sai</div></div>
+      <div class="result-stat"><div class="num" id="finalTotal"></div><div class="lbl">Tổng Câu</div></div>
+    </div>
+    <div class="result-msg" id="finalMsg"></div>
+    <div class="actions" style="justify-content:center">
+      <button class="btn-primary" onclick="restartQuiz()">🔀 Làm Lại (Ngẫu Nhiên)</button>
+      <button class="btn-secondary" onclick="showAllAnswers()">📋 Xem Tất Cả Đáp Án</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const CHAPTERS = {
+  "Chương 1": [
+    { q: "Để nghiên cứu kinh tế - chính trị Mác - Lênin, phương pháp nào quan trọng nhất?", opts: ["Mô hình hoá","Trừu tượng hoá khoa học","Phân tích và tổng hợp","Điều tra thống kê"], ans: 1 },
+    { q: "Phát biểu nào sau đây là sai về đối tượng nghiên cứu của KTCT?", opts: ["Đối tượng nghiên cứu của KTCT là quan hệ thuộc một lĩnh vực","Nghiên cứu KTCT phải đặt trong mối liên hệ biện chứng với LLSX và kiến trúc thượng tầng","KTCT không nghiên cứu biểu hiện kỹ thuật của sự sản xuất và trao đổi","Đối tượng nghiên cứu của KTCT là quan hệ xã hội của sản xuất và trao đổi"], ans: 0 },
+    { q: "Chủ nghĩa trọng nông nghiên cứu lĩnh vực gì?", opts: ["Lưu thông","Sản xuất","Phân phối","Cung cầu"], ans: 1 },
+    { q: "Học thuyết kinh tế nào của C.Mác được coi là nền tảng tư tưởng cho công nhân và nhân dân lao động?", opts: ["Học thuyết giá trị thặng dư","Học thuyết tái sản xuất tư bản xã hội","Học thuyết tích luỹ tư sản","Học thuyết giá trị lao động"], ans: 0 },
+    { q: "Hoạt động nào của con người được coi là cơ bản nhất và là cơ sở của đời sống xã hội?", opts: ["Hoạt động sản xuất của cải vật chất","Hoạt động nghệ thuật, thể thao","Hoạt động chính trị","Hoạt động khoa học"], ans: 0 },
+    { q: "Mục đích nghiên cứu KTCT Mác - Lênin. Chọn ý SAI:", opts: ["Phát hiện ra các quy luật kinh tế","Cung cấp cơ sở khoa học góp phần thúc đẩy trình độ văn minh","Vận dụng các quy luật để giải quyết hài hòa các quan hệ lợi ích","Tìm ra mối liên hệ giữa quan hệ sản xuất và kiến trúc thượng tầng tương ứng"], ans: 3 },
+    { q: "Để xem xét, giải thích nguồn gốc sâu xa của các hiện tượng kinh tế xã hội phải xuất phát từ:", opts: ["Từ truyền thống lịch sử","Từ ý thức xã hội","Từ hệ tư tưởng của giai cấp thống trị","Từ các hoạt động kinh tế"], ans: 3 },
+    { q: "Chủ nghĩa trọng thương nghiên cứu lĩnh vực gì?", opts: ["Sản xuất","Tiêu dùng","Lưu thông","Phân phối"], ans: 2 },
+    { q: "Thuật ngữ 'Kinh tế - chính trị' được sử dụng lần đầu tiên vào năm nào?", opts: ["1815","1615","1715","1651"], ans: 1 },
+    { q: "Chức năng phương pháp luận của kinh tế - chính trị Mác - Lênin thể hiện ở:", opts: ["Vận dụng vào các hoạt động thực tiễn lao động cũng như quản trị quốc gia","Thấy sự gắn kết giữa KTCT với nội hàm của các khái niệm kinh tế chuyên ngành","Góp phần xây dựng lý tưởng khoa học","Làm phong phú tri thức, tư duy lý luận các cá nhân về các quan hệ kinh tế"], ans: 1 },
+    { q: "Chức năng nhận thức của kinh tế - chính trị Mác - Lênin là nhằm:", opts: ["Phát hiện bản chất của các hiện tượng và quy luật kinh tế","Nghiên cứu mối quan hệ giữa quan hệ sản xuất với lực lượng sản xuất","Tìm ra các quy luật kinh tế chi phối sự vận động của sản xuất và trao đổi","Cung cấp hệ thống tri thức mở, những phạm trù kinh tế cơ bản"], ans: 3 },
+    { q: "Thuật ngữ chỉ mối liên hệ chặt chẽ giữa quy luật kinh tế với khía cạnh thực tiễn của hoạt động chính trị gọi là?", opts: ["Kinh tế chính trị","Kinh tế học","Kinh tế công","Kinh tế - xã hội"], ans: 0 },
+    { q: "Hệ thống lý luận kinh tế đầu tiên nghiên cứu về nền sản xuất tư bản chủ nghĩa là?", opts: ["Kinh tế chính trị Mác - Lênin","Chủ nghĩa trọng thương","Chủ nghĩa trọng nông","Kinh tế chính trị tư sản cổ điển"], ans: 3 },
+    { q: "Người sáng lập ra chủ nghĩa Mác là:", opts: ["Các Mác","C.Mác và Ph.Ăng ghen","C.Mác và V.I. Lênin","C.Mác, Ph. Ăng ghen và V.I. Lênin"], ans: 1 },
+    { q: "Trừu tượng hoá khoa học là:", opts: ["Đi từ những hiện tượng ngẫu nhiên để rút ra bản chất bên trong","Gạt bỏ các hiện tượng ngẫu nhiên, bề ngoài, giữ lại những mối liên hệ phổ biến mang tính bản chất","Gạt bỏ những bộ phận phức tạp của đối tượng nghiên cứu","Quá trình đi từ cụ thể đến trừu tượng và ngược lại"], ans: 1 },
+    { q: "Chức năng tư tưởng của kinh tế - chính trị Mác–Lênin thể hiện ở:", opts: ["Định vị vai trò, trách nhiệm của các cá nhân","Xây dựng nền tảng tư tưởng người lao động","Là cơ sở khoa học để giải quyết hài hòa các quan hệ lợi ích","Cải thiện đời sống vật chất và tinh thần của toàn xã hội"], ans: 1 },
+    { q: "Ai là người đầu tiên đưa ra khái niệm 'Kinh tế - chính trị'?", opts: ["William Petty","Francois Quesney","Tomas Mun","Antoine de Montchrestien"], ans: 3 },
+    { q: "Đối tượng nghiên cứu của kinh tế - chính trị Mác - Lênin là:", opts: ["Quan hệ xã hội của sản xuất và trao đổi","Quan hệ trao đổi giữa người với người trong sản xuất","Quan hệ kỹ thuật của sự sản xuất và trao đổi","Quan hệ giữa các quá trình sản xuất, phân phối, trao đổi, tiêu dùng"], ans: 0 },
+    { q: "Kinh tế - chính trị Mác - Lênin đã kế thừa và phát triển trực tiếp những thành tựu của:", opts: ["Chủ nghĩa trọng thương","Kinh tế - chính trị tầm thường","Kinh tế chính trị tư sản cổ điển","Chủ nghĩa trọng nông"], ans: 2 },
+    { q: "Chọn phương án KHÔNG ĐÚNG về quy luật kinh tế và chính sách kinh tế:", opts: ["Chính sách kinh tế luôn phù hợp với các quy luật kinh tế","Quy luật kinh tế hoạt động trong dài hạn, chính sách kinh tế tác động vào nền kinh tế trong ngắn hạn","Chính sách kinh tế là hoạt động chủ quan của nhà nước trên cơ sở nhận thức và vận dụng các quy luật","Quy luật kinh tế là cơ sở của chính sách kinh tế"], ans: 0 },
+    { q: "Kinh tế chính trị Mác Lênin ra đời trong khoảng thời gian nào?", opts: ["Từ nửa đầu thế kỷ XIX (Những năm 40 của thế kỷ XIX)","Từ nửa cuối thế kỷ XVIII đến nửa đầu XIX","Từ thế kỷ XV đến XVII","Từ thế kỷ XVII đến nửa đầu XVIII"], ans: 0 },
+    { q: "Hãy chọn phương án đúng về quy luật kinh tế:", opts: ["Mang tính chủ quan phụ thuộc vào ý muốn của con người","Tồn tại khách quan","Tác động khác nhau trong từng đối tượng cụ thể","Mang tính chủ quan với những động cơ lợi ích khác nhau"], ans: 1 },
+    { q: "Mục đích nghiên cứu của Kinh tế chính trị Mác Lênin là gì?", opts: ["Thúc đẩy sự phát triển của nền kinh tế","Tạo ra sự giàu có, văn minh của xã hội","Cung cấp cơ sở lý luận về sứ mệnh lịch sử của giai cấp công nhân","Nhằm phát hiện ra các quy luật kinh tế chi phối các quan hệ giữa người với người trong sản xuất và trao đổi"], ans: 3 },
+    { q: "Phương pháp nghiên cứu chủ yếu của Kinh tế chính trị Mác Lênin:", opts: ["Cần vận dụng thành thạo phép biện chứng","Phương pháp logic kết hợp lịch sử, thống kê, so sánh","Phương pháp trừu tượng hóa khoa học","Phương pháp duy vật lịch sử"], ans: 2 },
+    { q: "Phương pháp trừu tượng hóa khoa học là gì?", opts: ["Phương pháp lượng hóa để đưa ra các công thức tính toán cụ thể","Phương pháp đi sâu vào nghiên cứu bản chất của sự vật, hiện tượng","Nghiên cứu các sự vật, hiện tượng trong trạng thái vận động và biến đổi không ngừng","Phương pháp nhận ra và gạt bỏ khỏi quá trình nghiên cứu những yếu tố ngẫu nhiên, từ đó nắm được bản chất của sự vật"], ans: 3 },
+    { q: "Kinh tế chính trị Mác Lênin kế thừa các tư tưởng kinh tế của trường phái kinh tế nào?", opts: ["Chủ nghĩa trọng thương","Chủ nghĩa trọng nông","Kinh tế chính trị tư sản Cổ điển Anh","Cả ba trường phái trên"], ans: 2 },
+    { q: "Kinh tế chính trị Mác – Lênin có các chức năng nào?", opts: ["Nhận thức, thực tiễn, tư tưởng, giáo dục","Nhận thức, thực tiễn, tư tưởng, phương pháp luận","Nhận thức, thực tiễn, xã hội, phương pháp luận","Nhận thức, thực tiễn, giáo dục, xã hội"], ans: 1 },
+    { q: "Quy luật kinh tế là những mối liên hệ như thế nào?", opts: ["Không thể phát huy tác dụng thông qua hoạt động kinh tế của con người","Mang tính chủ quan và khách quan","Mang tính khách quan nhưng phụ thuộc vào ý muốn của con người","Phản ánh bản chất, khách quan, lặp đi lặp lại của các hiện tượng và quá trình kinh tế"], ans: 3 }
+  ],
+  "Chương 2": [
+    { q: "Quy luật giá trị là:", opts: ["Quy luật kinh tế của thời kỳ quá độ lên CNXH","Quy luật kinh tế chung của phương thức sản xuất Tư bản chủ nghĩa","Quy luật riêng của CNTB","Quy luật cơ bản của sản xuất và trao đổi hàng hoá"], ans: 3 },
+    { q: "Mục đích của cạnh tranh trong nội bộ ngành là?", opts: ["Giành các điều kiện sản xuất với giá cao nhất","Giành lợi ích tối đa trong việc mua TLSX và bán hàng hóa","Nhằm bán hàng hoá với giá cả có lợi nhất","Tự do di chuyển tư bản từ ngành này sang ngành khác"], ans: 2 },
+    { q: "Khi đồng nội tệ được định giá cao quá mức thì hoạt động xuất nhập khẩu sẽ:", opts: ["Hạn chế nhập khẩu, khuyến khích tiêu dùng hàng nội địa","Khuyến khích cả xuất và nhập khẩu","Hạn chế nhập khẩu, khuyến khích xuất khẩu","Khuyến khích nhập khẩu, hạn chế xuất khẩu"], ans: 3 },
+    { q: "Nhận định nào KHÔNG ĐÚNG về cơ chế thị trường?", opts: ["Là phương thức cơ bản để phân phối và sử dụng các nguồn lực của xã hội","Là hệ thống các quan hệ kinh tế mang đặc tính tự điều chỉnh","Là một không gian cụ thể để người mua và người bán gặp gỡ và trao đổi hàng hóa","Tuân theo các yêu cầu của quy luật kinh tế"], ans: 2 },
+    { q: "Trong các mệnh đề dưới đây, mệnh đề nào KHÔNG ĐÚNG?", opts: ["Quy luật kinh tế là quy luật chủ quan","Quy luật kinh tế là quy luật khách quan","Quy luật kinh tế phát huy tác dụng thông qua các hoạt động của con người","Quy luật kinh tế cũng giống các quy luật trong tự nhiên"], ans: 0 },
+    { q: "Nhận định nào đúng về hậu quả của lạm phát?", opts: ["Tiền lương thực tế tăng","Phân phối lại thu nhập từ người giàu sang người nghèo","Người giữ tiền, người cho vay bị thiệt; người giữ hàng hoá, người đi vay có lợi","Người giữ tiền, người cho vay có lợi; người giữ hàng hoá, người đi vay bị thiệt"], ans: 2 },
+    { q: "Cơ chế thị trường là:", opts: ["Cơ chế điều tiết nền kinh tế mang tính chủ quan","Cơ chế điều tiết nền kinh tế tự phát","Cơ chế thị trường do 'bàn tay hữu hình' chi phối","Cơ chế điều tiết nền kinh tế theo các quy luật kinh tế"], ans: 3 },
+    { q: "Sự hoạt động của quy luật giá trị được biểu hiện:", opts: ["Giá cả xoay quanh giá trị dưới tác động của quy luật cung cầu","Giá cả thị trường xoay quanh giá trị cá biệt của hàng hoá","Giá cả thị trường xoay quanh giá cả sản xuất dưới tác động của quy luật lưu thông","Giá cả thị trường xoay quanh giá cả độc quyền"], ans: 0 },
+    { q: "Trong công thức H-T-H', tiền thực hiện chức năng gì?", opts: ["Phương tiện cất trữ","Phương tiện lưu thông","Phương tiện thanh toán","Tiền tệ thế giới"], ans: 1 },
+    { q: "Nhận định nào đúng nhất về cạnh tranh?", opts: ["Là cuộc đấu tranh giữa những người sản xuất nhằm có được ưu thế trong tiêu thụ","Là sự ganh đua giữa những người sản xuất nhằm có được ưu thế trong sản xuất","Là sự ganh đua giữa các chủ thể kinh tế nhằm có được những ưu thế","Là cuộc đấu tranh giữa những người sản xuất với người tiêu dùng"], ans: 2 },
+    { q: "Nhận định nào sau đây KHÔNG ĐÚNG về dịch vụ?", opts: ["Dịch vụ là hàng hóa có quá trình sử dụng và sản xuất diễn ra đồng thời","Dịch vụ là hàng hóa vô hình","Để có được dịch vụ không cần hao phí sức lao động","Dịch vụ là hàng hóa không thể cất trữ"], ans: 2 },
+    { q: "Trong 5 chức năng của tiền tệ, chức năng nào không đòi hỏi phải có tiền vàng?", opts: ["Phương tiện lưu thông và phương tiện thanh toán","Tiền tệ thế giới và phương tiện cất trữ","Phương tiện cất trữ, Tiền tệ thế giới, Phương tiện thanh toán","Chức năng thước đo giá trị"], ans: 3 },
+    { q: "Lưu thông tiền tệ là gì?", opts: ["Là sự mua bán các quỹ tiền tệ","Là sự vận động của tiền lấy trao đổi hàng hoá làm tiền đề","Là sự vay, cho vay tiền tệ","Là sự di chuyển các quỹ tiền tệ trong nền kinh tế"], ans: 1 },
+    { q: "Thực hiện chức năng tiền tệ thế giới tức là tiền tệ dùng để làm gì?", opts: ["Làm môi giới trung gian cho trao đổi","Để biểu hiện và đo lường giá trị hàng hóa","Để mua và thanh toán quốc tế","Để trả nợ"], ans: 2 },
+    { q: "Vật ngang giá chung xuất hiện trong các hình thái giá trị nào?", opts: ["Hình thái chung và hình thái tiền tệ","Hình thái giá trị giản đơn","Hình thái giá trị mở rộng và hình thái chung","Hình thái giản đơn và hình thái mở rộng"], ans: 0 },
+    { q: "Chọn ý KHÔNG ĐÚNG về sản phẩm và hàng hoá:", opts: ["Mọi hàng hóa đều là kết quả của sản xuất","Mọi sản phẩm đều là hàng hoá","Không phải mọi sản phẩm đều là hàng hoá","Mọi hàng hoá đều là sản phẩm"], ans: 1 },
+    { q: "Bản chất tiền tệ là:", opts: ["Là vàng, bạc","Là hàng hoá đặc biệt đóng vai trò là vật ngang giá chung","Phương tiện để lưu thông hàng hoá và để thanh toán","Thước đo giá trị của hàng hoá"], ans: 1 },
+    { q: "Đối với nhà tư bản, để thu về nhiều lợi nhuận, giá trị cá biệt và giá trị xã hội liên quan với nhau như thế nào?", opts: ["Giá trị cá biệt phải cao hơn giá trị xã hội","Giá trị cá biệt phải nhỏ hơn giá trị xã hội","Giá trị cá biệt không liên quan đến giá trị xã hội","Giá trị cá biệt phải bằng giá trị xã hội"], ans: 1 },
+    { q: "Yêu cầu của quy luật giá trị trong nền sản xuất hàng hóa là gì?", opts: ["Việc sản xuất và trao đổi hàng hóa phải dựa vào hao phí lao động xã hội cần thiết","Việc sản xuất và trao đổi hàng hóa phải dựa vào hao phí lao động cá biệt","Hao phí lao động cá biệt > hao phí lao động xã hội cần thiết","Giá cả thị trường thoát ly, tách rời giá trị thị trường của hàng hóa"], ans: 0 },
+    { q: "Thế nào là cung hàng hoá?", opts: ["Là số lượng hàng hoá xã hội sản xuất ra","Là toàn bộ khả năng cung cấp hàng hoá cho thị trường","Toàn bộ hàng hoá đem bán trên thị trường ở một mức giá nhất định","Là toàn bộ số hàng hoá đem bán trên thị trường"], ans: 2 },
+    { q: "Căn cứ vào vai trò của mỗi yếu tố được trao đổi, thị trường được phân chia thành:", opts: ["Thị trường hàng hóa hữu hình và thị trường hàng hóa vô hình","Thị trường tư liệu tiêu dùng và thị trường tư liệu sản xuất","Thị trường cạnh tranh hoàn hảo và thị trường độc quyền","Thị trường tự do và thị trường có sự điều tiết"], ans: 1 },
+    { q: "Đặc điểm chung của các hàng hóa đặc biệt trong nền kinh tế thị trường?", opts: ["Giá cả do hao phí lao động quyết định","Giá trị không do hao phí lao động quyết định","Giá cả không do hao phí lao động quyết định","Giá trị do hao phí lao động quyết định"], ans: 2 },
+    { q: "Khi lạm phát phi mã xảy ra, hình thức sử dụng tiền nào có lợi nhất?", opts: ["Đầu tư vào sản xuất kinh doanh","Mua hàng hoá hoặc vàng cất giữ","Cất ở nhà","Gửi ngân hàng"], ans: 1 },
+    { q: "Nhận định nào sau đây là sai về nền kinh tế thị trường?", opts: ["Không có sự đa dạng của các chủ thể kinh tế và nhiều hình thức sở hữu","Nhà nước có thể khắc phục một phần các khuyết tật của thị trường","Động lực trực tiếp của các chủ thể sản xuất kinh doanh là lợi ích kinh tế-xã hội","Giá cả được hình thành theo nguyên tắc thị trường"], ans: 0 },
+    { q: "Giá cả của hàng hoá là:", opts: ["Giá tiền đã in trên sản phẩm hoặc người bán quy định","Số tiền người mua phải trả cho người bán","Sự thoả thuận giữa người mua và người bán","Sự biểu hiện bằng tiền của giá trị"], ans: 3 },
+    { q: "Nhận định nào là sai về cạnh tranh trong nội bộ ngành?", opts: ["Đòi hỏi các nhà tư bản phải ra sức cải tiến kỹ thuật, đổi mới công nghệ, tăng năng suất lao động","Sẽ dẫn đến hình thành giá trị thị trường của từng loại hàng hóa","Là cạnh tranh giữa các chủ thể kinh doanh trong một ngành, cùng sản xuất một loại hàng hóa","Có biện pháp là tự do di chuyển tư bản từ ngành này sang ngành khác"], ans: 3 },
+    { q: "Trong các phạm trù kinh tế dưới đây, phạm trù nào được coi là tín hiệu của cơ chế thị trường?", opts: ["Cung - cầu hàng hoá","Sức mua của tiền","Giá cả thị trường","Thông tin thị trường"], ans: 2 },
+    { q: "Nhận định nào sau đây là sai về ưu thế của kinh tế thị trường?", opts: ["Thực hiện phát huy tốt nhất tiềm năng của mọi chủ thể và lợi thế quốc gia","Tạo động lực mạnh mẽ cho sự hình thành ý tưởng mới của các chủ thể kinh tế","Tạo ra phương thức để thỏa mãn tối đa nhu cầu con người, thúc đẩy tiến bộ xã hội","Tự khắc phục được những hiện tượng phân hóa trong xã hội"], ans: 3 },
+    { q: "Chọn ý đúng về quan hệ cung - cầu đối với giá trị, giá cả:", opts: ["Không quyết định đến giá trị và có ảnh hưởng tới giá cả thị trường","Không có ảnh hưởng đến giá trị và giá cả","Không quyết định đến giá cả và có ảnh hưởng đến giá trị","Quyết định giá trị và giá cả hàng hoá"], ans: 0 }
+  ],
+  "Chương 3": [
+    { q: "Nhận xét về GTTD tương đối và GTTD siêu ngạch, ý nào dưới đây là SAI?", opts: ["GTTD tương đối dựa trên tăng NSLĐ xã hội, GTTD siêu ngạch dựa trên tăng NSLĐ cá biệt","Đều dựa trên cơ sở tăng NSLĐ","GTTD siêu ngạch có thể chuyển hoá thành GTTD tương đối","GTTD tương đối dựa trên tăng NSLĐ cá biệt, GTTD siêu ngạch dựa trên tăng NSLĐ xã hội"], ans: 3 },
+    { q: "Phương pháp sản xuất GTTD tuyệt đối có những hạn chế. Chọn ý SAI:", opts: ["Năng suất lao động không thay đổi","Tỷ suất GTTD và khối lượng GTTD không thay đổi","Gặp phải sự phản kháng quyết liệt của công nhân","Không thoả mãn khát vọng GTTD của nhà tư bản"], ans: 1 },
+    { q: "Điều kiện để sức lao động trở thành hàng hoá là:", opts: ["Người lao động tự nguyện đi làm thuê","Người lao động hoàn toàn không có TLSX và của cải gì","Người lao động không được tự do thân thể và không có TLSX","Người lao động được tự do về thân thể và không có TLSX"], ans: 3 },
+    { q: "Tỷ suất giá trị thặng dư (m') phản ánh điều gì?", opts: ["Trình độ bóc lột của tư bản đối với công nhân làm thuê","Mức độ thuận lợi trong cạnh tranh giữa các doanh nghiệp","Hiệu quả của tư bản","Chỉ cho nhà tư bản biết nơi đầu tư có lợi"], ans: 0 },
+    { q: "Tuần hoàn và chu chuyển giống nhau ở điểm nào?", opts: ["Đều nghiên cứu về thời gian chu chuyển của tư bản","Đều nghiên cứu số vòng chu chuyển của tư bản","Đều nghiên cứu sự vận động của tư bản","Đều nghiên cứu chức năng của tư bản"], ans: 2 },
+    { q: "Giá trị thặng dư là gì?", opts: ["Phần lao động không công của người công nhân","Phần lao động được trả công của người công nhân","Toàn bộ kết quả lao động của nhà tư bản","Toàn bộ phần giá trị mới do công nhân tạo ra trong quá trình sản xuất"], ans: 0 },
+    { q: "Giá trị sức lao động là?", opts: ["Giá trị những tư liệu tiêu dùng để duy trì đời sống của người lao động làm thuê, gia đình họ và phí tổn đào tạo","Giá trị những tư liệu sản xuất để nuôi sống người lao động và gia đình","Giá trị những tư liệu sản xuất để nuôi sống người lao động và phí tổn đào tạo","Giá trị những tư liệu tiêu dùng để duy trì đời sống nhà tư bản"], ans: 0 },
+    { q: "Phương pháp sản xuất GTTD tuyệt đối và tương đối có điểm nào giống nhau?", opts: ["Đều làm cho công nhân tốn sức lao động nhiều hơn","Đều làm tăng tỷ suất giá trị thặng dư","Đều tăng thời gian lao động của công nhân","Đều làm giảm giá trị sức lao động của công nhân"], ans: 1 },
+    { q: "Trong tuần hoàn tư bản, tư bản tồn tại lần lượt dưới các hình thức nào?", opts: ["Tư bản cố định, tư bản lưu động","Tư bản bất biến, tư bản khả biến","Tư bản tiền tệ, tư bản lưu thông, tư bản sản xuất","Tư bản tiền tệ, tư bản sản xuất, tư bản hàng hóa"], ans: 3 },
+    { q: "Vai trò của máy móc trong quá trình tạo ra giá trị thặng dư:", opts: ["Máy móc là yếu tố quyết định để tạo ra giá trị thặng dư","Máy móc là nguồn gốc của giá trị thặng dư","Máy móc là tiền đề vật chất cho việc tạo ra giá trị thặng dư","Máy móc và sức lao động đều tạo ra giá trị thặng dư"], ans: 2 },
+    { q: "Tiền công thực tế là gì?", opts: ["Là số lượng hàng hoá và dịch vụ mua được bằng tiền công danh nghĩa","Là tổng số tiền nhận được thực tế trong 1 tháng","Là giá cả của sức lao động","Là số tiền trong sổ lương + tiền thưởng + các nguồn thu nhập khác"], ans: 0 },
+    { q: "Tư bản là:", opts: ["Giá trị mang lại giá trị thặng dư bằng cách bóc lột lao động làm thuê","Tiền và máy móc thiết bị","Tiền có khả năng đẻ ra tiền","Công cụ sản xuất và nguyên vật liệu"], ans: 0 },
+    { q: "Chọn ý đúng về lao động và sức lao động:", opts: ["Sức lao động là hàng hoá, còn lao động không là hàng hoá","Sức lao động có giá trị, còn lao động không có giá trị","Sức lao động có sau, lao động có trước","Sức lao động là khả năng, lao động là quá trình vận dụng sức lao động vào sản xuất"], ans: 0 },
+    { q: "Thời gian chu chuyển của tư bản gồm?", opts: ["Thời gian lao động và thời gian sản xuất","Thời gian tiêu thụ hàng hoá và thời gian sản xuất","Thời gian sản xuất và thời gian lưu thông","Thời gian mua TLSX và thời gian sản xuất"], ans: 2 },
+    { q: "Tư bản khả biến là:", opts: ["Là nguồn gốc của giá trị thặng dư","Là nguồn gốc mang lại giá trị sử dụng của sản phẩm","Là điều kiện mang lại giá trị thặng dư","Tư bản luôn luôn biến đổi"], ans: 0 },
+    { q: "Chọn ý đúng về mua bán sức lao động?", opts: ["Chỉ bán quyền sở hữu không mất quyền sử dụng","Chỉ bán quyền sử dụng","Chỉ bán quyền sở hữu","Bán cả quyền sử dụng và quyền sở hữu"], ans: 1 },
+    { q: "Tư bản cố định có vai trò gì?", opts: ["Là nguồn gốc của giá trị thặng dư","Điều kiện để cạnh tranh giữa các ngành","Là điều kiện để tăng năng suất lao động","Quyết định việc mang lại giá trị thặng dư"], ans: 2 },
+    { q: "Dựa vào căn cứ nào để chia tư bản ra thành tư bản cố định và tư bản lưu động?", opts: ["Vai trò các bộ phận tư bản trong quá trình sản xuất GTTD","Sự thay đổi về lượng trong quá trình sản xuất","Phương thức chuyển giá trị của các bộ phận tư bản sang sản phẩm","Tốc độ chu chuyển chung của tư bản"], ans: 2 },
+    { q: "Sức lao động là:", opts: ["Toàn bộ thể lực và trí lực trong con người và được vận dụng trong quá trình sản xuất","Khả năng lao động, được tiêu dùng trong quá trình sản xuất","Hoạt động có mục đích của con người để tạo ra của cải","Toàn bộ thể lực trong một con người và được vận dụng để sản xuất"], ans: 0 },
+    { q: "Chọn ý KHÔNG ĐÚNG về các cặp phạm trù tư bản:", opts: ["Chia tư bản thành tư bản bất biến và tư bản khả biến để tìm nguồn gốc GTTD","Tư bản cố định cũng là tư bản bất biến, tư bản lưu động cũng là tư bản khả biến","Tư bản cố định, tư bản lưu động và tư bản bất biến, tư bản khả biến đều là tư bản sản xuất","Chia tư bản thành tư bản cố định và tư bản lưu động để biết cách thức chuyển giá trị"], ans: 1 },
+    { q: "Ý kiến nào dưới đây là sai về tích lũy tư bản?", opts: ["Động cơ của tích lũy tư bản là giá trị thặng dư","Tích luỹ tư bản là biến một phần giá trị thặng dư thành tư bản","Tích luỹ là sự tiết kiệm giá trị thặng dư","Nguồn gốc của tích luỹ tư bản là giá trị thặng dư"], ans: 2 },
+    { q: "Cạnh tranh giữa các ngành xảy ra khi có sự khác nhau về:", opts: ["Lợi nhuận","Giá trị thặng dư siêu ngạch","Cung cầu các loại hàng hóa","Tỷ suất lợi nhuận"], ans: 3 },
+    { q: "Giá cả của tư bản cho vay có điểm gì đặc biệt?", opts: ["Giá cả của tư bản cho vay do giá trị sử dụng của vốn vay quyết định","Giá cả của tư bản cho vay do giá trị của vốn vay quyết định","Giá cả của tư bản cho vay không phụ thuộc quan hệ cung-cầu về vốn vay","Giá cả của tư bản cho vay do nhà nước quyết định"], ans: 0 },
+    { q: "Chọn ý đúng về tỷ suất lợi nhuận (p') và tỷ suất giá trị thặng dư (m'):", opts: ["p' > m'","p' < m'","m' chỉ ra nơi đầu tư có lợi cho nhà tư bản, p' phản ánh trình độ bóc lột","p' = m'"], ans: 1 },
+    { q: "Địa tô chênh lệch I thu được trên:", opts: ["Ruộng đất có độ màu mỡ trung bình","Ruộng đất trung bình, đất tốt và ở vị trí thuận lợi","Ruộng đất ở vị trí không thuận lợi","Ruộng đất xấu"], ans: 1 },
+    { q: "Tích tụ tư bản là:", opts: ["Tăng qui mô tư bản cá biệt bằng cách tiết kiệm giá trị thặng dư","Tăng qui mô tư bản xã hội bằng cách tư bản hóa giá trị thặng dư","Tăng qui mô tư bản cá biệt bằng cách tư bản hóa giá trị thặng dư","Làm cho tư bản xã hội giảm xuống"], ans: 2 },
+    { q: "Khi hàng hóa bán đúng giá trị thì:", opts: ["p = m","p < m","p = 0","p > m"], ans: 0 },
+    { q: "Nhân tố nào dưới đây có ảnh hưởng ngược chiều với tỷ suất lợi nhuận (p')?", opts: ["Tỷ suất giá trị thặng dư","Tư bản khả biến","Tốc độ chu chuyển của tư bản","Cấu tạo hữu cơ của tư bản"], ans: 3 },
+    { q: "Chi phí sản xuất tư bản chủ nghĩa (k) là:", opts: ["Chi phí về đối tượng lao động và sức lao động","Chi phí nhà tư bản mua máy móc, nguyên vật liệu","Chi phí tư bản bất biến và tư bản khả biến","Chi phí về tư liệu lao động và sức lao động"], ans: 2 },
+    { q: "Địa tô chênh lệch II thu được từ đâu?", opts: ["Ruộng đất thâm canh","Ruộng đất có vị trí địa lí thuận lợi","Ruộng đất có độ màu mỡ tốt","Ruộng đất có độ màu mỡ trung bình"], ans: 0 },
+    { q: "Tích tụ và tập trung tư bản giống nhau ở:", opts: ["Tăng qui mô tư bản cá biệt","Nguồn gốc trực tiếp giống nhau","Tăng qui mô tư bản xã hội","Vai trò quan trọng như nhau"], ans: 0 },
+    { q: "Lợi nhuận thương nghiệp có được là do bán hàng hóa với mức giá:", opts: ["Thấp hơn giá trị","Bằng chi phí sản xuất tư bản chủ nghĩa","Bằng giá trị","Cao hơn giá trị"], ans: 2 },
+    { q: "Nhà tư bản kinh doanh nông nghiệp trên khu đất xấu nhất phải nộp địa tô gì?", opts: ["Địa tô tuyệt đối","Địa tô chênh lệch I và II","Địa tô tuyệt đối và địa tô chênh lệch II","Địa tô chênh lệch và địa tô tuyệt đối"], ans: 0 },
+    { q: "Lợi nhuận bình quân là gì?", opts: ["Lợi nhuận không bằng nhau của những lượng vốn tư bản đầu tư bằng nhau khi đầu tư vào các ngành khác nhau","Lợi nhuận bằng nhau của những lượng vốn tư bản đầu tư không bằng nhau","Lợi nhuận bằng nhau của những lượng vốn tư bản đầu tư bằng nhau khi đầu tư vào các ngành khác nhau","Lợi nhuận khác nhau của những lượng vốn tư bản đầu tư khác nhau"], ans: 2 },
+    { q: "Chọn ý KHÔNG ĐÚNG về lợi nhuận:", opts: ["Lợi nhuận có thể khác nhau về lượng với giá trị thặng dư","Là hình thức biến tướng của giá trị thặng dư","Lợi nhuận luôn lớn hơn giá trị thặng dư","Là khoản chênh lệch giữa giá trị hàng hóa và chi phí sản xuất"], ans: 2 },
+    { q: "Hệ quả của quá trình tích lũy tư bản là gì?", opts: ["Tích tụ tư bản và tập trung tư bản không đổi","Tích tụ tư bản và tập trung tư bản giảm xuống","Cấu tạo hữu cơ của tư bản tăng lên","Chênh lệch về thu nhập giữa nhà tư bản và người lao động giảm"], ans: 2 },
+    { q: "Tư bản thương nghiệp dưới chủ nghĩa tư bản ra đời từ:", opts: ["Tư bản công nghiệp","Tư bản cho vay","Tư bản lưu động","Tư bản hàng hóa"], ans: 0 },
+    { q: "Lợi nhuận là gì?", opts: ["Là khoản chênh lệch giữa giá trị hàng hóa và chi phí sản xuất tư bản chủ nghĩa","Là khoản chênh lệch giữa giá trị và giá cả hàng hóa","Là khoản chênh lệch giữa hao phí lao động cá biệt và hao phí lao động xã hội","Là khoản chênh lệch giữa vốn đầu tư và chi phí sản xuất"], ans: 0 },
+    { q: "Điểm giống nhau giữa địa tô và lợi tức là gì?", opts: ["Đều không phải là hình thức thu nhập của tư bản đầu tư","Đều là một phần giá trị thặng dư","Đều là phần lợi nhuận siêu ngạch","Đều không phụ thuộc vào quan hệ cung-cầu"], ans: 1 },
+    { q: "Khi hình thành lợi nhuận bình quân, giá trị hàng hóa sẽ chuyển thành?", opts: ["Giá trị thị trường","Giá cả sản xuất cá biệt","Giá cả sản xuất","Giá cả thị trường"], ans: 2 },
+    { q: "Giới hạn của tỷ suất lợi tức (z') là:", opts: ["0 > z' > p' bình quân","z' > p' bình quân","0 < z' < p' bình quân","z' = p' bình quân"], ans: 2 },
+    { q: "Địa tô tư bản chủ nghĩa là phần giá trị thặng dư còn lại sau khi khấu trừ:", opts: ["Lợi nhuận","Lợi nhuận độc quyền","Lợi nhuận siêu ngạch","Lợi nhuận bình quân"], ans: 3 },
+    { q: "Hình thức nào KHÔNG PHẢI là biểu hiện của giá trị thặng dư?", opts: ["Lợi nhuận","Tiền lương","Địa tô","Lợi tức"], ans: 1 },
+    { q: "Lợi nhuận thương nghiệp có nguồn gốc từ đâu?", opts: ["Từ lĩnh vực sản xuất do lao động làm thuê tạo ra","Từ lĩnh vực lưu thông sinh ra","Là kết quả của việc mua rẻ, bán đắt","Là kết quả của vận chuyển hàng hóa trên thị trường"], ans: 0 },
+    { q: "Tỷ suất lợi nhuận (p') phản ánh:", opts: ["Sự giàu có của nhà tư bản","Hiệu quả của tư bản đầu tư","Trình độ bóc lột của tư bản","Nghệ thuật quản lí của tư bản"], ans: 1 },
+    { q: "Địa tô tuyệt đối có ở loại ruộng đất nào?", opts: ["Ruộng xấu","Ruộng tốt, trung bình và xấu","Ruộng tốt","Ruộng trung bình"], ans: 1 },
+    { q: "Tư bản cho vay ra đời từ:", opts: ["Tư bản tiền tệ","Tư bản công nghiệp","Tư bản ngân hàng","Tư bản thương nghiệp"], ans: 0 },
+    { q: "Nhân tố nào KHÔNG ẢNH HƯỞNG đến quy mô tích lũy?", opts: ["Tỷ lệ phân chia giá trị thặng dư thành quỹ tích lũy và quỹ tiêu dùng","Tỷ suất giá trị thặng dư","Số lượng tư liệu lao động được sử dụng","Khối lượng giá trị thặng dư"], ans: 2 },
+    { q: "Giá cả ruộng đất phụ thuộc vào:", opts: ["Độ màu mỡ của đất","Tỷ suất lợi tức tiền gửi ngân hàng","Mức địa tô của đất","Mức địa tô của đất và tỷ suất lợi tức tiền gửi ngân hàng"], ans: 3 }
+  ],
+  "Kiểm Tra": [
+    { q: "Công thức tính giá cả sản xuất trong chủ nghĩa tư bản là gì?", opts: ["Chi phí sản xuất + lợi nhuận siêu ngạch","Chi phí sản xuất + giá trị thặng dư","Chi phí sản xuất + lợi nhuận","Chi phí sản xuất + lợi nhuận bình quân"], ans: 3 },
+    { q: "Chuyển dịch cơ cấu ngành kinh tế theo hướng CNH-HĐH được biểu hiện như thế nào?", opts: ["Tăng tỉ trọng đóng góp của công nghiệp và dịch vụ; giảm tỉ trọng đóng góp của nông nghiệp trong GDP","Tăng tỉ trọng đóng góp của các ngành kinh tế trong GDP","Giảm tỉ trọng đóng góp của công nghiệp và dịch vụ; tăng tỉ trọng đóng góp của nông nghiệp trong GDP","Giảm tỉ trọng của các ngành kinh tế trong GDP"], ans: 0 },
+    { q: "Vai trò của kinh tế nhà nước trong nền KTTT định hướng XHCN ở Việt Nam là gì?", opts: ["Vai trò thống trị","Vai trò chủ đạo","Vai trò quan trọng","Vai trò quyết định"], ans: 1 },
+    { q: "Địa tô trong chủ nghĩa tư bản là gì?", opts: ["Phần lợi nhuận bình quân mà nhà tư bản kinh doanh nông nghiệp phải nộp cho chủ đất","Phần chi phí sản xuất mà nhà tư bản kinh doanh nông nghiệp phải nộp cho chủ đất","Phần lợi nhuận siêu ngạch mà nhà tư bản kinh doanh nông nghiệp phải nộp cho chủ đất","Phần lợi tức mà nhà tư bản kinh doanh nông nghiệp phải nộp cho chủ đất"], ans: 2 },
+    { q: "Mục đích nghiên cứu của Kinh tế chính trị Mác Lênin là gì?", opts: ["Tìm ra chủ thể kinh tế","Tìm ra tiềm lực kinh tế","Tìm ra đối tác kinh tế","Tìm ra quy luật kinh tế"], ans: 3 },
+    { q: "Giá trị sử dụng của hàng hóa sức lao động có vai trò gì?", opts: ["Chìa khóa để giải quyết mâu thuẫn giữa tư bản và lao động làm thuê","Chìa khóa để giải quyết mâu thuẫn của lưu thông hàng hóa giản đơn","Chìa khóa để giải quyết mâu thuẫn giữa tư bản và công nhân","Chìa khóa để giải quyết mâu thuẫn trong công thức chung của tư bản"], ans: 3 },
+    { q: "Đặc điểm của phương pháp biện chứng duy vật trong nghiên cứu kinh tế là gì?", opts: ["Đi sâu vào nghiên cứu cái chi tiết, cái bộ phận, rồi tổng hợp, khái quát","Loại bỏ cái ngẫu nhiên, giữ cái điển hình","Xâu chuỗi các sự kiện quá khứ","Nghiên cứu sự vật trong mối liên hệ tác động qua lại và trong sự vận động phát triển không ngừng"], ans: 3 },
+    { q: "Một doanh nghiệp tăng năng suất lao động, giá trị thị trường 1 đơn vị hàng hóa mà ngành đó sản xuất có thay đổi không?", opts: ["Có thể thay đổi, có thể không đổi","Chắc chắn thay đổi","Chắc chắn không đổi","Không liên quan đến giá trị thị trường"], ans: 0 },
+    { q: "Luận điểm nào sau đây KHÔNG PHẢN ÁNH vai trò của lợi ích kinh tế?", opts: ["Lợi ích kinh tế phụ thuộc vào địa vị của mỗi cá nhân trong xã hội","Lợi ích kinh tế là động lực trực tiếp thúc đẩy các hoạt động kinh tế","Lợi ích kinh tế là cơ sở để thiết lập quan hệ kinh tế","Lợi ích kinh tế được đảm bảo là cơ sở cho sự ổn định và phát triển"], ans: 0 },
+    { q: "Để thu được giá trị thặng dư, giới hạn tối thiểu của độ dài ngày lao động là bao nhiêu?", opts: ["Lớn hơn thời gian lao động cần thiết","Nhỏ hơn thời gian lao động cần thiết","Bằng thời gian lao động thặng dư","Bằng thời gian lao động tất yếu"], ans: 0 },
+    { q: "Ưu thế của kinh tế thị trường đối với đời sống kinh tế - xã hội là gì?", opts: ["Thỏa mãn tốt nhất nhu cầu của con người; Kích thích tính năng động, sáng tạo; Phát huy tốt các tiềm năng của mọi chủ thể, vùng miền","Phát huy tiềm năng + sáng tạo + khắc phục phân hóa","Thỏa mãn nhu cầu + phát huy tiềm năng + khắc phục phân hóa","Sáng tạo + phát huy tiềm năng + khắc phục phân hóa"], ans: 0 },
+    { q: "Lợi nhuận bình quân là gì?", opts: ["Lợi nhuận khác nhau của vốn khác nhau","Lợi nhuận không bằng nhau của vốn bằng nhau","Lợi nhuận bằng nhau của những lượng vốn tư bản đầu tư bằng nhau khi đầu tư vào các ngành khác nhau","Lợi nhuận bằng nhau của vốn khác nhau"], ans: 2 },
+    { q: "Lợi tức là gì?", opts: ["Là một phần lợi nhuận bình quân mà người đi vay phải trả cho người cho vay","Là toàn bộ phần lợi nhuận bình quân","Là toàn bộ phần lợi nhuận siêu ngạch","Là một phần lợi nhuận siêu ngạch"], ans: 0 },
+    { q: "Lợi nhuận và giá trị thặng dư có nguồn gốc từ đâu?", opts: ["Lao động phức tạp","Lao động cụ thể","Lao động giản đơn","Lao động không công của công nhân"], ans: 3 },
+    { q: "Tính chất đặc biệt của hàng hóa tiền tệ là gì?", opts: ["Là vật ngang giá chung","Được mang ra trao đổi","Có hai thuộc tính","Là vật ngang giá"], ans: 0 },
+    { q: "Phương pháp sản xuất giá trị thặng dư được áp dụng phổ biến hiện nay là?", opts: ["Tuyệt đối","Siêu ngạch","Tương đối","Lợi nhuận siêu ngạch"], ans: 2 },
+    { q: "Giá trị hàng hoá là gì?", opts: ["Là hao phí lao động xã hội kết tinh trong hàng hoá","Hao phí lao động cá biệt","Chi phí sản xuất","Công dụng"], ans: 0 },
+    { q: "Năng suất lao động phụ thuộc vào nhân tố nào sau đây?", opts: ["Giá cả đầu vào","Thời gian lao động","Nhu cầu công nhân","Trình độ khoa học công nghệ"], ans: 3 },
+    { q: "Công thức chung của tư bản là gì?", opts: ["H – T – H","T – H – T'","H – SX – H'","T – H – T"], ans: 1 },
+    { q: "Nguồn lực quan trọng hàng đầu trong nền kinh tế tri thức là gì?", opts: ["Thể chế","Vốn","Tài nguyên","Tri thức"], ans: 3 },
+    { q: "Thuộc tính giá trị sử dụng của hàng hóa sức lao động có điểm đặc biệt là?", opts: ["Tạo ra giá trị bằng bản thân nó","Nhỏ hơn","Tạo nhiều sản phẩm","Tạo ra giá trị mới lớn hơn giá trị của bản thân nó"], ans: 3 }
+  ],
+  "Chương 5": [
+    { q: "Mô hình phát triển kinh tế của Việt Nam hiện nay là gì?", opts: ["Kinh tế thị trường có sự quản lý của nhà nước","Kinh tế thị trường xã hội chủ nghĩa","Kinh tế hàng hóa nhiều thành phần theo định hướng xã hội chủ nghĩa","Kinh tế thị trường định hướng xã hội chủ nghĩa"], ans: 3 },
+    { q: "Nhận định nào là sai về Kinh tế thị trường?", opts: ["Mỗi nước có mô hình kinh tế thị trường phù hợp riêng","Nền KTTT của mỗi nước vừa có đặc trưng tất yếu chung vừa có đặc trưng phản ánh riêng","Tồn tại mô hình KTTT chung cho mọi quốc gia và mọi giai đoạn phát triển","KTTT là sản phẩm của văn minh nhân loại"], ans: 2 },
+    { q: "Đặc trưng mang tính lịch sử-xã hội của KTTT định hướng XHCN ở Việt Nam là gì?", opts: ["Nền kinh tế nhiều thành phần với kinh tế nhà nước giữ vai trò chủ đạo","Tồn tại nhiều chủ thể độc lập với nhau về lợi ích kinh tế","Thị trường giữ vai trò quyết định phân bổ nguồn lực","Kinh tế thị trường chịu sự quản lý của nhà nước và sự lãnh đạo của đảng"], ans: 3 },
+    { q: "Tính tất yếu khách quan cho sự ra đời của KTTT định hướng XHCN ở Việt Nam. Chọn ý SAI:", opts: ["Phù hợp với xu hướng phát triển khách quan của Việt Nam","Do tính ưu việt của KTTT trong định hướng XHCN trong thúc đẩy phát triển","Phù hợp với nguyện vọng dân giàu, nước mạnh của người dân Việt Nam","Do thể chế KTTT định hướng XHCN ở Việt Nam còn chưa đồng bộ"], ans: 3 },
+    { q: "Nguyên nhân tồn tại nhiều thành phần kinh tế trong nền KTTT định hướng XHCN ở nước ta là do. Chọn ý SAI:", opts: ["Do xã hội cũ để lại","Do quá trình cải tạo và xây dựng QHSX mới","Do trình độ LLSX còn nhiều thang bậc khác nhau","Còn nhiều quan hệ sở hữu về TLSX"], ans: 1 },
+    { q: "Đặc trưng chung của kinh tế thị trường?", opts: ["Kinh tế thị trường gắn liền với vai trò lãnh đạo của Đảng cộng sản","Kinh tế thị trường gắn liền với định hướng xã hội chủ nghĩa","Giá cả thị trường do thị trường quy định","Kinh tế thị trường thực hiện phân phối thu nhập công bằng"], ans: 2 },
+    { q: "Cơ cấu kinh tế nhiều thành phần trong nền KTTT có vai trò gì? Chọn ý SAI:", opts: ["Cho phép khai thác, sử dụng có hiệu quả các yếu tố sản xuất","Đảm bảo được an ninh quốc phòng và phục vụ lợi ích công cộng","Thúc đẩy kinh tế hàng hoá phát triển, khoa học, công nghệ phát triển nhanh","Làm cho NSLĐ tăng, kinh tế tăng trưởng nhanh và hiệu quả"], ans: 1 },
+    { q: "Nền KTTT định hướng XHCN ở Việt Nam thực hiện nguyên tắc phân phối nào? Chọn ý SAI:", opts: ["Phân phối theo đầu vào và đầu ra","Ngoài thù lao lao động thông qua các quỹ phúc lợi xã hội và tập thể","Theo lao động","Theo hiệu quả sản xuất kinh doanh"], ans: 0 },
+    { q: "Biểu hiện nào dưới đây KHÔNG ĐÚNG về vai trò chủ đạo của kinh tế nhà nước:", opts: ["Là nhân tố chính thúc đẩy tăng trưởng kinh tế nhanh và bền vững, có tác dụng chi phối các thành phần kinh tế khác","Nắm các ngành then chốt, các lĩnh vực quan trọng","Đi đầu trong ứng dụng tiến bộ KHCN, là công cụ để định hướng và điều tiết kinh tế vĩ mô","Chiếm tỷ trọng lớn"], ans: 3 },
+    { q: "Sự khác biệt cơ bản giữa KTTT định hướng XHCN với kinh tế thị trường TBCN là:", opts: ["Có sự điều tiết của nhà nước XHCN","Có nhiều hình thức sở hữu TLSX","Vai trò chủ đạo của kinh tế nhà nước","Nền kinh tế nhiều thành phần"], ans: 0 },
+    { q: "Quan niệm nào sau đây KHÔNG ĐÚNG về kinh tế thị trường?", opts: ["Kinh tế thị trường là sản phẩm riêng có của chủ nghĩa tư bản","Kinh tế thị trường là kết quả phát triển lâu dài của lực lượng sản xuất","Kinh tế thị trường là hình thức phát triển cao của kinh tế hàng hóa","Kinh tế thị trường là thành tựu của văn minh nhân loại"], ans: 0 },
+    { q: "Luận điểm nào sau đây KHÔNG PHẢN ÁNH vai trò của lợi ích kinh tế?", opts: ["Lợi ích kinh tế phụ thuộc vào địa vị của mỗi cá nhân trong xã hội","Lợi ích kinh tế được đảm bảo là cơ sở cho sự ổn định và phát triển của xã hội","Lợi ích kinh tế là cơ sở để thiết lập quan hệ kinh tế giữa các chủ thể","Lợi ích kinh tế là động lực trực tiếp thúc đẩy các hoạt động kinh tế của các chủ thể"], ans: 0 },
+    { q: "Chủ thể quản lý nền kinh tế thị trường định hướng XHCN ở Việt Nam là gì?", opts: ["Nhân dân quản lý và giám sát","Các chủ doanh nghiệp và các nhà đầu tư","Đảng Cộng sản và các tổ chức chính trị xã hội","Nhà nước XHCN đặt dưới sự lãnh đạo của Đảng Cộng sản và chịu sự giám sát của nhân dân"], ans: 3 },
+    { q: "Trong nền KTTT, nhà nước có chức năng gì trong bảo đảm hài hòa các quan hệ lợi ích? Chọn ý SAI:", opts: ["Bảo vệ lợi ích hợp pháp, tạo môi trường thuận lợi cho hoạt động tìm kiếm lợi ích","Giải quyết các xung đột trong quan hệ xã hội","Điều hòa lợi ích giữa cá nhân- doanh nghiệp- xã hội","Kiểm soát, ngăn ngừa các quan hệ lợi ích có ảnh hưởng tiêu cực đối với sự phát triển"], ans: 1 },
+    { q: "Mối quan hệ giữa kinh tế thị trường và định hướng xã hội chủ nghĩa?", opts: ["Chủ nghĩa xã hội không phù hợp với cơ chế thị trường","Chúng mâu thuẫn và đối lập với nhau hoàn toàn","Kinh tế thị trường làm chệch hướng xã hội chủ nghĩa","Kinh tế thị trường là tiền đề để xây dựng chủ nghĩa xã hội"], ans: 3 },
+    { q: "Nhân tố nào sau đây KHÔNG ẢNH HƯỞNG đến lợi ích kinh tế?", opts: ["Trình độ phát triển của lực lượng sản xuất","Địa vị của chủ thể kinh tế trong quan hệ sản xuất","Chính sách phân phối thu nhập của nhà nước","Trình độ phát triển của đời sống văn hóa tinh thần"], ans: 3 },
+    { q: "Trong các hình thức lợi ích kinh tế, lợi ích nào là cơ sở nền tảng cho các lợi ích khác?", opts: ["Lợi ích xã hội","Lợi ích cá nhân","Lợi ích cá nhân và lợi ích xã hội","Lợi ích nhóm"], ans: 1 },
+    { q: "Trong các hình thức lợi ích kinh tế sau, lợi ích nào đóng vai trò định hướng cho các quan hệ lợi ích khác?", opts: ["Lợi ích xã hội","Lợi ích cá nhân","Lợi ích nhóm","Lợi ích cá nhân và lợi ích nhóm"], ans: 0 },
+    { q: "Quan điểm 'KTTT định hướng XHCN ở Việt Nam là mô hình kinh tế tổng quát của thời kỳ quá độ' được khẳng định tại Đại hội Đảng lần thứ mấy?", opts: ["Đại hội Đảng lần thứ IX","Đại hội Đảng lần thứ VI","Đại hội Đảng lần thứ VII","Đại hội Đảng lần thứ VIII"], ans: 0 },
+    { q: "Chọn ý KHÔNG ĐÚNG về tính tất yếu khách quan của nhiều hình thức phân phối thu nhập:", opts: ["Do yêu cầu khách quan tồn tại nhiều hình thức sở hữu về tư liệu sản xuất","Do trình độ phát triển của LLSX còn thấp kém, phải huy động mọi nguồn lực","Do yêu cầu đảm bảo tính công bằng xã hội trong sử dụng các nguồn lực kinh tế","Do định hướng phát triển xã hội chủ nghĩa"], ans: 2 },
+    { q: "Nhóm lợi ích là gì?", opts: ["Các cá nhân, tổ chức hoạt động cùng ngành, cùng lĩnh vực, quan hệ trao đổi với nhau","Các cá nhân, tổ chức hoạt động trong cùng ngành, liên kết với nhau để thực hiện tốt hơn lợi ích riêng","Các cá nhân, tổ chức hoạt động trong các ngành khác nhau nhưng có mối liên hệ với nhau","Các cá nhân, tổ chức hoạt động trong cùng ngành, liên kết với nhau để thực hiện tốt hơn lợi ích chung của nhóm"], ans: 3 },
+    { q: "Đặc điểm của quan hệ lợi ích kinh tế trong nền KTTT định hướng XHCN?", opts: ["Lợi ích kinh tế của giai cấp thống trị hoàn toàn đối lập với giai cấp bị trị","Các quan hệ lợi ích kinh tế thống nhất với nhau","Các quan hệ lợi ích kinh tế vừa thống nhất, vừa mâu thuẫn với nhau","Các quan hệ lợi ích kinh tế mâu thuẫn với nhau"], ans: 2 },
+    { q: "Nhận định nào sau đây KHÔNG ĐÚNG về thực hiện 'công bằng trong phân phối thu nhập'?", opts: ["Phần thu nhập của mỗi người phải luôn luôn bằng nhau","Công bằng tương ứng với mức độ đóng góp trong việc tạo ra thu nhập","Công bằng về mức thu nhập mà mỗi chủ thể nhận được","Công bằng về cơ hội tiếp cận các nguồn lực của xã hội"], ans: 0 }
+  ],
+  "Chương 6": [
+    { q: "Lý do khách quan hàng đầu thúc đẩy Việt Nam phải thực hiện công nghiệp hóa, hiện đại hóa là gì?", opts: ["Để xây dựng cơ sở vật chất kỹ thuật cho chủ nghĩa xã hội","Để khai thác tốt nguồn lực công nghệ hiện có","Để nhanh chóng bắt kịp trình độ công nghệ hiện đại của thế giới","Để giải quyết việc làm cho người lao động"], ans: 0 },
+    { q: "Đặc điểm của quá trình CNH, HĐH ở Việt Nam. Chọn ý SAI:", opts: ["Đẩy mạnh CNH, HĐH nông nghiệp nông thôn","CNH, HĐH gắn với Kinh tế tri thức","CNH, HĐH theo định hướng XHCN","CNH, HĐH trong điều kiện KTTT định hướng XHCN"], ans: 0 },
+    { q: "Cơ sở vật chất kỹ thuật là tiêu chuẩn để đánh giá điều gì?", opts: ["Mức độ hiện đại của nền kinh tế","Trình độ phát triển của xã hội","Trình độ hoàn thiện của thể chế chính trị","Trình độ của người lao động"], ans: 1 },
+    { q: "Nền kinh tế tri thức được xem là:", opts: ["Một giai đoạn mới của CNTB hiện đại","Một hình thái kinh tế - xã hội mới","Một phương thức sản xuất mới","Một nấc thang phát triển của lực lượng sản xuất"], ans: 3 },
+    { q: "Trong các luận điểm dưới đây, luận điểm nào KHÔNG ĐÚNG?", opts: ["CNH là tất yếu đối với các nước nghèo, kém phát triển","CNH là tất yếu đối với mọi nước lạc hậu","CNH là tất yếu đối với các nước chưa có nền sản xuất lớn, hiện đại","CNH là tất yếu đối với mọi nước đi lên CNXH"], ans: 3 },
+    { q: "Nước nào tiến hành CNH đầu tiên trên thế giới?", opts: ["Mỹ","Pháp","Anh","Đức"], ans: 2 },
+    { q: "Đâu là động lực của công nghiệp hoá, hiện đại hoá?", opts: ["Hiệu quả kinh tế - xã hội","Khoa học - công nghệ","Mở rộng quan hệ kinh tế quốc tế","Con người"], ans: 3 },
+    { q: "Quá trình CNH, HĐH làm cho cơ cấu lao động chuyển dịch. Ý nào dưới đây KHÔNG ĐÚNG?", opts: ["Lao động ngành dịch vụ tăng nhanh hơn các ngành sản xuất vật chất","Lao động công nghiệp tăng","Tỷ trọng lao động trí tuệ trong nền kinh tế tăng lên","Lao động nông nghiệp giảm"], ans: 0 },
+    { q: "Thế nào là cơ cấu kinh tế hợp lý, hiện đại và hiệu quả? Chọn đáp án SAI:", opts: ["Khai thác phân bổ và phát huy hiệu quả các nguồn lực trong nước cũng như nước ngoài","Ứng dụng linh hoạt các thành tựu khoa học công nghệ mới, hiện đại","Phù hợp với xu thế phát triển chung của nền kinh tế và yêu cầu của toàn cầu hóa","Giảm tỉ trọng đóng góp của công nghiệp và dịch vụ; tăng tỉ trọng đóng góp của nông nghiệp trong GDP"], ans: 3 },
+    { q: "Thực chất của CNH ở nước ta là gì?", opts: ["Cải thiện, nâng cao đời sống nhân dân","Thay thế công nghiệp nhẹ thành công nghiệp nặng","Tái sản xuất mở rộng","Thay lao động thủ công lạc hậu bằng lao động sử dụng máy móc có NSLĐ xã hội cao"], ans: 3 },
+    { q: "Mối quan hệ giữa CNH, HĐH với phát triển kinh tế tri thức ở Việt Nam là gì?", opts: ["Phát triển kinh tế tri thức là mục tiêu của CNH, HĐH","Phát triển kinh tế tri thức là một nội dung gắn liền với quá trình CNH, HĐH","Phát triển kinh tế tri thức là điều kiện tiền đề của CNH, HĐH","Phát triển kinh tế tri thức là điều kiện tiên quyết để thực hiện CNH, HĐH"], ans: 1 },
+    { q: "Để nhanh chóng phát triển đất nước đối với một nước CNH muộn, chúng ta đặc biệt coi trọng giải pháp gì?", opts: ["Coi trọng vai trò kinh tế của nhà nước","Đẩy mạnh việc thu hút đầu tư trực tiếp nước ngoài","Thúc đẩy chuyển dịch cơ cấu kinh tế theo hướng hiện đại","Khuyến khích các hình thức tổ chức, sản xuất, kinh doanh"], ans: 1 },
+    { q: "Vì sao cần phải xây dựng và phát triển ngành công nghiệp sản xuất tư liệu sản xuất trong quá trình CNH, HĐH?", opts: ["Vì là ngành có trình độ công nghệ hiện đại","Vì là ngành tạo ra phần lớn sản phẩm trong nền kinh tế","Vì là ngành có năng suất lao động cao","Vì là ngành có vai trò quan trọng, quyết định sự phát triển của các ngành khác"], ans: 3 },
+    { q: "Tác động tích cực của hội nhập kinh tế quốc tế. Chọn ý SAI:", opts: ["Tạo cơ hội phát triển nguồn nhân lực","Tạo điều kiện thúc đẩy hội nhập các lĩnh vực văn hóa, chính trị, củng cố an ninh quốc phòng","Phân phối công bằng lợi ích và rủi ro cho các nước, giảm bớt khoảng cách giàu nghèo","Tạo điều kiện mở rộng thị trường, tiếp thu khoa học công nghệ, vốn"], ans: 2 },
+    { q: "Đặc trưng của cuộc cách mạng công nghiệp lần thứ tư là:", opts: ["Cơ giới hóa","Điện khí hóa","Tin học hóa và tự động hóa","Kết nối thế giới thực và thế giới ảo"], ans: 3 },
+    { q: "Thách thức lớn nhất đối với các nước đang phát triển trong bối cảnh CMCN 4.0 là:", opts: ["Khoảng cách chênh lệch về trình độ phát triển của LLSX ngày càng lớn","Tỉ lệ thất nghiệp ngày càng gia tăng","Nợ nước ngoài ngày càng lớn","Nền kinh tế ngày càng bị phụ thuộc vào bên ngoài"], ans: 0 },
+    { q: "Đặc trưng riêng có của mô hình công nghiệp hóa cổ điển là:", opts: ["Thu hút vốn đầu tư từ nước ngoài","Thực hiện bước đi mang tính tuần tự","Chuyển từ chiến lược thay thế nhập khẩu sang hướng về xuất khẩu","Ưu tiên phát triển công nghiệp nặng"], ans: 3 },
+    { q: "Đặc trưng riêng có của mô hình công nghiệp hóa của Liên Xô là:", opts: ["Thực hiện công nghiệp hóa rút ngắn","Thực hiện công nghiệp hóa theo chiến lược hướng về xuất khẩu","Chú trọng đầu tư nguồn nhân lực","Ưu tiên phát triển công nghiệp nặng"], ans: 3 },
+    { q: "Điểm giống nhau trong mô hình công nghiệp hóa của NICs và Liên Xô là:", opts: ["Đều ưu tiên phát triển công nghiệp nặng","Đều mở cửa, thu hút vốn đầu tư từ nước ngoài","Đều có sự can thiệp của nhà nước vào quá trình công nghiệp hóa","Đều thực hiện chuyển giao công nghệ với các quốc gia có công nghệ tiên tiến"], ans: 2 },
+    { q: "Mục tiêu hàng đầu của CNH, HĐH ở Việt Nam là:", opts: ["Để Việt Nam bắt kịp với trình độ văn minh của nhân loại","Nhằm theo kịp các nước tư bản phát triển","Để Việt Nam hội nhập kinh tế quốc tế thành công","Xây dựng cơ sở vật chất kỹ thuật cho CNXH"], ans: 3 },
+    { q: "Kinh tế tri thức là:", opts: ["Nền kinh tế hình thành trong thời kỳ cuộc cách mạng công nghiệp","Nền kinh tế sản sinh ra những tri thức mới","Nền kinh tế ứng dụng những thành tựu khoa học công nghệ mới","Sự sản sinh, phổ cập và sử dụng tri thức quyết định đối với sự tăng trưởng và phát triển kinh tế"], ans: 3 },
+    { q: "Đâu KHÔNG PHẢI là đặc điểm của kinh tế tri thức?", opts: ["Các ngành kinh tế dựa vào tri thức và thành tựu KHCN ngày càng tăng và chiếm ưu thế","Thông tin trở thành tài nguyên và được lan truyền rộng rãi","Tri thức trở thành lực lượng sản xuất trực tiếp","Thông tin được chia sẻ miễn phí trên phạm vi toàn cầu"], ans: 3 },
+    { q: "Chuyển dịch cơ cấu kinh tế là gì?", opts: ["Sự thay đổi tỉ lệ đóng góp của mỗi bộ phận cũng như mối quan hệ giữa các bộ phận trong nền kinh tế","Tỉ trọng của mỗi thành phần kinh tế trong nền kinh tế","Tỉ trọng của nông nghiệp, công nghiệp, dịch vụ trong nền kinh tế","Tỉ trọng của mỗi ngành, mỗi lĩnh vực của nền kinh tế và mối quan hệ giữa các lĩnh vực đó"], ans: 0 },
+    { q: "Tác động tiêu cực của hội nhập kinh tế quốc tế?", opts: ["Gia tăng sự phụ thuộc vào bên ngoài của nền kinh tế","Mở rộng thị trường, tiếp thu khoa học, công nghệ, vốn","Nâng cao chất lượng nguồn nhân lực","Gia tăng sự phụ thuộc về chính trị giữa các nước"], ans: 0 },
+    { q: "Đâu KHÔNG PHẢI là nhiệm vụ chuẩn bị các điều kiện để ứng phó với tác động tiêu cực của CMCN 4.0?", opts: ["Phát triển kinh tế nhà nước giữ vai trò chủ đạo","Phát triển nguồn nhân lực có trình độ công nghệ cao","Đẩy mạnh công nghiệp hóa, hiện đại hóa nông nghiệp, nông thôn","Xây dựng hạ tầng kỹ thuật về công nghệ thông tin, thực hiện chuyển đổi số"], ans: 0 },
+    { q: "Để thích ứng với cuộc CMCN 4.0, CNH, HĐH Việt Nam cần thực hiện nội dung gì?", opts: ["Hoàn thiện thể chế, xây dựng nền kinh tế dựa trên đổi mới sáng tạo","Chuyển đổi cơ cấu kinh tế theo hướng hiện đại, hợp lý, hiệu quả","Tạo lập những điều kiện cần thiết cho quá trình công nghiệp hóa, hiện đại hóa","Hoàn thiện quan hệ sản xuất phù hợp với trình độ phát triển của lực lượng sản xuất"], ans: 0 }
+  ]
+};
+
+const ALL_KEY = "Tất Cả";
+let currentChapter = ALL_KEY;
+let questions = [];
+let answers = {};
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function buildChapterNav() {
+  const nav = document.getElementById('chapterNav');
+  const keys = [ALL_KEY, ...Object.keys(CHAPTERS)];
+  nav.innerHTML = keys.map(k => `<button class="chapter-btn${k===currentChapter?' active':''}" onclick="selectChapter('${k}')">${k}</button>`).join('');
+}
+
+function selectChapter(ch) {
+  currentChapter = ch;
+  buildChapterNav();
+  restartQuiz();
+}
+
+function getQuestions() {
+  if (currentChapter === ALL_KEY) {
+    return Object.entries(CHAPTERS).flatMap(([chName, qs]) => qs.map(q => ({...q, chapter: chName})));
+  }
+  return (CHAPTERS[currentChapter] || []).map(q => ({...q, chapter: currentChapter}));
+}
+
+function restartQuiz() {
+  answers = {};
+  const pool = getQuestions();
+  questions = shuffle(pool).map((q, i) => ({
+    ...q,
+    id: i,
+    opts: (() => {
+      // shuffle options and adjust answer index
+      const indexed = q.opts.map((o, idx) => ({o, idx}));
+      const shuffled = shuffle(indexed);
+      return { opts: shuffled.map(x => x.o), ans: shuffled.findIndex(x => x.idx === q.ans) };
+    })()
+  }));
+  // flatten
+  questions = questions.map(q => ({...q, opts: q.opts.opts, ans: q.opts.ans}));
+  document.getElementById('result-panel').style.display = 'none';
+  renderQuiz();
+  updateStats();
+  document.getElementById('statsBar').style.display = questions.length ? 'flex' : 'none';
+  window.scrollTo(0, 0);
+}
+
+function renderQuiz() {
+  const area = document.getElementById('quiz-area');
+  if (!questions.length) {
+    area.innerHTML = '<div class="empty-state"><p>Không có câu hỏi nào.</p></div>';
+    return;
+  }
+
+  const letters = ['A','B','C','D'];
+  area.innerHTML = questions.map((q, qi) => `
+    <div class="question-card" id="qcard-${qi}">
+      <div class="q-meta">
+        <span class="q-number">Câu ${qi+1}</span>
+        <span class="q-chapter">${q.chapter}</span>
+      </div>
+      <div class="q-text">${q.q}</div>
+      <div class="options-grid">
+        ${q.opts.map((opt, oi) => `
+          <button class="option-btn" id="opt-${qi}-${oi}" onclick="selectAnswer(${qi},${oi})">
+            <span class="option-letter">${letters[oi]}</span>
+            <span>${opt}</span>
+          </button>
+        `).join('')}
+      </div>
+      <div class="result-badge" id="rbadge-${qi}"></div>
+    </div>
+  `).join('') + `
+  <div class="actions">
+    <button class="btn-primary" onclick="checkAllDone()">📊 Xem Kết Quả</button>
+    <button class="btn-secondary" onclick="restartQuiz()">🔀 Làm Lại</button>
+  </div>`;
+}
+
+function selectAnswer(qi, oi) {
+  // Already answered this question
+  if (answers[qi] !== undefined) return;
+
+  answers[qi] = oi;
+  const q = questions[qi];
+  const letters = ['A','B','C','D'];
+  const rightAns = q.ans;
+
+  // Apply correct/wrong styling and disable all options for this question
+  q.opts.forEach((_, i) => {
+    const btn = document.getElementById(`opt-${qi}-${i}`);
+    btn.disabled = true;
+    if (i === rightAns) btn.classList.add('correct');
+    else if (i === oi) btn.classList.add('wrong');
+  });
+
+  // Show inline feedback badge
+  const badge = document.getElementById(`rbadge-${qi}`);
+  if (oi === rightAns) {
+    badge.className = 'result-badge correct-msg show';
+    badge.innerHTML = `✅ Chính xác! Đáp án: <strong>${letters[rightAns]}. ${q.opts[rightAns]}</strong>`;
+  } else {
+    badge.className = 'result-badge wrong-msg show';
+    badge.innerHTML = `❌ Sai rồi! Đáp án đúng là: <strong>${letters[rightAns]}. ${q.opts[rightAns]}</strong>`;
+  }
+
+  updateStats();
+
+  // If all questions answered, auto-show result button highlight
+  if (Object.keys(answers).length === questions.length) {
+    const btn = document.querySelector('.btn-primary');
+    if (btn) btn.style.animation = 'pulse 0.6s ease 2';
+  }
+}
+
+function updateStats() {
+  const total = questions.length;
+  const answered = Object.keys(answers).length;
+  const correct = Object.keys(answers).filter(qi => answers[qi] === questions[qi].ans).length;
+  const wrong = answered - correct;
+  document.getElementById('statProgress').textContent = `${answered}/${total}`;
+  document.getElementById('statCorrect').textContent = `${correct} Đúng`;
+  document.getElementById('statWrong').textContent = `${wrong} Sai`;
+  const pct = total ? (answered / total) * 100 : 0;
+  document.getElementById('progressFill').style.width = pct + '%';
+}
+
+function checkAllDone() {
+  const correct = Object.keys(answers).filter(qi => answers[qi] === questions[qi].ans).length;
+  showResults(correct);
+}
+
+function submitQuiz() { checkAllDone(); }
+
+function showResults(correct) {
+  const total = questions.length;
+  const wrong = total - correct;
+  const pct = total ? Math.round((correct / total) * 100) : 0;
+  document.getElementById('finalScore').textContent = pct + '%';
+  document.getElementById('finalCorrect').textContent = correct;
+  document.getElementById('finalWrong').textContent = wrong;
+  document.getElementById('finalTotal').textContent = total;
+  let msg = '';
+  if (pct >= 90) msg = '🏆 Xuất sắc! Bạn đã nắm vững kiến thức!';
+  else if (pct >= 70) msg = '👍 Khá tốt! Hãy ôn lại những câu sai.';
+  else if (pct >= 50) msg = '📚 Cần cố gắng thêm! Ôn luyện nhiều hơn nhé.';
+  else msg = '💪 Đừng nản! Hãy đọc lại lý thuyết và thử lại!';
+  document.getElementById('finalMsg').textContent = msg;
+  const panel = document.getElementById('result-panel');
+  panel.style.display = 'block';
+  panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function showAllAnswers() {
+  document.getElementById('result-panel').style.display = 'none';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Init
+buildChapterNav();
+restartQuiz();
+</script>
+</body>
+</html>
